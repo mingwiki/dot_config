@@ -2047,3 +2047,9 @@ We trust you have received the usual lecture from th
 : 1685810011:0;l
 : 1685810019:0;cd .config/
 : 1685810022:0;lazygit
+: 1685810036:0;l
+: 1685810050:0;cd nvim
+: 1685810050:0;ls
+: 1685810053:0;nvim init.vim
+: 1685810072:0;..
+: 1685810073:0;lazygit

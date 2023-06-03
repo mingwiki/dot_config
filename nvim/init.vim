@@ -1,5 +1,5 @@
-let g:proxy_http = 'socks5h://10.10.10.10:20000'
-let g:proxy_https = 'socks5h://10.10.10.10:20000'
+let g:proxy_http = 'socks5h://0.0.0.0:20000'
+let g:proxy_https = 'socks5h://0.0.0.0:20000'
 let g:airline#extensions#tabline#enabled = 1
 
 call plug#begin()
