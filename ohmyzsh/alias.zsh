@@ -1,4 +1,4 @@
-alias sp='export all_proxy=socks5://10.10.10.10:20000; export http_proxy=socks5://10.10.10.10:20000; export https_proxy=socks5://10.10.10.10:20000'
+alias sp='export all_proxy=socks5://127.0.0.1:20000; export http_proxy=socks5://127.0.0.1:20000; export https_proxy=socks5://127.0.0.1:20000'
 alias unsp='unset all_proxy; unset https_proxy; unset http_proxy;'
 alias cl='clear'
 alias gl='glances'

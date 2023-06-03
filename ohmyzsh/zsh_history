@@ -1,31 +1,3 @@
-: 1681874538:0;wt
-: 1681874549:0;tldr watch
-: 1681875859:0;wt tail -n 20 /mnt/r1/yt_youtube/asmr/yt-dlp.log
-: 1681876021:0;watch tail -n 30 yt-dlp.log
-: 1681876038:0;watch tail -n10 /mnt/r1/yt_youtube/asmr/yt-dlp.log
-: 1681876044:0;cla
-: 1681876220:0;clcl
-: 1681876292:0;tldr neofetch
-: 1681876308:0;neofetch --help
-: 1681876518:0;code cron.conf
-: 1681878590:0;less /mnt/r1/yt_youtube/asmr/yt-dlp.log
-: 1681886379:0;wt /mnt/r1/yt_youtube/asmr/yt-dlp.log
-: 1681890155:0;aria2p add 'https://get.pixelexperience.org/changelog/munch/PixelExperience_Plus_munch-13.0-20230329-0416-OFFICIAL.zip' 'https://get.pixelexperience.org/changelog/munch/PixelExperience_Plus_munch-13.0-20230329-0416-OFFICIAL.img'
-: 1681890157:0;aria2p show
-: 1681890230:0;curl -O https://get.pixelexperience.org/changelog/munch/PixelExperience_Plus_munch-13.0-20230329-0416-OFFICIAL.zip
-: 1681890237:0;rm PixelExperience_Plus_munch-13.0-20230329-0416-OFFICIAL.zip
-: 1683163801:0;>>>>>>> 0769f25acccdebda4d9f23caa9a4bc9ec606dd67
-: 1681977295:0;curl 4fm.top
-: 1681979323:0;go -v
-: 1681979347:0;go -V
-: 1681979523:0;echo $GOPATH
-: 1681979634:0;curl -O https://go.dev/dl/
-: 1681979648:0;wget https://go.dev/dl/go1.20.3.linux-amd64.tar.gz
-: 1681979717:0;apt remove golang
-: 1681979761:0;apt remove golang-1.15 golang-1.15-doc golang-1.15-go golang-1.15-src golang-doc golang-go golang-src
-: 1681979770:0;go version
-: 1681979774:0;which go
-: 1681979841:0;go install github.com/jesseduffield/lazygit@latest
 : 1681979899:0;curl 4.ipw.cn
 : 1681990634:0;q
 : 1683163801:0;>>>>>>> 55e649b1c3304b0b852a5a1440bdd83a7c43698f
@@ -495,7 +467,6 @@ gnome-disk-utility gnome-online-miners gnome-sound-recorder gnome-user-share
 : 1684135315:0;pacman -S tig
 : 1684135318:0;tig
 : 1684135645:0;git remote show
-: 1684135648:0;git remote show origin
 : 1684135674:0;lazygit .
 : 1684135682:0;lazygit status
 : 1682404073:0;pacman -S crontab
@@ -505,8 +476,6 @@ gnome-disk-utility gnome-online-miners gnome-sound-recorder gnome-user-share
 : 1682404239:0;pacman -S n
 : 1682404242:0;pacman -S npm
 : 1682404299:0;code .config/nvim/init.vim
-: 1682404375:0;sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \\
-       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 : 1682404483:0;git config --global
 : 1682404490:0;git config --global show
 : 1682404498:0;git config --global --list
@@ -539,13 +508,10 @@ gnome-disk-utility gnome-online-miners gnome-sound-recorder gnome-user-share
 : 1683517394:0;ls /home/ming
 : 1683517409:0;useradd ming
 : 1683517424:0;usermod ming -d /home/ming
-: 1683517443:0;mkdir ming
 : 1683517462:0;mv rua /home/ming
-: 1683517465:0;cd /home/ming
 : 1683517472:0;cd ming
 : 1683517477:0;rm -rf /home
 : 1683517483:0;usermod ming -d /ming
-: 1683517485:0;su ming
 : 1683524663:0;nslookup qq.com | nali
 : 1683525134:0;nali -v
 : 1683525135:0;nali -V
@@ -613,7 +579,6 @@ gnome-disk-utility gnome-online-miners gnome-sound-recorder gnome-user-share
 : 1684218018:0;dnslookup
 : 1684218021:0;dog
 : 1684218115:0;go install github.com/ameshkov/dnslookup@latest
-: 1684218160:0;unsp
 : 1684218166:0;wget https://github.com/ameshkov/dnslookup/releases/download/v1.9.1/dnslookup-linux-amd64-v1.9.1.tar.gz
 : 1684218207:0;tar xf dnslookup-linux-amd64-v1.9.1.tar.gz
 : 1684218248:0;rm -rf lazygit*
@@ -822,7 +787,6 @@ unzip .
 : 1684379455:0;nvim .gitconfig
 : 1684379470:0;git config --global fetch.prune true
 : 1684379476:0;git config --global diff.colorMoved zebra
-: 1684377338:0;pacman -S lazygit
 : 1684378625:0;pacman -Rs nvim
 : 1684378669:0;rua uninstall nvim
 : 1684378681:0;rua remvoe
@@ -1172,11 +1136,9 @@ unzip .
 : 1684905583:0;su
 : 1684905587:0;su sc
 : 1684905676:0;cd /sc/
-: 1684905703:0;cd .ssh/
 : 1684905753:0;groupadd sc ssh
 : 1684905771:0;usermod sc -g ssh
 : 1684905776:0;groups sc
-: 1684905793:0;nvim /etc/ssh/sshd_config
 : 1684905826:0;cd /etc/ssh
 : 1684905837:0;nvim ssh_config
 : 1684905855:0;cd /sc
@@ -1184,7 +1146,6 @@ unzip .
 : 1684905877:0;systemctl restart sshd
 : 1684905992:0;cd /sc/.ssh/
 : 1684905994:0;nvim authorized_keys
-: 1684906107:0;nvim .ssh/authorized_keys
 : 1684906133:0;SSH_CLIENT
 : 1684906141:0;SSH_CONNECTION
 : 1684906188:0;kill zsh
@@ -1273,7 +1234,6 @@ unzip .
 : 1684998951:0;tldr mdadm
 : 1685003617:0;nvim bitwarden.env
 : 1685004617:0;nvim .config/nvim/lua/config.lua
-: 1685005694:0;sp
 : 1685005857:0;nvim .config/nvim/init.vim
 : 1685005884:0;cd .config/nvim/lua/
 : 1685005886:0;rm eviline.lua
@@ -1365,12 +1325,8 @@ unzip .
 : 1684468660:0;nvim GenAppletLinks/index.jsx
 : 1684468667:0;nvim AppletsConfig/index.jsx
 : 1684474574:0;rua
-: 1684474612:0;git clone https://aur.archlinux.org/paru.git
-: 1684474618:0;cd paru/
-: 1684474621:0;makepkg -si
 : 1684474634:0;mv paru /ming
 : 1684474639:0;cd /ming
-: 1684474651:0;chown -R ming:root ming
 : 1684475522:0;paru -h
 : 1684475546:0;paru -c
 : 1684475645:0;tldr pacman -Qtdq
@@ -1445,8 +1401,6 @@ unzip .
 : 1684481716:0;git clone /git/bare.list.git
 : 1684481721:0;git clone /git/bare/list.git
 : 1684481735:0;rm _add.txt
-: 1684481750:0;git commit -a
-: 1684481758:0;git push
 : 1684481881:0;cd bare/
 : 1684481883:0;cd list.git/
 : 1684481886:0;cd hooks/
@@ -1780,7 +1734,6 @@ unzip .
 : 1685328111:0;less 20230529.log
 : 1685345644:0;kill 729117
 : 1685347555:0;ps aux | grep trojan
-: 1685351251:0;la
 : 1685351263:0;nvim ls
 : 1685351286:0;nvim .pm2
 : 1685351303:0;top
@@ -1814,7 +1767,6 @@ unzip .
 : 1685696615:0;brotli
 : 1685696757:0;cd .config/broot/
 : 1685696762:0;cd launcher/
-: 1685696779:0;nvim .config/ohmyzsh/alias.zsh
 : 1685696818:0;source .config/broot/launcher/bash/br
 : 1685696840:0;nvim br
 : 1685696844:0;rm br
@@ -1940,12 +1892,9 @@ unzip .
 : 1685723579:0;netstat -tunlp
 : 1685723805:0;clera
 : 1685723806:0;clear
-: 1685730905:0;pwd
 : 1685771335:0;docker ps
-: 1685771397:0;neofetch
 : 1685771404:0;gl
 : 1685771641:0;ip addr
-: 1685776119:0;cl
 : 1685776148:0;git submodule
 : 1685776285:0;git rm --cached
 : 1685776289:0;git rm --cached .
@@ -1963,7 +1912,6 @@ unzip .
 : 1685776730:0;cd ..
 : 1685776751:0;mv ../.local .
 : 1685776755:0;ln -s .local ..
-: 1685776757:0;ls
 : 1685776783:0;ln -s .config/.local .
 : 1685776807:0;nvim
 : 1685776841:0;git submodule update --init --recursive
@@ -1971,9 +1919,6 @@ unzip .
 : 1685776854:0;unlink .local
 : 1685776861:0;mv .local ..
 : 1685776934:0;git rm --cached -r .
-: 1685776940:0;git add .
-: 1685776969:0;cd
-: 1685776991:0;nvim install.sh
 : 1685777009:0;cd aria2p/
 : 1685777014:0;cd coc/
 : 1685777022:0;cd JetBrains
@@ -1998,29 +1943,18 @@ unzip .
 : 1685777169:0;rm user-dirs.*
 : 1685777177:0;cd znt/
 : 1685777188:0;nvim .zshenv
-: 1685777197:0;rm .zshenv
 : 1685777215:0;..
-: 1685777218:0;cd .config/
 : 1685777224:0;rm -rf .git
 : 1685777227:0;git init
 : 1685777248:0;git remove add origin git@github.com:mingwiki/dot_config.git
 : 1685777254:0;git remote add origin git@github.com:mingwiki/dot_config.git
-: 1685777255:0;l
 : 1685777262:0;nvim .git
 : 1685777267:0;nvim .gitmodules
 : 1685777282:0;git submodule update --recursive --init
 : 1685777299:0;nvim .zshrc
-: 1685777303:0;sz
-: 1685777307:0;exit
-: 1685777312:0;cl
-: 1685777314:0;cd .config/
-: 1685777315:0;l
 : 1685777317:0;neofetch
-: 1685777318:0;cd
-: 1685777319:0;l
 : 1685777326:0;rm .zshenv
 : 1685777335:0;cd .config/
-: 1685777337:0;l
 : 1685777342:0;nvim install.sh
 : 1685777352:0;git push
 : 1685777359:0;git push -u origin master
@@ -2031,3 +1965,85 @@ unzip .
 : 1685777448:0;git push origin master
 : 1685777459:0;git add .
 : 1685777464:0;git commit -a
+: 1685808209:0;rm install.sh
+: 1685808211:0;la
+: 1685808215:0;rm .zshrc
+: 1685808219:0;mv .zshrc.pre-oh-my-zsh .zshrc
+: 1685808222:0;sz
+: 1685808243:0;nvim .config/ohmyzsh/alias.zsh
+: 1685808293:0;pacman -S lazygit
+: 1685808311:0;cd .oh-my-zsh/
+: 1685808318:0;git remote show origin
+: 1685808619:0;nvim .ssh/authorized_keys
+: 1685808635:0;cd .ssh/
+: 1685808643:0;cat id_rsa.pub >> authorized_keys
+: 1685808645:0;cat authorized_keys
+: 1685808665:0;nvim /etc/ssh/sshd_config
+: 1685808688:0;cl
+: 1685808716:0;sp
+: 1685808716:0;curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+: 1685808719:0;unsp
+: 1685808725:0;sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \\
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+: 1685808756:0;git clone https://aur.archlinux.org/paru.git
+: 1685808762:0;pwd
+: 1685808765:0;cd paru/
+: 1685808768:0;makepkg -si
+: 1685808780:0;useradd ming -d /home/ming
+: 1685808785:0;cd /home/ming
+: 1685808790:0;cd /hom
+: 1685808795:0;mkdir ming
+: 1685808808:0;usermod -aG root ming
+: 1685808812:0;groups ming
+: 1685808826:0;l
+: 1685808835:0;mv paru /home/ming
+: 1685808877:0;cd /home/
+: 1685808878:0;ls
+: 1685808879:0;chown -R ming:root ming
+: 1685808908:0;passwd ming
+: 1685808996:0;usermod -aG ssh ming
+: 1685809009:0;usermod -aG sudo ming
+: 1685809013:0;usermod -aG sudoers ming
+: 1685809023:0;nvim /etc/sudoers
+: 1685809151:0;cd
+: 1685809165:0;systemctl start systemd-homed
+: 1685809170:0;systemctl enable systemd-homed
+: 1685809176:0;su ming
+: 1685809228:0;\
+We trust you have received the usual lecture from th
+: 1685809234:0;pacman -S pambase
+: 1685809237:0;exit
+: 1685809243:0;groups ming
+: 1685809247:0;nvim /etc/sudoers
+: 1685809311:0;paru
+: 1685809323:0;nano
+: 1685809325:0;nvim
+: 1685809330:0;pacman -S vi
+: 1685809335:0;vi /etc/suders
+: 1685809345:0;vi /etc/sudoers
+: 1685809403:0;pacman -Rs vi
+: 1685809407:0;pacman -S vim
+: 1685809413:0;vim /etc/sudoers
+: 1685809445:0;usermod -aG wheel ming
+: 1685809447:0;su ming
+: 1685809523:0;systemctl restart systemd-home
+: 1685809524:0;systemctl restart systemd-homed
+: 1685809526:0;su ming
+: 1685809861:0;cd
+: 1685809862:0;ls
+: 1685809864:0;pwd
+: 1685809871:0;paru vim-plug
+: 1685809878:0;su ming
+: 1685809906:0;ls
+: 1685809909:0;nvim
+: 1685809924:0;paru -Rs vim vi
+: 1685809926:0;paru -Rs vim
+: 1685809934:0;nivm
+: 1685809935:0;nvim
+: 1685810001:0;cl
+: 1685810002:0;nvim
+: 1685810007:0;ls
+: 1685810010:0;cl
+: 1685810011:0;l
+: 1685810019:0;cd .config/
+: 1685810022:0;lazygit
