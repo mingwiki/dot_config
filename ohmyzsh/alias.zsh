@@ -1,5 +1,5 @@
-alias sp='export all_proxy=socks5://127.0.0.1:20000; export http_proxy=socks5://127.0.0.1:20000; export https_proxy=socks5://127.0.0.1:20000'
-alias unsp='unset all_proxy; unset https_proxy; unset http_proxy;'
+alias sp='export {http,https,ftp,rsync,all}_proxy=socks5h://127.0.0.1:20000; export {HTTP,HTTPS,FTP,RSYNC,ALL}_PROXY=socks5h://127.0.0.1:20000'
+alias unsp='unset {http,https,ftp,rsync,all}_proxy; unset {HTTP,HTTPS,FTP,RSYNC,ALL}_PROXY'
 alias cl='clear'
 alias gl='glances'
 alias sz='source ~/.zshrc'
@@ -12,7 +12,8 @@ alias setPip='pip config set global.index-url https://mirrors.ustc.edu.cn/pypi/w
 alias sd='python3 launch.py --ckpt-dir=/mnt/r1/ckpt --lora-dir=/mnt/r1/lora --xformers --listen --enable-insecure-extension-access --port=8888'
 alias rg='rga'
 alias grep='rga'
-alias b='broot'
+alias pc='proxychains4'
+alias lg='lazygit'
 hup() {
   if [[ $# -eq 0 ]]; then
     echo "Error: 'nohup' requires at least one argument."

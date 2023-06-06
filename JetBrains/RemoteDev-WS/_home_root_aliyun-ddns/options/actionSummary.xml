@@ -1,0 +1,46 @@
+<application>
+  <component name="ActionsLocalSummary">
+    <e n="EditorBackSpace">
+      <i c="34" l="1686020317521" />
+    </e>
+    <e n="EditorChooseLookupItem">
+      <i c="2" l="1686020373918" />
+    </e>
+    <e n="EditorCopy">
+      <i c="6" l="1686020344042" />
+    </e>
+    <e n="EditorCut">
+      <i c="1" l="1686020371576" />
+    </e>
+    <e n="EditorLeft">
+      <i c="6" l="1686020268543" />
+    </e>
+    <e n="EditorPaste">
+      <i c="8" l="1686020374600" />
+    </e>
+    <e n="EditorRight">
+      <i c="16" l="1686020312155" />
+    </e>
+    <e n="EditorSelectWord">
+      <i c="5" l="1686020370020" />
+    </e>
+    <e n="EditorUp">
+      <i c="3" l="1686020299449" />
+    </e>
+    <e n="ReformatCode">
+      <i c="11" l="1686020349849" />
+    </e>
+    <e n="SaveDocument">
+      <i c="11" l="1686020375048" />
+    </e>
+    <e n="ToggleLineBreakpoint">
+      <i c="1" l="1686020222157" />
+    </e>
+    <e n="com.intellij.notification.NotificationAction$Simple">
+      <i c="1" l="1686020016971" />
+    </e>
+    <e n="com.intellij.xdebugger.impl.breakpoints.RemoveBreakpointGutterIconAction">
+      <i c="1" l="1686020223404" />
+    </e>
+  </component>
+</application>

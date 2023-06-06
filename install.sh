@@ -6,3 +6,4 @@ ln -sf ~/.config/.wget-hsts ~/.wget-hsts
 ln -sf ~/.config/.rediscli_history ~/.rediscli_history
 ln -sf ~/.config/.mysql_history ~/.mysql_history
 ln -sf ~/.config/.lesshst ~/.lesshst
+ln -sf ~/.config/.npmrc ~/.npmrc

@@ -12,9 +12,11 @@ Plug 'nvim-tree/nvim-web-devicons' " lua
 Plug 'ryanoasis/vim-devicons'       " vimscript
 Plug 'preservim/nerdtree'
 Plug 'neovim/nvim-lspconfig'
+Plug 'numToStr/Comment.nvim'
 call plug#end()
 
 :lua require('config')
+:lua require('Comment').setup()
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 set number
 nnoremap <leader>n :NERDTreeFocus<CR>
@@ -22,3 +24,4 @@ nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 set clipboard=unnamedplus
+set noswapfile
