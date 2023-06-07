@@ -635,7 +635,6 @@
 : 1685096646:0;./trojan-linux-amd64 info
 : 1685096653:0;./trojan-linux-amd64 status
 : 1685096665:0;./trojan-linux-amd64 start
-: 1685096686:0;nvim trojan-linux-amd64
 : 1685096690:0;rm trojan-linux-amd64
 : 1685096699:0;curl -OL https://github.com/Jrohy/trojan/releases/download/v2.15.1/trojan-linux-amd64/
 : 1685096709:0;curl -OsSL https://github.com/Jrohy/trojan/releases/download/v2.15.1/trojan-linux-amd64/
@@ -1814,8 +1813,6 @@ chmod 640 /etc/msmtprc
 : 1686105551:0;cat /p
 : 1686116293:0;rm miwifi_ra82_all_7eb36_1.3.27_INT.bin
 : 1686116300:0;rm ÊÉÆ•ÂÉØ£ÊÉ∂ÉßÊÉÅ£20221027.html
-: 1686116350:0;df -ahT
-: 1686116470:0;cat /proc/mdstat
 : 1686116500:0;lsblk
 : 1686116504:0;lsblk -af
 : 1686116529:0;lvs
@@ -1882,7 +1879,6 @@ chmod 640 /etc/msmtprc
 : 1686123611:0;top
 : 1686123625:0;htop
 : 1686123638:0;systemctl
-: 1686123655:0;docker ps
 : 1686123674:0;journalctl -f
 : 1686128228:0;df -ahT
 : 1686128260:0;q
@@ -1976,11 +1972,9 @@ chmod 640 /etc/msmtprc
 : 1686133312:0;git submodule init
 : 1686133316:0;git submodule init --recusive
 : 1686133327:0;git submodule update
-: 1686133331:0;git submodule update --recursive --init
 : 1686133334:0;git submodule update --recursive
 : 1686133341:0;nvim install.sh
 : 1686133359:0;cd htop/
-: 1686133359:0;l
 : 1686133362:0;nvim htoprc
 : 1686133375:0;..
 : 1686133386:0;rm nvim-old
@@ -1989,14 +1983,13 @@ chmod 640 /etc/msmtprc
 : 1686133406:0;cd aliyun-ddns/
 : 1686133407:0;nvim index.js
 : 1686133438:0;cd
+: 1686133386:0;rm nvim-old
+: 1686133391:0;rm -rf nvim-old
+: 1686133406:0;cd aliyun-ddns/
+: 1686133407:0;nvim index.js
 : 1686133444:0;nvim aliyun-ddns
-: 1686133453:0;ls
-: 1686133533:0;cd .config/
-: 1686133534:0;lazygit
-: 1686116849:0;cd .config/
 : 1686116853:0;git pull
 : 1686116888:0;rm .lesshst
-: 1686116898:0;lazygit
 : 1686117384:0;crontab -e
 : 1686123999:0;grep 244.171 20230607.log| less
 : 1686124036:0;grep 197.203 20230607.log| less
@@ -2038,24 +2031,17 @@ chmod 640 /etc/msmtprc
 : 1686127986:0;docker inspect freshrss
 : 1686127990:0;docker inspect freshrss | les
 : 1686127991:0;docker inspect freshrss | less
-: 1686128000:0;ls
 : 1686128005:0;cd vw-data/
-: 1686128006:0;l
-: 1686128016:0;cd
 : 1686128025:0;free -h
 : 1686128034:0;docker images
 : 1686128048:0;docker image -
 : 1686128067:0;docker container prune
 : 1686128070:0;docker container prune -a
 : 1686128080:0;docker image prune -a
-: 1686128082:0;cl
 : 1686128083:0;docker ps
 : 1686128085:0;df -ahT
-: 1686128112:0;exit
-: 1686133551:0;ls
 : 1686133552:0;l
 : 1686133558:0;nvim .zshrc
-: 1686133563:0;cd .config/
 : 1686133564:0;lazygit
 : 1686133550:0;exit
 : 1686134047:0;cd .config/
@@ -2235,3 +2221,17 @@ chmod 640 /etc/msmtprc
 : 1686135896:0;nvim .config/ohmyzsh/alias.zsh
 : 1686135939:0;cd .config/
 : 1686135939:0;lazygit
+: 1686133597:0;cd nvim/l
+: 1686133598:0;cd nvim/
+: 1686133601:0;..
+: 1686133606:0;git submodule update --recursive --init
+: 1686133862:0;cl
+: 1686133869:0;nvim trojan-linux-amd64
+: 1686133875:0;cd .config/
+: 1686133877:0;vnim install.sh
+: 1686133893:0;nvim install.sh
+: 1686133904:0;cd
+: 1686133905:0;ls
+: 1686133905:0;exit
+: 1686135970:0;cd .config/
+: 1686135971:0;lazygit
