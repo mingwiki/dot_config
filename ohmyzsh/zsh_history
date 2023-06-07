@@ -2220,3 +2220,18 @@ chmod 640 /etc/msmtprc
 : 1686135502:0;rm -rf nvim
 : 1686135504:0;ls
 : 1686135527:0;lazygit
+: 1686135551:0;cd
+: 1686135551:0;lx
+: 1686135552:0;ls
+: 1686135602:0;git clone https://github.com/LazyVim/starter ~/.config/nvim
+: 1686135607:0;cd .config/nvim/
+: 1686135609:0;ls
+: 1686135611:0;rm -rf .git
+: 1686135616:0;cd
+: 1686135617:0;ls
+: 1686135618:0;nvim
+: 1686135878:0;:q
+: 1686135888:0;ls
+: 1686135896:0;nvim .config/ohmyzsh/alias.zsh
+: 1686135939:0;cd .config/
+: 1686135939:0;lazygit
