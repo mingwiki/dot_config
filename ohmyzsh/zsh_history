@@ -1,6 +1,3 @@
-: 1684392843:0;rg www stream.gz
-: 1684392958:0;zgrep www stream.gz -v
-: 1684393155:0;nvim robots.txt
 : 1684393497:0;rm error.log
 : 1684393528:0;tail -f 2023May.log
 : 1684394586:0;nvim next
@@ -831,7 +828,6 @@
 : 1685690642:0;sh install.sh
 : 1685690665:0;unlink .idea .java .local
 : 1685690716:0;sh .config/install.sh
-: 1685691245:0;eixt
 : 1685696615:0;brotli
 : 1685696757:0;cd .config/broot/
 : 1685696762:0;cd launcher/
@@ -1180,7 +1176,6 @@ We trust you have received the usual lecture from th
 : 1685815598:0;nvim mail
 : 1685815637:0;systemctl restart sendmail
 : 1685844267:0;nvim /etc/fstab
-: 1685844286:0;lsblk -af
 : 1685844499:0;cp fstab mdadm.conf /etc -f
 : 1685844515:0;unlink /etc/fstab
 : 1685844519:0;unlink /etc/mdadm.conf
@@ -1683,12 +1678,10 @@ cron-hourly.timer cron-monthly.timer cron-root-root-1.timer cron-weekly.timer
 : 1685983027:0;journalctl -f -u trojan
 : 1685983174:0;ping 4fm.top
 : 1685983275:0;nvim /etc/resolv.conf
-: 1685984364:0;cd /home/data/
 : 1685984875:0;ps aux | rg php
 : 1685984924:0;cd ddns
 : 1685984927:0;zd ddns
 : 1685984948:0;git status
-: 1685985065:0;df -ahT
 : 1685985442:0;docker-compose up -d
 : 1685985757:0;paru aria2
 : 1685985772:0;systemctl enable aria2c
@@ -1734,7 +1727,6 @@ cron-hourly.timer cron-monthly.timer cron-root-root-1.timer cron-weekly.timer
 : 1685986651:0;su ming
 : 1685986898:0;sp
 : 1685986899:0;sudo -u ming paru dnslookup
-: 1685986964:0;cdl
 : 1685986971:0;wget https://github.com/ameshkov/dnslookup/releases/download/v1.9.1/dnslookup-linux-amd64-v1.9.1.tar.gz
 : 1685986978:0;curl -OL https://github.com/ameshkov/dnslookup/releases/download/v1.9.1/dnslookup-linux-amd64-v1.9.1.tar.gz
 : 1685986997:0;tar zxf dnslookup-linux-amd64-v1.9.1.tar.gz
@@ -1766,7 +1758,6 @@ cron-hourly.timer cron-monthly.timer cron-root-root-1.timer cron-weekly.timer
 : 1686016197:0;systemctl enable cronie.service
 : 1686016218:0;nvim /etc/systemd/system/multi-user.target.wants/cronie.service
 : 1686016231:0;cat /etc/systemd/system/multi-user.target.wants/cronie.service
-: 1686016978:0;lsblk
 : 1686017274:0;systl
 : 1686017281:0;systemctl daemon-reload
 : 1686017284:0;systemctl start cronie
@@ -1809,7 +1800,6 @@ cron-hourly.timer cron-monthly.timer cron-root-root-1.timer cron-weekly.timer
 : 1686019687:0;chown root:msmtp /etc/msmtprc\
 chmod 640 /etc/msmtprc
 : 1686020330:0;npm start
-: 1686020404:0;lazygit
 : 1686020424:0;nvim .gitignore
 : 1686020439:0;nvim .config/ohmyzsh/alias.zsh
 : 1686020497:0;sz
@@ -1822,7 +1812,6 @@ chmod 640 /etc/msmtprc
 : 1686020767:0;unlink .wget-hsts
 : 1686020783:0;mv .rediscli_history .mysql_history .wget-hsts ..
 : 1686020798:0;git add .
-: 1686020826:0;cd .config/
 : 1686020830:0;git commit -a
 : 1686020838:0;git push
 : 1686021019:0;transmission-cli -v
@@ -1993,31 +1982,17 @@ chmod 640 /etc/msmtprc
 : 1686103751:0;..
 : 1686103756:0;rm -rf r10
 : 1686103775:0;cd immich/
-: 1686103778:0;cd
-: 1686103779:0;l
-: 1686105511:0;lvdisplay
 : 1686105540:0;lvscan
-: 1686105542:0;lvs
 : 1686105551:0;cat /p
-: 1686105553:0;cl
-: 1686105556:0;cat /proc/mdstat
 : 1686105875:0;sl
-: 1686105876:0;ls
-: 1686105878:0;gl
-: 1686105922:0;exit
 : 1686112414:0;gl
-: 1686116281:0;cl
 : 1686116287:0;cd /home/data/
-: 1686116287:0;l
 : 1686116289:0;ls
 : 1686116293:0;rm miwifi_ra82_all_7eb36_1.3.27_INT.bin
 : 1686116300:0;rm ÊÉÆ•ÂÉØ£ÊÉ∂ÉßÊÉÅ£20221027.html
-: 1686116300:0;l
-: 1686116347:0;cd
 : 1686116348:0;l
 : 1686116350:0;df -ahT
 : 1686116448:0;cl
-: 1686116451:0;lsblk
 : 1686116470:0;cat /proc/mdstat
 : 1686116498:0;cd
 : 1686116500:0;lsblk
@@ -2028,3 +2003,10 @@ chmod 640 /etc/msmtprc
 : 1686116650:0;cdl
 : 1686116652:0;cd .config/
 : 1686116654:0;lazygit
+: 1686116665:0;eixt
+: 1686116667:0;exit
+: 1686116767:0;l
+: 1686116776:0;cd .config/
+: 1686116778:0;nvim install.sh
+: 1686116789:0;l
+: 1686116794:0;lazygit
