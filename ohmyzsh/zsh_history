@@ -1,122 +1,3 @@
-: 1684376508:0;inxi -Fz
-: 1684376540:0;inxi -Fzx
-: 1684376711:0;rm -rf containers old
-: 1684376727:0;rm -rf pods
-: 1684376743:0;cd spool/
-: 1684376751:0;cd log/
-: 1684376780:0;truncate -s 0 access.log
-: 1684376872:0;cd .gnupg/
-: 1684376875:0;cd crls.d/
-: 1684376883:0;cd .kube
-: 1684376905:0;cd .local/state/
-: 1684376922:0;mv .local .config
-: 1684377018:0;tldr ln
-: 1684377054:0;rm -rf ~/.local
-: 1684377086:0;cd .z
-: 1684377091:0;nvim .z
-: 1684377106:0;cd .pm2
-: 1684377140:0;cd .dotnet/
-: 1684377143:0;cd corefx/
-: 1684377145:0;cd cryptography/
-: 1684377147:0;cd crls/
-: 1684377176:0;nvim .shell.pre-oh-my-zsh
-: 1684377198:0;pacman -Rs tig
-: 1684377206:0;nvim .wget-hsts
-: 1684377250:0;mv .wget-hsts .rediscli_history .mysql_history .config
-: 1684377625:0;cd state
-: 1684377652:0;mv .local/share .config/.local
-: 1684377668:0;cp .local/share .config/.local
-: 1684377671:0;cp .local/share .config/.local -r
-: 1684377683:0;cd .config/.local/
-: 1684377747:0;rm .shell.pre-oh-my-zsh
-: 1684377752:0;nvim .selected_editor
-: 1684377757:0;rm .selected_editor
-: 1684377774:0;apt remove tig
-: 1684377781:0;rm .tig_history
-: 1684377789:0;cd .mozilla/
-: 1684377801:0;cd .ida
-: 1684377822:0;cd .userPrefs/
-: 1684377831:0;cd .lc/
-: 1684377844:0;nvim .lesshst
-: 1684377877:0;mv .idea .java .lesshst .config
-: 1684378031:0;nvim .rest-client .config
-: 1684378041:0;mv .rest-client .config
-: 1684378076:0;cd .npm
-: 1684378130:0;mv nvim .config
-: 1684378136:0;\
-
-: 1684378166:0;cd pkg/
-: 1684378177:0;mv nvim nvim-bin
-: 1684378186:0;mv nvim-bin .config
-: 1684378199:0;vi .config/install.sh
-: 1684378220:0;nano .config/install.sh
-: 1684378337:0;nano .zshrc
-: 1684378436:0;cd .config/nvim-bin/
-: 1684379295:0;git config pull.rebase true
-: 1684379304:0;git config global pull.rebase true
-: 1684379453:0;git config --global pull.rebase true
-: 1684379455:0;nvim .gitconfig
-: 1684379470:0;git config --global fetch.prune true
-: 1684379476:0;git config --global diff.colorMoved zebra
-: 1684378625:0;pacman -Rs nvim
-: 1684378669:0;rua uninstall nvim
-: 1684378681:0;rua remvoe
-: 1684378685:0;rua remove
-: 1684378699:0;rua info
-: 1684378703:0;rua info nvim
-: 1684378708:0;rua info neovim
-: 1684378714:0;pacman -Rs rua neovim
-: 1684378723:0;pacman -Rs llvm lvm2
-: 1684378733:0;ls /bin
-: 1684378739:0;which vi
-: 1684378746:0;git pull
-: 1684378838:0;which vim
-: 1684387874:0;code sg.json
-: 1684390130:0;mv .cargo
-: 1684390133:0;mv .cargo .config
-: 1684390142:0;nvim .config/install.sh
-: 1684381134:0;pacman -S hdparm
-: 1684381170:0;hdparm -T /dev/vda1
-: 1684381215:0;tldr hdparm
-: 1684381237:0;hdparm -tT /dev/vda1
-: 1684381819:0;nvim /etc/systemd/system/multi-user.target.wants/nginx.service
-: 1684382752:0;cd ngn
-: 1684383051:0;tail -f /var/log/nginx/access.log
-: 1684383340:0;vi access.log
-: 1684383464:0;ccat
-: 1684383529:0;less access.gz
-: 1684383536:0;cat access.gz
-: 1684383551:0;zcat access.gz
-: 1684384359:0;rm access.*
-: 1684384413:0;hmod -R 755 /var/log/nginx;
-: 1684384416:0;chmod -R 755 /var/log/nginx;
-: 1684384460:0;sudo nginx -t
-: 1684384673:0;tail -f err
-: 1684384730:0;nginx -s reopen
-: 1684384923:0;rm access.log error.log
-: 1684385172:0;less 20230518-access.log
-: 1684385580:0;rm access.log
-: 1684386124:0;tail 20230518-access.log
-: 1684386131:0;tail error.log
-: 1684386293:0;mkdir html
-: 1684386323:0;tail -f 20230518-access.log
-: 1684386404:0;rm 20230518-access.log
-: 1684386866:0;touch error.log
-: 1684386877:0;cat error.log
-: 1684386885:0;rm -rf error.log
-: 1684386901:0;code /etc/systemd/system/multi-user.target.wants/nginx.service
-: 1684387486:0;code /etc/trojan/config.json
-: 1684388095:0;tail -f access-20230518.log
-: 1684388278:0;rm access-20230518.log
-: 1684389294:0;rm 20230518.log
-: 1684389315:0;zcat stream.gz
-: 1684459136:0;z 410
-: 1684392339:0;cd /var/log/nginx/
-: 1684392726:0;zgrep web 2023May.log
-: 1684392756:0;pacman -S ripgrep
-: 1684392790:0;rg web stream.gz
-: 1684392797:0;zgrep web stream.gz
-: 1684392814:0;rg web 2023May.log
 : 1684392843:0;rg www stream.gz
 : 1684392958:0;zgrep www stream.gz -v
 : 1684393155:0;nvim robots.txt
@@ -244,8 +125,6 @@
 : 1684817434:0;apt install ufw
 : 1684817466:0;ufw show raw
 : 1684817500:0;apt remove iptables
-: 1684817531:0;systemctl enable ufw
-: 1684817541:0;systemctl start ufw
 : 1684817620:0;systemctl disable iptables
 : 1684817625:0;systemctl stop iptables
 : 1684817732:0;apt search ufw
@@ -267,7 +146,6 @@
 : 1684818038:0;apt remove nftables
 : 1684818048:0;apt stop ufw
 : 1684818053:0;systemctl stop ufw
-: 1684818062:0;ps
 : 1684819417:0;systemctl restart ss sg
 : 1684819436:0;systemctl status ss
 : 1684819521:0;iptables -t nat -F
@@ -366,7 +244,6 @@
 : 1684835510:0;cd nvim-linux64/
 : 1684835518:0;cd runtime/
 : 1684835610:0;z .config
-: 1684840874:0;cd wireguard/
 : 1684840876:0;cd config/
 : 1684840882:0;cd peer2/
 : 1684840887:0;cat peer2.
@@ -423,12 +300,10 @@
 : 1684934811:0;z com
 : 1684936599:0;nvim nginx-conf/kavita.conf
 : 1684936618:0;docker compose restart kavita
-: 1684936803:0;journalctl -f -u nginx
 : 1684947366:0;lz
 : 1684978026:0;z r10
 : 1684978031:0;crontab -l > cron.conf
 : 1684978131:0;z r
-: 1684978137:0;ncdu
 : 1684979792:0;z /mnt
 : 1684980052:0;LESS
 : 1684980056:0;less
@@ -680,7 +555,6 @@
 : 1684487320:0;systemctl enable postfix.service
 : 1684487332:0;paru -Rs postfix f
 : 1684487333:0;paru -Rs postfix
-: 1684487446:0;paru -Qtd
 : 1684487533:0;paru -Rs lsb-release
 : 1684487782:0;yay
 : 1684493619:0;nvim src/pages/GenAppletLinks/redirect.jsx
@@ -869,7 +743,6 @@
 : 1685096401:0;cd web/
 : 1685096494:0;sh build.sh
 : 1685096527:0;nvim build.sh
-: 1685096585:0;sl
 : 1685096589:0;rm -rf trojan
 : 1685096592:0;curl -O https://github.com/Jrohy/trojan/releases/download/v2.15.1/trojan-linux-amd64
 : 1685096642:0;./trojan-linux-amd64 log
@@ -1186,7 +1059,6 @@ We trust you have received the usual lecture from th
 : 1685810122:0;systemctl enable docker
 : 1685810183:0;mdadm -D
 : 1685810273:0;mount /dev/md125 /home/data
-: 1685810312:0;cd /home/
 : 1685810314:0;mkdir data
 : 1685810317:0;mount /dev/md126 /home/data
 : 1685810320:0;cd data
@@ -1207,7 +1079,6 @@ We trust you have received the usual lecture from th
 : 1685810790:0;ln -sf ~/resolv.conf /etc/resolv.conf
 : 1685810863:0;mdadm -Ds >> /etc/mdadm.conf
 : 1685810881:0;ln -sf ~/mdadm.conf /etc/mdadm.conf
-: 1685810897:0;cd trojan/
 : 1685810906:0;mv /etc/trojan .
 : 1685810925:0;mkdir trojan
 : 1685810928:0;ln s ~/trojan /etc/trojan
@@ -1255,8 +1126,6 @@ We trust you have received the usual lecture from th
 : 1685811598:0;mdadm --monitor --mail root
 : 1685811605:0;mdadm --monitor --mail root --scan
 : 1685811613:0;mdadm --monitor --mail root --scan &
-: 1685811703:0;vgdisplay
-: 1685812430:0;paru
 : 1685812440:0;paru -Syyu
 : 1685812753:0;paru riggrep-all
 : 1685812761:0;paru ripgrep-all
@@ -1415,7 +1284,6 @@ We trust you have received the usual lecture from th
 : 1685851878:0;paru tldr
 : 1685851886:0;tldr -u
 : 1685851901:0;tldr msmtp
-: 1685852357:0;pvdisplay
 : 1685852553:0;cp -r aliyun-ddns .
 : 1685852557:0;cp -r aliyun-ddns ~
 : 1685852567:0;paru npm
@@ -1427,7 +1295,6 @@ We trust you have received the usual lecture from th
 : 1685852776:0;npm i
 : 1685852827:0;mv .npmrc .config
 : 1685852847:0;ln -sf ~/.config/.npmrc ~/.npmrc
-: 1685852855:0;cd .config/
 : 1685852857:0;nvim install.sh
 : 1685853698:0;cd data/
 : 1685854449:0;paru nginx
@@ -1468,7 +1335,6 @@ We trust you have received the usual lecture from th
 : 1685858638:0;crontab -x
 : 1685858674:0;smb
 : 1685859153:0;systemctl start smb.service
-: 1685859158:0;systemctl enable smb
 : 1685859313:0;smbpasswd -a ming
 : 1685859394:0;mkdir samba
 : 1685859405:0;cp /etc/samba/smb.conf samba
@@ -1503,15 +1369,12 @@ We trust you have received the usual lecture from th
 : 1685861060:0;ufw allow proto icmp from any
 : 1685861078:0;ufw allow outbound icmp from any
 : 1685861175:0;ufw delete 8 16
-: 1685861189:0;ufw delete 15
 : 1685861257:0;ufw allow 1:65535/udp
 : 1685861557:0;ufw default allow
 : 1685861598:0;ufw allow http
 : 1685861601:0;ufw allow https
 : 1685861604:0;ufw app list
 : 1685861614:0;ufw allow nginx
-: 1685861626:0;ufw allow smb
-: 1685861629:0;ufw allow samba
 : 1685861746:0;ufw delete http
 : 1685861750:0;ufw delete 80
 : 1685861767:0;ufw delete 9
@@ -1568,7 +1431,6 @@ cron-hourly.timer cron-monthly.timer cron-root-root-1.timer cron-weekly.timer
 : 1685864873:0;cd user/
 : 1685864875:0;cd sockets.target.wants/
 : 1685864884:0;cd network/
-: 1685865015:0;cd samba/
 : 1685865283:0;umount /home/data
 : 1685865347:0;SSH_CONNECTION
 : 1685865355:0;SSH_CLIENT
@@ -1584,7 +1446,6 @@ cron-hourly.timer cron-monthly.timer cron-root-root-1.timer cron-weekly.timer
 : 1685870242:0;cd /dev/mapper/
 : 1685870306:0;cd arch/
 : 1685870330:0;ls -la
-: 1685871474:0;paru htop
 : 1685872285:0;less rsync_20230604_1005.log
 : 1685872292:0;less rsync_20230604_1658.log
 : 1685872312:0;rm rsync_20230604_1658.log
@@ -1596,7 +1457,6 @@ cron-hourly.timer cron-monthly.timer cron-root-root-1.timer cron-weekly.timer
 : 1685883770:0;systemctl restart smb
 : 1685883907:0;tail rsync_20230604_2049.log
 : 1685884079:0;smbstatus
-: 1685884178:0;htop
 : 1685884266:0;smbtree
 : 1685884282:0;smbinfo
 : 1685884307:0;smbclient
@@ -1604,8 +1464,6 @@ cron-hourly.timer cron-monthly.timer cron-root-root-1.timer cron-weekly.timer
 : 1685884391:0;smbpasswd -x root
 : 1685884395:0;smbpasswd -x admimn
 : 1685884398:0;smbpasswd -x admin
-: 1685884401:0;nvim /etc/samba/smb.conf
-: 1685884635:0;journalctl -f -u smb
 : 1685884816:0;udoKJqzjVN94kcyJRJCr2P5eVVXLKq2UKfjQ7t5dUs
 : 1685884820:0;smbpasswd -a mingwiki
 : 1685884841:0;smbpasswd
@@ -1615,7 +1473,6 @@ cron-hourly.timer cron-monthly.timer cron-root-root-1.timer cron-weekly.timer
 : 1685885017:0;ufw deny 445/tcp
 : 1685908286:0;ps aux | rg rsync
 : 1685908308:0;killall rsync
-: 1685908551:0;paru -Rs htop
 : 1685908596:0;less rsync_20230604_1751.log
 : 1685908622:0;less rsync_20230604_2049.log
 : 1685908640:0;rm rsync_20230604_*
@@ -1625,13 +1482,10 @@ cron-hourly.timer cron-monthly.timer cron-root-root-1.timer cron-weekly.timer
 : 1685908984:0;ufw allow proto any from 127.0.0.1
 : 1685909004:0;ufw allow proto any from 10.0.0.0/8
 : 1685909155:0;ufw delete 7
-: 1685909169:0;ufw delete 18
 : 1685909179:0;ufw delete 8
 : 1685909198:0;ufw delete 19
-: 1685909209:0;ufw delete 17
 : 1685909262:0;ufw delete 4
 : 1685909274:0;ufw delete 12
-: 1685909276:0;ufw status numbered
 : 1685909418:0;cd .ssh/
 : 1685909426:0;cat id_rsa.pub >> authorized_keys
 : 1685909429:0;nvim authorized_keys
@@ -1641,12 +1495,9 @@ cron-hourly.timer cron-monthly.timer cron-root-root-1.timer cron-weekly.timer
 : 1685935469:0;ssh root@4fm.top
 : 1685935527:0;neofetch
 : 1685935595:0;mdadm
-: 1685939744:0;lvs -o+cache_mode
 : 1685939766:0;lvdisplay -o+cache_mode
 : 1685940361:0;lvdisplay --help
 : 1685940369:0;lvdisplay -aa
-: 1685940371:0;lvdisplay -a
-: 1685940450:0;lvscan
 : 1685942676:0;wt rsync_20230605_1251.log
 : 1685942724:0;mail
 : 1685942728:0;rm mbox
@@ -1660,21 +1511,16 @@ cron-hourly.timer cron-monthly.timer cron-root-root-1.timer cron-weekly.timer
 : 1685952116:0;rm rsync_20230605_1*
 : 1685952297:0;nvim index.js
 : 1685952337:0;rm pre*
-: 1685952353:0;git add .
-: 1685952360:0;git commit -a
-: 1685952370:0;git push
 : 1685952449:0;hup rsync -avzhP /home/data/r10 .
 : 1685952461:0;rm rsync_20230605_1607.log
 : 1685952465:0;cd r10/
 : 1685952481:0;rm -rf toolkits op_support
 : 1685952487:0;cd desktop/
-: 1685952501:0;cd ssh/
 : 1685952511:0;mv compose ~
 : 1685952627:0;nvim /etc/nginx/nginx.conf
 : 1685952666:0;nginx -t
 : 1685953055:0;cd kavita
 : 1685953070:0;mv kavita ..
-: 1685953186:0;paru docker-compose
 : 1685953443:0;paru -Rs nginx-mainline
 : 1685953649:0;rm cron.conf
 : 1685953682:0;nvim daemon.json
@@ -1705,12 +1551,7 @@ cron-hourly.timer cron-monthly.timer cron-root-root-1.timer cron-weekly.timer
 : 1685954994:0;cd watch/
 : 1685955001:0;cd complete/
 : 1685955012:0;transmission-cli
-: 1685955023:0;transmission-cli -h
-: 1685955024:0;transmission-cli -V
-: 1685955025:0;transmission-cli -v
-: 1685955139:0;journalctl -f -u ufw
 : 1685955191:0;ufw allow 9091
-: 1685955222:0;journalctl -f
 : 1685955581:0;cd /
 : 1685955650:0;ls downloads
 : 1685955657:0;ll downloads
@@ -1721,7 +1562,6 @@ cron-hourly.timer cron-monthly.timer cron-root-root-1.timer cron-weekly.timer
 : 1685955786:0;userdel transmission
 : 1685955805:0;chown -R ming:root downloads
 : 1685955811:0;cd ..
-: 1685955821:0;cd transmission/
 : 1685955884:0;nvim settings.json
 : 1685955900:0;mkdir watch
 : 1685955902:0;systemctl restart transmission.service
@@ -1771,11 +1611,9 @@ cron-hourly.timer cron-monthly.timer cron-root-root-1.timer cron-weekly.timer
 : 1685960246:0;docker inspect mariadb
 : 1685963284:0;cd .config/nvim/
 : 1685963286:0;nvim init.vim
-: 1685963327:0;nvim docker-compose.yml
 : 1685963433:0;docker compose down bitwarden freshrss
 : 1685963436:0;docker compose down bitwarden
 : 1685963447:0;docker compose stop bitwarden freshrss
-: 1685963452:0;docker compose
 : 1685963464:0;docker stop bitwarden freshrss
 : 1685963487:0;mv bitwarden.conf bitwarden.conf.bk
 : 1685963491:0;rm freshrss.conf
@@ -1783,17 +1621,14 @@ cron-hourly.timer cron-monthly.timer cron-root-root-1.timer cron-weekly.timer
 : 1685963544:0;docker container prune
 : 1685963554:0;docker image prune -a
 : 1685963727:0;nvim
-: 1685963773:0;..
 : 1685963775:0;mv aria2 ~
 : 1685963786:0;mv cookie ~
 : 1685963809:0;cd cls
 : 1685963813:0;ll
 : 1685963896:0;cat /home/data/r10/compose/docker-compose.yml
-: 1685963960:0;cd r10
 : 1685963964:0;mv immich ~
 : 1685964000:0;nvim bitwarden.env
 : 1685964011:0;nvim .env
-: 1685964071:0;cd immich/
 : 1685964172:0;cd multi-user.target.wants/
 : 1685964174:0;rm nginx.service
 : 1685964186:0;nvim cronie.service
@@ -1802,7 +1637,6 @@ cron-hourly.timer cron-monthly.timer cron-root-root-1.timer cron-weekly.timer
 : 1685964241:0;crontab
 : 1685964267:0;systemctl disable cronie.service
 : 1685964272:0;systemctl stop cron
-: 1685981009:0;w
 : 1685981085:0;systemctl start sshd
 : 1685981099:0;systemctl restart sshd
 : 1685981136:0;systemctl enable dhcpcd@
@@ -1814,7 +1648,6 @@ cron-hourly.timer cron-monthly.timer cron-root-root-1.timer cron-weekly.timer
 : 1685981541:0;ip addr del 10.10.10.100/24
 : 1685981551:0;ip addr |lress
 : 1685981567:0;docekr compose down
-: 1685981572:0;docker compose down
 : 1685981830:0;ip route flush all
 : 1685981835:0;systemctl enable dhcpcd
 : 1685981844:0;ip adr
@@ -1838,31 +1671,25 @@ cron-hourly.timer cron-monthly.timer cron-root-root-1.timer cron-weekly.timer
 : 1685982274:0;ping 223.5.5.5
 : 1685982281:0;ping 10.10.10.10
 : 1685982469:0;nvim /etc/dhcpcd.conf
-: 1685982502:0;z compose
 : 1685982506:0;docker compose up-d
 : 1685982523:0;systemctl
 : 1685982552:0;systemctl start Adguardhome
 : 1685982561:0;systemctl enable adguardhome
-: 1685982566:0;netstat -tunlp
 : 1685982641:0;systemctl enable trojan
 : 1685982645:0;systemctl start trojan
 : 1685982719:0;systemctl status trojan'
 : 1685982775:0;ip route
 : 1685982944:0;ping qq.com
-: 1685983021:0;systemctl status trojan
 : 1685983027:0;journalctl -f -u trojan
 : 1685983174:0;ping 4fm.top
 : 1685983275:0;nvim /etc/resolv.conf
 : 1685984364:0;cd /home/data/
-: 1685984370:0;rm -rf r10
 : 1685984875:0;ps aux | rg php
 : 1685984924:0;cd ddns
 : 1685984927:0;zd ddns
 : 1685984948:0;git status
 : 1685985065:0;df -ahT
 : 1685985442:0;docker-compose up -d
-: 1685985551:0;ufw enable
-: 1685985556:0;ufw status verbose
 : 1685985757:0;paru aria2
 : 1685985772:0;systemctl enable aria2c
 : 1685985793:0;nvim aria2.service
@@ -1921,17 +1748,12 @@ cron-hourly.timer cron-monthly.timer cron-root-root-1.timer cron-weekly.timer
 : 1685987077:0;paru dnsutils
 : 1685987093:0;pacman -S dnsutils
 : 1685987101:0;nslookup www.4fm.top
-: 1685987272:0;cd conf.d/
 : 1685987276:0;nvim immich.conf
 : 1685987283:0;nvim photoprism.conf
 : 1685987315:0;cd /var/log
-: 1685987320:0;cd nginx/
 : 1685987338:0;docker exec -it nginx bash
-: 1685992573:0;ip addr
 : 1685992605:0;systemctl restart dhcpcd.service mdmonitor
-: 1685992608:0;ip addr | less
 : 1685992624:0;z ddns
-: 1685992643:0;systemctl status transmission.service
 : 1686015182:0;crontab -l
 : 1686015208:0;crond -h
 : 1686015232:0;msmtp -h
@@ -1944,10 +1766,7 @@ cron-hourly.timer cron-monthly.timer cron-root-root-1.timer cron-weekly.timer
 : 1686016197:0;systemctl enable cronie.service
 : 1686016218:0;nvim /etc/systemd/system/multi-user.target.wants/cronie.service
 : 1686016231:0;cat /etc/systemd/system/multi-user.target.wants/cronie.service
-: 1686016818:0;lvdisplay
-: 1686016898:0;lvs
 : 1686016978:0;lsblk
-: 1686017001:0;cat /proc/mdstat
 : 1686017274:0;systl
 : 1686017281:0;systemctl daemon-reload
 : 1686017284:0;systemctl start cronie
@@ -1965,12 +1784,9 @@ cron-hourly.timer cron-monthly.timer cron-root-root-1.timer cron-weekly.timer
 : 1686018031:0;paru -Rs cron
 : 1686018037:0;paru -Ss cron
 : 1686018053:0;paru -Q
-: 1686018055:0;paru -Qt
 : 1686018073:0;cd /etc/
 : 1686018083:0;nvim anacrontab
 : 1686018093:0;rm anacrontab
-: 1686018388:0;cd compose/
-: 1686018402:0;docker compose up -d
 : 1686018416:0;docker logs -f nginx
 : 1686018423:0;docker s
 : 1686018547:0;cp ddns test
@@ -1992,46 +1808,223 @@ cron-hourly.timer cron-monthly.timer cron-root-root-1.timer cron-weekly.timer
 : 1686019328:0;nvim /etc/mdadm.conf
 : 1686019687:0;chown root:msmtp /etc/msmtprc\
 chmod 640 /etc/msmtprc
-: 1686019695:0;l
-: 1686019702:0;docker ps
-: 1686019823:0;gl
 : 1686020330:0;npm start
-: 1686020400:0;cd aliyun-ddns/
 : 1686020404:0;lazygit
 : 1686020424:0;nvim .gitignore
-: 1686020434:0;cd
 : 1686020439:0;nvim .config/ohmyzsh/alias.zsh
 : 1686020497:0;sz
-: 1686020502:0;ls
-: 1686020502:0;lc
-: 1686020503:0;cl
-: 1686020506:0;exit
-: 1686020513:0;cl
 : 1686020515:0;cd aliyun-ddns/
-: 1686020516:0;ls
-: 1686020517:0;lg
 : 1686020572:0;lgg
 : 1686020573:0;lg
-: 1686020633:0;git push
-: 1686020640:0;cd
-: 1686020641:0;l
 : 1686020653:0;less .msmtp.log
-: 1686020698:0;l
-: 1686020699:0;ls
-: 1686020700:0;l
 : 1686020755:0;unlink .mysql_history
 : 1686020763:0;unlink .rediscli_history
 : 1686020767:0;unlink .wget-hsts
-: 1686020771:0;cd .config/
-: 1686020772:0;ls
 : 1686020783:0;mv .rediscli_history .mysql_history .wget-hsts ..
-: 1686020786:0;cd
-: 1686020786:0;l
-: 1686020795:0;cd .config/
 : 1686020798:0;git add .
-: 1686020800:0;git commit -a
-: 1686020817:0;ls
-: 1686020823:0;cd
-: 1686020824:0;l
 : 1686020826:0;cd .config/
 : 1686020830:0;git commit -a
+: 1686020838:0;git push
+: 1686021019:0;transmission-cli -v
+: 1686021025:0;transmission-cli -h
+: 1686021469:0;ufw active
+: 1686021474:0;ufw enable
+: 1686021483:0;systemctl enable ufw
+: 1686021493:0;systemctl start ufw
+: 1686021654:0;ps aux | rg root
+: 1686021776:0;paru htop
+: 1686021946:0;lc
+: 1686021950:0;systemctl status ufw
+: 1686021957:0;systemctl status aria2.service
+: 1686021963:0;systemctl status transmission.service
+: 1686021967:0;paru jq
+: 1686022004:0;systemctl status trojan
+: 1686022008:0;systemctl status samba
+: 1686022120:0;systemctl start samba.service
+: 1686022124:0;journalctl -f -u samba
+: 1686022224:0;systemctl start smbd
+: 1686022226:0;systemctl start smb
+: 1686022247:0;systemctl disable samba
+: 1686022261:0;systemctl status nmb
+: 1686022278:0;systemctl enable smb nmb
+: 1686022289:0;systemctl enable smb
+: 1686022370:0;nvim /etc/samba/smb.conf
+: 1686022400:0;systemctl restart smb nmb
+: 1686022481:0;ps
+: 1686022484:0;w
+: 1686022610:0;lvs -o+cache_mode
+: 1686022656:0;htop
+: 1686022668:0;paru -Rs htop
+: 1686022681:0;paru -Qtd
+: 1686022686:0;paru -Qt
+: 1686022735:0;paru -Rs smartmontools docker-compose
+: 1686022788:0;nvim /etc/mkinitcpio.
+: 1686022791:0;nvim /etc/mkinitcpio.conf
+: 1686022798:0;paru
+: 1686022808:0;paru -Syy
+: 1686022855:0;paru wireguard
+: 1686022866:0;paru wireguard | less
+: 1686022895:0;paru -S wireguard-tools
+: 1686022949:0;systemctl start wireguard
+: 1686022955:0;wg
+: 1686022962:0;systemctl start wg
+: 1686023080:0;paru -Rs wireguard-tools
+: 1686023164:0;ls /usr/share/zoneinfo/Asia/Singapore
+: 1686023275:0;docker compose
+: 1686023279:0;paru docker-compose
+: 1686023338:0;cd wireguard/
+: 1686023345:0;cd peer1/
+: 1686023352:0;cat peer1.conf
+: 1686023372:0;rm -rf wireguard
+: 1686023378:0;nvim wireguard
+: 1686023397:0;docker compose -f wireguard.yml up -d
+: 1686023413:0;cat wireguard/peer1/peer1.conf
+: 1686023589:0;ip addr
+: 1686023721:0;systemctl status smb nmb
+: 1686023790:0;ufw allow proto udp from any
+: 1686024060:0;journalctl -f -u smb
+: 1686024571:0;ufw allow smb
+: 1686024574:0;ufw allow samba
+: 1686024603:0;ufw allow 445
+: 1686024610:0;ufw allow 139
+: 1686024660:0;ss -t -a
+: 1686024738:0;ss -a
+: 1686024782:0;ufw status verbose
+: 1686024836:0;ufw allow 445/tcp from 172.16.57.114
+: 1686024860:0;ufw allow any from 172.16.57.114
+: 1686024866:0;ufw allow proto any from 172.16.57.114
+: 1686025090:0;cat /etc/samba/smb.conf
+: 1686027130:0;lvdisplay -a
+: 1686027382:0;z lgo
+: 1686027384:0;z log
+: 1686027402:0;cd gn
+: 1686027411:0;rm -rf nginx
+: 1686027416:0;cd samba/
+: 1686027441:0;cd journal/
+: 1686027448:0;cd 569e29cfb2c94f029403705e68bd6844/
+: 1686027455:0;journalctl -f
+: 1686027592:0;journalctl -f -u iptables
+: 1686027600:0;journalctl -f -u ufw
+: 1686027616:0;tldr journalctl
+: 1686027664:0;nvim /etc/systemd/journald.conf
+: 1686027776:0;systemctl restart systemd-journald
+: 1686027980:0;ps auxww | rg trans
+: 1686028091:0;cat /etc/docker/daemon.json
+: 1686028393:0;ufw allow 22000
+: 1686028401:0;ufw allow 21027
+: 1686028409:0;ufw allow 8384
+: 1686029717:0;systemctl disable nmb
+: 1686029726:0;systemctl statussmb
+: 1686029859:0;systemctl start nmb
+: 1686029898:0;systemctl stop n,b
+: 1686029901:0;systemctl stop nmb
+: 1686029916:0;systemctl status smb
+: 1686030026:0;docker inspect wireguard
+: 1686030061:0;ip addr | less
+: 1686030102:0;ufw allow proto 445 from 172.19.0.1/24
+: 1686030107:0;ufw allow proto tcp 445 from 172.19.0.1/24
+: 1686030140:0;ufw allow 445 from 172.19.0.1/24
+: 1686030154:0;ufw allow 172.19.0.1
+: 1686030158:0;ufw allow 172.19.0.1/24
+: 1686030162:0;ufw allow from 172.19.0.1/24
+: 1686030194:0;ufw delete 18
+: 1686030204:0;ufw allow from 172.19.0.2
+: 1686030235:0;nvim wireguard.yml
+: 1686030250:0;cat wireguard.yml >> compose/docker-compose.yml
+: 1686030271:0;rsync -avzhP wireguard compose
+: 1686030288:0;docker compose -f wireguard.yml down
+: 1686030371:0;rm -rf wireguard*
+: 1686030434:0;ufw delete 17
+: 1686030490:0;ufw delete 28
+: 1686030496:0;ufw delete 15
+: 1686030598:0;rm -rf adguardhome bitwarden* etc-dnsmasq.d etc-pihole freshrss gitea haproxy homepage rustdesk st-sync typesense vaultwarden
+: 1686030602:0;nvim docker-compose.yml
+: 1686030660:0;cd nginx/
+: 1686030661:0;cd conf.d/
+: 1686030667:0;rm syncthing.conf
+: 1686030670:0;cd compose/
+: 1686030719:0;ufw delete 14
+: 1686030733:0;ufw delete 24
+: 1686030738:0;ufw status numbered
+: 1686030770:0;ufw delete 10
+: 1686030777:0;netstat -tunlp
+: 1686031110:0;paru ncdu
+: 1686032101:0;ncud
+: 1686032123:0;cd ming/
+: 1686032130:0;cd /home/
+: 1686032135:0;ncdu
+: 1686036411:0;nginx
+: 1686036420:0;docker inspect nginx
+: 1686036480:0;docker pw
+: 1686050562:0;z compose
+: 1686050601:0;journalctl -f -u immich-server
+: 1686050613:0;journalctl -f -u immich-web
+: 1686050628:0;journalctl -f -u nginx
+: 1686050695:0;docker ps
+: 1686054748:0;docker log -f immich-web
+: 1686054769:0;docker logs -f immich-web
+: 1686054776:0;docker logs -f immich-server
+: 1686054789:0;docker compose down
+: 1686054810:0;docker compose up -d
+: 1686058708:0;pvs
+: 1686058710:0;pvscan
+: 1686058725:0;pvdisplay
+: 1686058816:0;vgs
+: 1686058820:0;vgscan
+: 1686058850:0;vgdisplay
+: 1686058854:0;vgdisplay -a
+: 1686101148:0;cls
+: 1686102303:0;ps auxww | rg md
+: 1686102459:0;transmission-cli -V
+: 1686102463:0;cd transmission/
+: 1686102470:0;cat bandwidth-groups.json
+: 1686102478:0;cat stats.json
+: 1686102483:0;cat settings.json
+: 1686103659:0;cd resume/
+: 1686103664:0;cd crontabs/
+: 1686103672:0;cd transmission/torrents/
+: 1686103681:0;cd r10
+: 1686103703:0;cd ssh/
+: 1686103713:0;rm -rf ssh
+: 1686103717:0;cd vps
+: 1686103728:0;rm -rf vps
+: 1686103731:0;cd trojan/
+: 1686103744:0;mv * ..
+: 1686103751:0;..
+: 1686103756:0;rm -rf r10
+: 1686103775:0;cd immich/
+: 1686103778:0;cd
+: 1686103779:0;l
+: 1686105511:0;lvdisplay
+: 1686105540:0;lvscan
+: 1686105542:0;lvs
+: 1686105551:0;cat /p
+: 1686105553:0;cl
+: 1686105556:0;cat /proc/mdstat
+: 1686105875:0;sl
+: 1686105876:0;ls
+: 1686105878:0;gl
+: 1686105922:0;exit
+: 1686112414:0;gl
+: 1686116281:0;cl
+: 1686116287:0;cd /home/data/
+: 1686116287:0;l
+: 1686116289:0;ls
+: 1686116293:0;rm miwifi_ra82_all_7eb36_1.3.27_INT.bin
+: 1686116300:0;rm ÊÉÆ•ÂÉØ£ÊÉ∂ÉßÊÉÅ£20221027.html
+: 1686116300:0;l
+: 1686116347:0;cd
+: 1686116348:0;l
+: 1686116350:0;df -ahT
+: 1686116448:0;cl
+: 1686116451:0;lsblk
+: 1686116470:0;cat /proc/mdstat
+: 1686116498:0;cd
+: 1686116500:0;lsblk
+: 1686116504:0;lsblk -af
+: 1686116529:0;lvs
+: 1686116532:0;ldif
+: 1686116535:0;lvdisplay
+: 1686116650:0;cdl
+: 1686116652:0;cd .config/
+: 1686116654:0;lazygit
