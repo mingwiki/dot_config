@@ -1,72 +1,3 @@
-: 1684410420:0;rm stream.gz
-: 1684411264:0;pacman -Syy
-: 1684411268:0;pacman -Syyu
-: 1684411341:0;pacman -Rs fish gcc gawk nodejs
-: 1684411347:0;pacman -Rs fish gcc nodejs
-: 1684411359:0;pacman -Rs fish gcc nodejs rust
-: 1684411370:0;pacman -Rs fish gcc nodejs rust npm
-: 1684411381:0;pacman -Rs fish gcc nodejs rust npm base-devel
-: 1684411405:0;npm i -g n
-: 1684411429:0;n 19
-: 1684411439:0;n 0h
-: 1684411441:0;n -h
-: 1684411455:0;n rm 19.9.0
-: 1684411457:0;n ls
-: 1684411468:0;n rm 19.9.1
-: 1684411471:0;n rm 19.8.1
-: 1684411475:0;n lts
-: 1684411485:0;node -v
-: 1684411496:0;pacman -Rs nodejs
-: 1684411500:0;pacman -R nodejs
-: 1684411508:0;pacman -Rs nodejs npm
-: 1684411513:0;npm
-: 1684411516:0;which npm
-: 1684411519:0;which node
-: 1684459378:0;fuck
-: 1684459807:0;less 2023-May.log
-: 1684459824:0;zgrep -v www stream.gz
-: 1684459899:0;zgrep www stream.gz
-: 1684460215:0;rm 2023May.log
-: 1684460221:0;rm 2023-May.log
-: 1684460455:0;chown -R http:http nginx
-: 1684460853:0;nvim .config/nvim/
-: 1684460943:0;cd .vscode-server/
-: 1684461003:0;cd .java/
-: 1684461030:0;cd nvim-bin
-: 1684461059:0;cd .local/
-: 1684461075:0;cd .rest-client/
-: 1684461219:0;cd .cargo/
-: 1684461227:0;cd .idea/
-: 1684462485:0;code docker-compose.yml
-: 1684463844:0;code homepage/bookmarks.yaml
-: 1684463862:0;code homepage/services.yaml
-: 1684464279:0;code homepage/settings.yaml
-: 1684464289:0;code homepage/widgets.yaml
-: 1684464542:0;rm -rf rustdesk
-: 1684485132:0;nvim /etc/postfix/main.cf
-: 1684485157:0;cd /etc/postfix/
-: 1684485167:0;nvim master.cf
-: 1684587224:0;nivm .inputrc
-: 1684587229:0;nvim .inputrc
-: 1684587242:0;nvim .mozilla
-: 1684587261:0;cd .pm2/
-: 1684587280:0;nvim .python_history
-: 1684723772:0;z asmr
-: 1684723826:0;cd freecodecamp/
-: 1684723837:0;cd Fireship/
-: 1684723844:0;cd Jack_Herrington/
-: 1684723857:0;cd NetNinja/
-: 1684723865:0;cd TraversyMedia/
-: 1684723873:0;cd WebDevSimplified/
-: 1684723874:0;yt playlist.txt
-: 1684723887:0;cd yt_bilibili/
-: 1684723907:0;cat ~/.config/ohmyzsh/alias.zsh
-: 1684723919:0;cd ÂÉ≤É¨Â≠É∞ÁÉ£Å‰∏ÄËµ∑‰∫É¥ÂÉ®É¶ÈÉ≤ÉøÂ≠¶ËÆæËÆÉÅÊ®ÉÅÂºÉØ/
-: 1684723930:0;cd Á®É´Â∫ÉØÂÉ±É∏Â∞ÉØÂ±±‰∏ÉÆBug/
-: 1684723931:0;bili playlist.txt
-: 1684723948:0;ps aux | grep nginx
-: 1684749139:0;ps aux | grep yt-dlp
-: 1684749153:0;less */**/*.log
 : 1684749257:0;nvim yts.js
 : 1684749275:0;cd Animenzzz/
 : 1684751034:0;cat pre*
@@ -124,10 +55,8 @@
 : 1684828408:0;set(ENV{https_proxy} "socks5://10.10.10.10:20000")
 : 1684828508:0;make CMAKE_BUILD_TYPE=RelWithDebInfo
 : 1684828539:0;git submodule deinit neovim
-: 1684828568:0;cd .git/
 : 1684828574:0;cd refs/
 : 1684828580:0;cd objects/
-: 1684828584:0;cd modules/
 : 1684828696:0;curl -O https://github.com/neovim/neovim/releases/download/stable/nvim-linux64.tar.gz
 : 1684828711:0;unzip nvim-linux64.tar.gz
 : 1684828724:0;tar xxf nvim-linux64.tar.gz
@@ -162,7 +91,6 @@
 : 1684829352:0;nano export.zsh
 : 1684829450:0;vim -v
 : 1684829584:0;nvim -V
-: 1684829786:0;cd nvim/l
 : 1684829935:0;rm config.lua
 : 1684829990:0;code .config/nvim/lua/config.lua
 : 1684830206:0;nvim -v
@@ -197,12 +125,10 @@
 : 1684832097:0;cd .config/nvim-linux64/
 : 1684832198:0;nvim speedtest.py
 : 1684832932:0;nvim onedark.vim
-: 1684832941:0;nvim onedark.lua
 : 1684832994:0;nvim lua/onedark.lua
 : 1684833075:0;rm lua/onedark.lua
 : 1684833746:0;code config.lua
 : 1684833868:0;code init.vim
-: 1684834438:0;cd lua/
 : 1684834455:0;code eviline.lua
 : 1684835149:0;cat ohmyzsh/export.zsh
 : 1684835343:0;cd neovim/
@@ -251,7 +177,6 @@
 : 1684909707:0;rm -rf PixelExperience_Plus_munch-13.0-20230329-0416-OFFICIAL.*
 : 1684909713:0;cd 0301
 : 1684909722:0;cd 0306
-: 1684909728:0;cd..
 : 1684913474:0;cd /mnt
 : 1684913563:0;chown -R mingwiki:root
 : 1684913574:0;groups mingwiki
@@ -288,7 +213,6 @@
 : 1684985840:0;br -g
 : 1684985847:0;br -gp
 : 1684986337:0;cd nvim/ls
-: 1684986339:0;cd nvim/
 : 1684987434:0;apt install ripgrep-all
 : 1684987438:0;apt install ripgrepall
 : 1684987455:0;apt install ripgrep pandoc poppler-utils ffmpeg
@@ -320,7 +244,6 @@
 : 1685004617:0;nvim .config/nvim/lua/config.lua
 : 1685005884:0;cd .config/nvim/lua/
 : 1685005886:0;rm eviline.lua
-: 1685005892:0;nvim config.lua
 : 1685006628:0;rm -rf 0301
 : 1685006813:0;rm -rf kavita
 : 1685006827:0;cd /r1
@@ -407,7 +330,6 @@
 : 1684477555:0;cd go/
 : 1684477561:0;mkdir git
 : 1684477609:0;mv var/toolkits git
-: 1684477659:0;cd git
 : 1684477735:0;mv op_support chatbot-ui /git
 : 1684477831:0;pm2 del all
 : 1684478051:0;paru cgit
@@ -467,7 +389,6 @@
 : 1684481735:0;rm _add.txt
 : 1684481881:0;cd bare/
 : 1684481883:0;cd list.git/
-: 1684481886:0;cd hooks/
 : 1684481931:0;cd list/
 : 1684481939:0;cd .
 : 1684481946:0;rm -rf list
@@ -898,7 +819,6 @@
 : 1685723526:0;netstat -tunp
 : 1685723805:0;clera
 : 1685723806:0;clear
-: 1685776148:0;git submodule
 : 1685776285:0;git rm --cached
 : 1685776289:0;git rm --cached .
 : 1685776293:0;git rm --cached -r
@@ -941,14 +861,10 @@
 : 1685777169:0;rm user-dirs.*
 : 1685777177:0;cd znt/
 : 1685777188:0;nvim .zshenv
-: 1685777224:0;rm -rf .git
 : 1685777227:0;git init
 : 1685777248:0;git remove add origin git@github.com:mingwiki/dot_config.git
 : 1685777254:0;git remote add origin git@github.com:mingwiki/dot_config.git
 : 1685777262:0;nvim .git
-: 1685777267:0;nvim .gitmodules
-: 1685777282:0;git submodule update --recursive --init
-: 1685777299:0;nvim .zshrc
 : 1685777326:0;rm .zshenv
 : 1685777359:0;git push -u origin master
 : 1685777362:0;git push -u origin master -f
@@ -1002,7 +918,6 @@ We trust you have received the usual lecture from th
 : 1685809924:0;paru -Rs vim vi
 : 1685809926:0;paru -Rs vim
 : 1685809934:0;nivm
-: 1685810050:0;cd nvim
 : 1685810096:0;paru docker
 : 1685810116:0;systemctl start docker
 : 1685810122:0;systemctl enable docker
@@ -1182,7 +1097,6 @@ We trust you have received the usual lecture from th
 : 1685848922:0;systemctl status sendmail.service
 : 1685848987:0;cd auth/
 : 1685848989:0;nvim auth-info
-: 1685849174:0;mailq
 : 1685849387:0;cd /etc/mail/
 : 1685849391:0;nvim aliases
 : 1685849533:0;cd mail/
@@ -1231,7 +1145,6 @@ We trust you have received the usual lecture from th
 : 1685851875:0;tldr
 : 1685851878:0;paru tldr
 : 1685851886:0;tldr -u
-: 1685851901:0;tldr msmtp
 : 1685852553:0;cp -r aliyun-ddns .
 : 1685852557:0;cp -r aliyun-ddns ~
 : 1685852567:0;paru npm
@@ -1452,7 +1365,6 @@ cron-hourly.timer cron-monthly.timer cron-root-root-1.timer cron-weekly.timer
 : 1685952061:0;tail rsync_20230605_1251.log
 : 1685952111:0;cat rsync_20230605_1601.log
 : 1685952116:0;rm rsync_20230605_1*
-: 1685952297:0;nvim index.js
 : 1685952337:0;rm pre*
 : 1685952449:0;hup rsync -avzhP /home/data/r10 .
 : 1685952461:0;rm rsync_20230605_1607.log
@@ -1501,7 +1413,6 @@ cron-hourly.timer cron-monthly.timer cron-root-root-1.timer cron-weekly.timer
 : 1685955782:0;systemctl stop transmission.service
 : 1685955786:0;userdel transmission
 : 1685955805:0;chown -R ming:root downloads
-: 1685955811:0;cd ..
 : 1685955884:0;nvim settings.json
 : 1685955900:0;mkdir watch
 : 1685955902:0;systemctl restart transmission.service
@@ -1547,8 +1458,6 @@ cron-hourly.timer cron-monthly.timer cron-root-root-1.timer cron-weekly.timer
 : 1685960107:0;mv nginx/certs .
 : 1685960236:0;docker inspect db
 : 1685960246:0;docker inspect mariadb
-: 1685963284:0;cd .config/nvim/
-: 1685963286:0;nvim init.vim
 : 1685963433:0;docker compose down bitwarden freshrss
 : 1685963436:0;docker compose down bitwarden
 : 1685963447:0;docker compose stop bitwarden freshrss
@@ -1556,6 +1465,9 @@ cron-hourly.timer cron-monthly.timer cron-root-root-1.timer cron-weekly.timer
 : 1685963487:0;mv bitwarden.conf bitwarden.conf.bk
 : 1685963491:0;rm freshrss.conf
 : 1685963727:0;nvim
+: 1685963542:0;docker container prune -a
+: 1685963544:0;docker container prune
+: 1685963554:0;docker image prune -a
 : 1685963775:0;mv aria2 ~
 : 1685963786:0;mv cookie ~
 : 1685963809:0;cd cls
@@ -1578,7 +1490,6 @@ cron-hourly.timer cron-monthly.timer cron-root-root-1.timer cron-weekly.timer
 : 1685981167:0;dhcpcd
 : 1685981175:0;ip addr -4
 : 1685981206:0;ip address add 10.10.10.100/24 broadcast + dev eth0
-: 1685981418:0;:q
 : 1685981534:0;ip del
 : 1685981541:0;ip addr del 10.10.10.100/24
 : 1685981551:0;ip addr |lress
@@ -1664,7 +1575,6 @@ cron-hourly.timer cron-monthly.timer cron-root-root-1.timer cron-weekly.timer
 : 1685986522:0;mdadm --monitor --scan --test -1
 : 1685986646:0;paru dnslookup
 : 1685986651:0;su ming
-: 1685986898:0;sp
 : 1685986899:0;sudo -u ming paru dnslookup
 : 1685986971:0;wget https://github.com/ameshkov/dnslookup/releases/download/v1.9.1/dnslookup-linux-amd64-v1.9.1.tar.gz
 : 1685986978:0;curl -OL https://github.com/ameshkov/dnslookup/releases/download/v1.9.1/dnslookup-linux-amd64-v1.9.1.tar.gz
@@ -1687,7 +1597,6 @@ cron-hourly.timer cron-monthly.timer cron-root-root-1.timer cron-weekly.timer
 : 1685992624:0;z ddns
 : 1686015182:0;crontab -l
 : 1686015208:0;crond -h
-: 1686015232:0;msmtp -h
 : 1686015234:0;msmtp -t
 : 1686015903:0;nvim .msmtprc
 : 1686015918:0;nvim /etc/msmtprc
@@ -1737,10 +1646,8 @@ cron-hourly.timer cron-monthly.timer cron-root-root-1.timer cron-weekly.timer
 : 1686019687:0;chown root:msmtp /etc/msmtprc\
 chmod 640 /etc/msmtprc
 : 1686020330:0;npm start
-: 1686020424:0;nvim .gitignore
 : 1686020439:0;nvim .config/ohmyzsh/alias.zsh
 : 1686020497:0;sz
-: 1686020515:0;cd aliyun-ddns/
 : 1686020572:0;lgg
 : 1686020573:0;lg
 : 1686020653:0;less .msmtp.log
@@ -1905,8 +1812,6 @@ chmod 640 /etc/msmtprc
 : 1686103775:0;cd immich/
 : 1686105540:0;lvscan
 : 1686105551:0;cat /p
-: 1686105875:0;sl
-: 1686116287:0;cd /home/data/
 : 1686116293:0;rm miwifi_ra82_all_7eb36_1.3.27_INT.bin
 : 1686116300:0;rm ÊÉÆ•ÂÉØ£ÊÉ∂ÉßÊÉÅ£20221027.html
 : 1686116350:0;df -ahT
@@ -1940,28 +1845,23 @@ chmod 640 /etc/msmtprc
 : 1686036892:0;nvim nginx.conf.pacsave
 : 1686036906:0;mv nginx.conf.pacsave nginx.conf
 : 1686036913:0;rm nginx.conf
-: 1686037310:0;nvim /etc/nginx/nginx.conf
 : 1686037597:0;systemctl restart nginx
 : 1686037598:0;nginx -t
 : 1686044990:0;z ngin
 : 1686045606:0;less 20230606.log
 : 1686045682:0;pm2 ls
 : 1686045685:0;cdl
-: 1686116715:0;nvim install.sh
 : 1686116741:0;sh install.sh
-: 1686116742:0;..
 : 1686116819:0;unlink .mysql_history
 : 1686116827:0;unlink .rediscli_history
 : 1686116830:0;unlink .wget-hsts
 : 1686116842:0;unlink .lesshst
 : 1686116853:0;git pull
 : 1686116888:0;rm .lesshst
-: 1686116927:0;lazygit
 : 1686116999:0;tldr git
 : 1686117002:0;tldr git merge
 : 1686117168:0;cls
 : 1686117198:0;cp ddns config
-: 1686117318:0;cd .config/
 : 1686117328:0;git commit -a -m "test"
 : 1686117334:0;cd /etc/cron.d/
 : 1686117336:0;nvim config
@@ -1978,295 +1878,98 @@ chmod 640 /etc/msmtprc
 : 1686118267:0;docker compose up -d
 : 1686118306:0;cd rustdesk/
 : 1686118310:0;cat id_ed25519.pub
-: 1686118771:0;cd
-: 1686119765:0;l
 : 1686119766:0;gl
-: 1686123603:0;cl
 : 1686123611:0;top
 : 1686123625:0;htop
 : 1686123638:0;systemctl
 : 1686123655:0;docker ps
 : 1686123674:0;journalctl -f
-: 1686123935:0;ls
-: 1686123935:0;exit
-: 1686128226:0;cl
 : 1686128228:0;df -ahT
 : 1686128260:0;q
-: 1686128262:0;l
 : 1686128265:0;cd /home/data/
-: 1686128266:0;l
-: 1686128268:0;cd
-: 1686128268:0;l
-: 1686128270:0;ls
-: 1686128271:0;l
 : 1686128279:0;nvim .profile
-: 1686128281:0;ls
-: 1686128282:0;l
 : 1686128289:0;nvim .npmrc
-: 1686128327:0;ls
-: 1686128369:0;l
 : 1686128385:0;nvim .zshrc
-: 1686128394:0;ls
 : 1686128395:0;cl
-: 1686128395:0;l
-: 1686128397:0;ls
 : 1686128402:0;nvim .msmtp.log
 : 1686128421:0;mailq
 : 1686128438:0;msmtp -h
 : 1686128440:0;msmtp --hlwp
 : 1686128443:0;msmtp --help
 : 1686128452:0;tldr msmtp
-: 1686128616:0;cd .config/
-: 1686128617:0;l
-: 1686128619:0;cd nvim/l
-: 1686128620:0;l
-: 1686128624:0;cd nvim/
-: 1686128624:0;l
-: 1686128627:0;nvim init.vim
-: 1686128635:0;l
-: 1686128638:0;cd lua/
-: 1686128639:0;l
-: 1686128642:0;nvim config.lua
-: 1686128651:0;ls
 : 1686128657:0;mv config.lua ..
-: 1686128657:0;ls
-: 1686128661:0;nvim
-: 1686128672:0;..
-: 1686128675:0;nvim init.vim
-: 1686128682:0;nvim
-: 1686128686:0;ls
 : 1686128693:0;rm -rf lua
-: 1686128694:0;l
-: 1686128697:0;nvim init.vim
-: 1686128708:0;ls
-: 1686128711:0;nvim config.lua
-: 1686128734:0;nvim init.vim
-: 1686128897:0;ls
 : 1686128900:0;nvim config.lua
 : 1686128914:0;mv config.lua coc.lua
-: 1686128916:0;nvim init.vim
-: 1686128936:0;nvim options.lua
-: 1686128953:0;l
-: 1686128956:0;nvim init.vim
 : 1686128977:0;nvim keymaps.lua
-: 1686128982:0;nvim init.vim
-: 1686129042:0;ls
-: 1686129048:0;nvim coc.lua
-: 1686129076:0;ls
 : 1686129083:0;nvim coc.lua
-: 1686129089:0;ls
-: 1686129094:0;nvim options.lua
-: 1686129096:0;ls
-: 1686129098:0;nvim init.vim
-: 1686129120:0;ls
 : 1686129123:0;nvim options.lua
-: 1686129127:0;ls
-: 1686129131:0;nvim init.vim
-: 1686129307:0;ls
-: 1686129317:0;nvim plugins.lua
-: 1686129351:0;ls
 : 1686129361:0;paru nvim-packer
 : 1686129372:0;sudo -u ming paru nvim-packer
-: 1686129390:0;ls
-: 1686129395:0;nvim init.vim
-: 1686129487:0;ls
 : 1686129490:0;nvim init.vim
 : 1686129584:0;mv
-: 1686129585:0;ls
 : 1686129629:0;rm keymaps.lua options.lua plugins.lua
-: 1686129629:0;ls
-: 1686129631:0;cd ..
 : 1686129638:0;mv nvim nvim-old
 : 1686129644:0;mkdir nvim
-: 1686129646:0;cd nvim/
-: 1686129650:0;nvim init.lua
-: 1686129661:0;ls
 : 1686129666:0;nvim basic.lua
-: 1686129685:0;nvim init.lua
-: 1686129689:0;ls
-: 1686129716:0;nvim plugins.lua
 : 1686129791:0;nvim init.lua q
-: 1686129805:0;nvim init.lua
-: 1686129817:0;nvim plugins.lua
-: 1686129842:0;nvim init.lua
-: 1686129861:0;nvim plugins.lua
-: 1686129906:0;nvim init.lua
-: 1686129932:0;nvim plugins.lua
-: 1686129943:0;nvim init.lua
-: 1686130070:0;ls
-: 1686130235:0;rm *
-: 1686130237:0;ls
-: 1686130241:0;nvim init.lua
-: 1686130244:0;ls
-: 1686130245:0;nvim init.lua
-: 1686130247:0;ls
-: 1686130257:0;nvim lua/plugins.lua
 : 1686130276:0;mkdir lua
-: 1686130279:0;nvim lua/plugins.lua
-: 1686130285:0;ls
-: 1686130291:0;nvim init.lua
 : 1686130729:0;sp
-: 1686130730:0;nvim init.lua
-: 1686130808:0;ls
-: 1686130810:0;nvim lua/plugins.lua
-: 1686130818:0;nvim init.lua
 : 1686131143:0;nvim plugin
-: 1686131149:0;ls
 : 1686131152:0;vnim plugin/packer_compiled.lua
 : 1686131155:0;:q
-: 1686131156:0;ls
-: 1686131158:0;cd lua/
-: 1686131158:0;ls
-: 1686131161:0;nvim plugins.lua
-: 1686131163:0;ls
-: 1686131165:0;..
 : 1686131166:0;cd plugin/
-: 1686131166:0;ls
 : 1686131170:0;nvim packer_compiled.lua
-: 1686131172:0;ls
-: 1686131175:0;..
-: 1686131175:0;ls
 : 1686131202:0;nvim onedark.lua
-: 1686131210:0;nvim init.lua
-: 1686131221:0;nvim
-: 1686131225:0;nvim init.lua
-: 1686131227:0;sl
-: 1686131228:0;ls
 : 1686131240:0;mv onedark.lua theme.lua
-: 1686131240:0;ls
 : 1686131246:0;mv theme.lua lua
-: 1686131246:0;ls
-: 1686131247:0;cd lua/
-: 1686131248:0;ls
-: 1686131248:0;cd
 : 1686131251:0;cd .config/nvim/ls
 : 1686131254:0;cd .config/nvim/
-: 1686131254:0;l
-: 1686131256:0;nvim init.lua
 : 1686131271:0;nvim lua/theme.lua
-: 1686131303:0;nvim init.lua
 : 1686131369:0;nvim lua/plugins.lua
-: 1686131378:0;nvim init.lua
 : 1686131421:0;nvim lua/tree.lua
-: 1686131452:0;ls
-: 1686131462:0;nvim init.lua
-: 1686131495:0;ls
-: 1686131498:0;nvim init.lua
-: 1686131547:0;nvim lua/keybindings.lua
-: 1686131552:0;nvim init.lua
-: 1686131569:0;nvim lua/keybindings.lua
-: 1686131572:0;nvim init.lua
-: 1686131595:0;ls
 : 1686131606:0;nvim lua/keybindings.lua
 : 1686131720:0;cd lua/
 : 1686131725:0;mv keybindings.lua keymap.lua
 : 1686131728:0;nvim plugins.lua
 : 1686131732:0;nvim ini
-: 1686131741:0;..
-: 1686131743:0;nvim init.lua
 : 1686132640:0;rm *
-: 1686132642:0;ls
 : 1686132649:0;rm -rf *
-: 1686132651:0;ls
 : 1686132652:0;nvim
 : 1686132653:0;sl
-: 1686132654:0;l
-: 1686132737:0;..
-: 1686132742:0;rm -rf nvim
 : 1686132743:0;git clone https://github.com/LazyVim/starter ~/.config/nvim
-: 1686132745:0;ls
-: 1686132747:0;cd nvim
-: 1686132747:0;ls
-: 1686132750:0;nvim init.lua
-: 1686132781:0;ls
-: 1686132786:0;rm -rf .git
-: 1686132787:0;ls
 : 1686132794:0;rm -rf LICENSE README.md
-: 1686132795:0;ls
-: 1686132796:0;l
 : 1686132801:0;nvim stylua.toml
-: 1686132815:0;ls
 : 1686132817:0;nvim ..
-: 1686132831:0;ls
-: 1686132836:0;cd
-: 1686132840:0;cd .config/
-: 1686132840:0;ls
-: 1686132846:0;rm -rf nvim
-: 1686132847:0;ls
-: 1686132882:0;git submodule add https://github.com/LazyVim/LazyVim.git nvim
-: 1686132883:0;ls
-: 1686132893:0;nvim .gitignore
-: 1686132896:0;ls
 : 1686132899:0;cd git
-: 1686132900:0;ls
-: 1686132904:0;cd .git/
-: 1686132905:0;ls
 : 1686132909:0;nvim in
 : 1686132915:0;nvim index
-: 1686132917:0;ls
 : 1686132921:0;cd hooks/
-: 1686132921:0;l
-: 1686132923:0;..
-: 1686132924:0;ls
 : 1686132927:0;cd branches/
-: 1686132927:0;l
 : 1686132928:0;cd..
-: 1686132929:0;l
-: 1686133014:0;..
 : 1686133022:0;git cache rm nvim
 : 1686133032:0;git rm --cached nvim
-: 1686133037:0;git rm --cached nvim -r
-: 1686133041:0;ls
 : 1686133044:0;git submodule add https://github.com/LazyVim/LazyVim.git nvim
-: 1686133047:0;ls
 : 1686133052:0;nvim .gitignore
 : 1686133065:0;cd nvim/l
 : 1686133068:0;cd nvim/
-: 1686133068:0;l
-: 1686133074:0;nvim init.lua
 : 1686133087:0;rm -rf .ig
-: 1686133091:0;cd ..
-: 1686133101:0;git submodule deinit nvim
-: 1686133109:0;git submodule deinit nvim -f
-: 1686133115:0;git rm --cached nvim -r
 : 1686133118:0;git submodule deinit nvim -f
-: 1686133119:0;git submodule deinit nvim
-: 1686133122:0;ls
-: 1686133127:0;rm -rf nvim
-: 1686133130:0;git submodule
 : 1686133133:0;git submodule status
-: 1686133135:0;ls
-: 1686133138:0;nvim .gitmodules
 : 1686133144:0;git submodule
 : 1686133149:0;git submodule -h
 : 1686133157:0;git submodule deinit nvim
 : 1686133160:0;nvim .gitmodules
-: 1686133167:0;ls
 : 1686133176:0;https://github.com/LazyVim/LazyVim.git nvim
 : 1686133181:0;git https://github.com/LazyVim/LazyVim.git nvim
 : 1686133188:0;git clone https://github.com/LazyVim/LazyVim.git nvim
-: 1686133192:0;ls
 : 1686133193:0;cd nvim
-: 1686133193:0;ls
-: 1686133199:0;nvim init.lua
 : 1686133205:0;rm -rf .git
 : 1686133206:0;nvim init.lua
-: 1686133213:0;ls
 : 1686133215:0;cd ..
-: 1686133219:0;rm -rf nvim
-: 1686133264:0;git submodule add https://github.com/LazyVim/starter nvim
-: 1686133269:0;git submodule add https://github.com/LazyVim/starter nvim --force
-: 1686133276:0;cd modules/
-: 1686133277:0;ls
 : 1686133278:0;cd .git/
-: 1686133279:0;ls
 : 1686133281:0;cd modules/
-: 1686133282:0;ls
 : 1686133285:0;rm -rf nvim
-: 1686133286:0;cd
-: 1686133286:0;ls
-: 1686133289:0;cd .config/
-: 1686133290:0;ls
 : 1686133295:0;git rm --cached nvim -r
 : 1686133303:0;git submodule add https://github.com/LazyVim/starter nvim --force
 : 1686133306:0;git submodule add https://github.com/LazyVim/starter nvim
@@ -2275,30 +1978,17 @@ chmod 640 /etc/msmtprc
 : 1686133327:0;git submodule update
 : 1686133331:0;git submodule update --recursive --init
 : 1686133334:0;git submodule update --recursive
-: 1686133335:0;ls
 : 1686133341:0;nvim install.sh
-: 1686133356:0;ls
 : 1686133359:0;cd htop/
 : 1686133359:0;l
 : 1686133362:0;nvim htoprc
-: 1686133375:0;ls
 : 1686133375:0;..
-: 1686133376:0;ls
 : 1686133386:0;rm nvim-old
-: 1686133387:0;ls
 : 1686133391:0;rm -rf nvim-old
-: 1686133392:0;ls
-: 1686133395:0;cd
-: 1686133396:0;ls
 : 1686133400:0;nvim /etc/nginx/nginx.conf
-: 1686133403:0;ls
 : 1686133406:0;cd aliyun-ddns/
 : 1686133407:0;nvim index.js
-: 1686133430:0;ls
-: 1686133432:0;lazygit
-: 1686133437:0;ls
 : 1686133438:0;cd
-: 1686133439:0;ls
 : 1686133444:0;nvim aliyun-ddns
 : 1686133453:0;ls
 : 1686133533:0;cd .config/
@@ -2367,3 +2057,76 @@ chmod 640 /etc/msmtprc
 : 1686133558:0;nvim .zshrc
 : 1686133563:0;cd .config/
 : 1686133564:0;lazygit
+: 1686133550:0;exit
+: 1686134047:0;cd .config/
+: 1686134048:0;ls
+: 1686134049:0;nvim ini
+: 1686134052:0;ls
+: 1686134054:0;cd nvim/ls
+: 1686134055:0;cd nvim/
+: 1686134056:0;l
+: 1686134058:0;nvim init.lua
+: 1686134060:0;ls
+: 1686134064:0;cd lua/
+: 1686134064:0;ls
+: 1686134067:0;cd config/
+: 1686134067:0;l
+: 1686134069:0;nvim options.lua
+: 1686134072:0;ls
+: 1686134075:0;nvim lazy.lua
+: 1686134137:0;cd
+: 1686134148:0;cd .config/nvim/
+: 1686134149:0;ls
+: 1686134152:0;nvim init.lua
+: 1686134190:0;..
+: 1686134190:0;ls
+: 1686134192:0;cd aria2p/
+: 1686134195:0;..
+: 1686134195:0;ls
+: 1686134197:0;cd aria2p/
+: 1686134198:0;..
+: 1686134200:0;cd ohmyzsh/
+: 1686134200:0;ls
+: 1686134202:0;nvim alias.zsh
+: 1686134208:0;ls
+: 1686134210:0;nvim export.zsh
+: 1686134218:0;cd
+: 1686134218:0;ls
+: 1686134222:0;cd aliyun-ddns/l
+: 1686134224:0;cd aliyun-ddns/
+: 1686134225:0;nvim i
+: 1686134271:0;ls
+: 1686134272:0;cd
+: 1686134273:0;ls
+: 1686134274:0;l
+: 1686134276:0;nvim .zsrhc
+: 1686134280:0;cd .config/
+: 1686134281:0;ls
+: 1686134283:0;cd nvim/ls
+: 1686134284:0;cd nvim/
+: 1686134285:0;l
+: 1686134287:0;nvim init.lua
+: 1686134289:0;ls
+: 1686134291:0;cd lua/
+: 1686134291:0;ls
+: 1686134295:0;cd config/
+: 1686134295:0;l
+: 1686134299:0;nvim lazy.lua
+: 1686134351:0;ls
+: 1686134355:0;nvim autocmds.lua
+: 1686134361:0;nvim lazy.lua
+: 1686134371:0;cd
+: 1686134372:0;cd .config/
+: 1686134373:0;ls
+: 1686134382:0;git submodule deinit nvim
+: 1686134384:0;git submodule deinit nvim -=f
+: 1686134385:0;git submodule deinit nvim -f
+: 1686134394:0;nvim .gitmodules
+: 1686134400:0;ls
+: 1686134405:0;rm -rf nvim
+: 1686134406:0;ls
+: 1686134412:0;git cache rm nvim
+: 1686134416:0;git rm --cached nvim -r
+: 1686134424:0;git add .
+: 1686134425:0;git rm --cached nvim -r
+: 1686134428:0;lazygit

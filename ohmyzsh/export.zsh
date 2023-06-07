@@ -18,6 +18,5 @@ export SAVEHIST=2000
 export ZSHZ_CASE=smart
 export DENO_INSTALL="$HOME/.deno"
 export VIM=$HOME/.config/nvim-linux64/share/nvim/runtime
-export VIMRUNTIME=$HOME/.config/nvim-linux64/share/nvim/runtime
 export EDITOR=nvim
 export GO111MODULE=on
