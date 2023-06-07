@@ -2243,3 +2243,16 @@ chmod 640 /etc/msmtprc
 : 1686136013:0;cd
 : 1686136016:0;cd .config/
 : 1686136017:0;lazygit
+: 1686136030:0;ls
+: 1686136033:0;git submodule update --recursive --init
+: 1686136045:0;git submodule deinit nvim
+: 1686136048:0;git submodule deinit nvim =f
+: 1686136050:0;git submodule deinit nvim -f
+: 1686136054:0;git submodule deinit -f nvim
+: 1686136060:0;git rm --cached nvim -r
+: 1686136061:0;ls
+: 1686136067:0;rm -rf .nvim
+: 1686136071:0;rm -rf nvim
+: 1686136071:0;ls
+: 1686136075:0;nvim .gitmodules
+: 1686136082:0;lazygit
