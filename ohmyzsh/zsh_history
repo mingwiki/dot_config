@@ -825,7 +825,6 @@
 : 1685690584:0;mv ming /home
 : 1685690588:0;cd /home
 : 1685690592:0;cd root/
-: 1685690642:0;sh install.sh
 : 1685690665:0;unlink .idea .java .local
 : 1685690716:0;sh .config/install.sh
 : 1685696615:0;brotli
@@ -859,7 +858,6 @@
 : 1685697553:0;cd op_support/
 : 1685697555:0;pm2 restart pm2.json
 : 1685697563:0;pm2 save
-: 1685697610:0;pm2 ls
 : 1685697613:0;pm2 startup
 : 1685697627:0;systemctl status pm2
 : 1685697629:0;systemctl status pm2-root.service
@@ -937,7 +935,6 @@
 : 1685719971:0;cp rss.4fm.top_other/* /cert
 : 1685719980:0;rm -rf git.4fm.top_other* rss*
 : 1685720388:0;docker run -d --restart unless-stopped --log-opt max-size=10m -p 8888:80 -e TZ=Asia/Singapore -e 'CRON_MIN=1,31' -v freshrss_data:/var/www/FreshRSS/data -v freshrss_extensions:/var/www/FreshRSS/extensions --name freshrss freshrss/freshrss
-: 1685720470:0;systemctl restart nginx
 : 1685720546:0;mariadb
 : 1685723495:0;netstat -tulp
 : 1685723520:0;netstat -tunl
@@ -1001,7 +998,6 @@
 : 1685777367:0;git push origin master -f
 : 1685777373:0;git push -f
 : 1685777377:0;git push -f origin master
-: 1685777448:0;git push origin master
 : 1685808209:0;rm install.sh
 : 1685808215:0;rm .zshrc
 : 1685808219:0;mv .zshrc.pre-oh-my-zsh .zshrc
@@ -1290,14 +1286,12 @@ We trust you have received the usual lecture from th
 : 1685852776:0;npm i
 : 1685852827:0;mv .npmrc .config
 : 1685852847:0;ln -sf ~/.config/.npmrc ~/.npmrc
-: 1685852857:0;nvim install.sh
 : 1685853698:0;cd data/
 : 1685854449:0;paru nginx
 : 1685854477:0;paru nginx-quic
 : 1685854725:0;paru proxychains
 : 1685854734:0;nvim /etc/proxychains.conf
 : 1685854995:0;unsp
-: 1685855401:0;paru nginx-mainline
 : 1685855418:0;nginx -v
 : 1685855421:0;nginx -V
 : 1685855441:0;nvim /etc/nginx/
@@ -1488,7 +1482,6 @@ cron-hourly.timer cron-monthly.timer cron-root-root-1.timer cron-weekly.timer
 : 1685928577:0;lvconvert --uncache arch/home
 : 1685934954:0;ps aux | rg lv
 : 1685935469:0;ssh root@4fm.top
-: 1685935527:0;neofetch
 : 1685935595:0;mdadm
 : 1685939766:0;lvdisplay -o+cache_mode
 : 1685940361:0;lvdisplay --help
@@ -1512,8 +1505,6 @@ cron-hourly.timer cron-monthly.timer cron-root-root-1.timer cron-weekly.timer
 : 1685952481:0;rm -rf toolkits op_support
 : 1685952487:0;cd desktop/
 : 1685952511:0;mv compose ~
-: 1685952627:0;nvim /etc/nginx/nginx.conf
-: 1685952666:0;nginx -t
 : 1685953055:0;cd kavita
 : 1685953070:0;mv kavita ..
 : 1685953443:0;paru -Rs nginx-mainline
@@ -1575,7 +1566,6 @@ cron-hourly.timer cron-monthly.timer cron-root-root-1.timer cron-weekly.timer
 : 1685958120:0;cd 20230228/
 : 1685958297:0;docker logs -f kavita
 : 1685958317:0;docker version
-: 1685958321:0;docker info
 : 1685958420:0;qgl
 : 1685958582:0;docker -D compose up -d
 : 1685958602:0;docker -D compose up
@@ -1821,7 +1811,6 @@ chmod 640 /etc/msmtprc
 : 1686021483:0;systemctl enable ufw
 : 1686021493:0;systemctl start ufw
 : 1686021654:0;ps aux | rg root
-: 1686021776:0;paru htop
 : 1686021946:0;lc
 : 1686021950:0;systemctl status ufw
 : 1686021957:0;systemctl status aria2.service
@@ -1842,7 +1831,6 @@ chmod 640 /etc/msmtprc
 : 1686022481:0;ps
 : 1686022484:0;w
 : 1686022610:0;lvs -o+cache_mode
-: 1686022656:0;htop
 : 1686022668:0;paru -Rs htop
 : 1686022681:0;paru -Qtd
 : 1686022686:0;paru -Qt
@@ -1949,7 +1937,6 @@ chmod 640 /etc/msmtprc
 : 1686050601:0;journalctl -f -u immich-server
 : 1686050613:0;journalctl -f -u immich-web
 : 1686050628:0;journalctl -f -u nginx
-: 1686050695:0;docker ps
 : 1686054748:0;docker log -f immich-web
 : 1686054769:0;docker logs -f immich-web
 : 1686054776:0;docker logs -f immich-server
@@ -1979,7 +1966,6 @@ chmod 640 /etc/msmtprc
 : 1686103728:0;rm -rf vps
 : 1686103731:0;cd trojan/
 : 1686103744:0;mv * ..
-: 1686103751:0;..
 : 1686103756:0;rm -rf r10
 : 1686103775:0;cd immich/
 : 1686105540:0;lvscan
@@ -1993,8 +1979,11 @@ chmod 640 /etc/msmtprc
 : 1686116348:0;l
 : 1686116350:0;df -ahT
 : 1686116448:0;cl
+: 1686116287:0;cd /home/data/
+: 1686116293:0;rm miwifi_ra82_all_7eb36_1.3.27_INT.bin
+: 1686116300:0;rm ÊÉÆ•ÂÉØ£ÊÉ∂ÉßÊÉÅ£20221027.html
+: 1686116350:0;df -ahT
 : 1686116470:0;cat /proc/mdstat
-: 1686116498:0;cd
 : 1686116500:0;lsblk
 : 1686116504:0;lsblk -af
 : 1686116529:0;lvs
@@ -2010,3 +1999,61 @@ chmod 640 /etc/msmtprc
 : 1686116778:0;nvim install.sh
 : 1686116789:0;l
 : 1686116794:0;lazygit
+: 1685777459:0;git add .
+: 1685777464:0;git commit -a
+: 1685777474:0;git push origin master
+: 1685777799:0;docker ls
+: 1685777852:0;docker run -d --name vaultwarden -v /vw-data/:/data/ -p 6666:80 vaultwarden/server:latest
+: 1685777858:0;docker ps -a
+: 1685777870:0;docker start vaultwarden
+: 1685861329:0;tcp
+: 1685861334:0;tcpdump -c 10 -nn -i eth0 tcp
+: 1685861978:0;curl http://naizi.fun
+: 1685861996:0;curl http://naizi.fun:81
+: 1685862532:0;ping naizi.fun
+: 1685871389:0;docker info
+: 1685871459:0;paru htop
+: 1685871466:0;htop
+: 1685935474:0;pm2
+: 1685935478:0;pm2 -h
+: 1685935515:0;neofetch
+: 1686036847:0;cp nginx.conf ~
+: 1686036849:0;paru nginx-mainline
+: 1686036887:0;cd /etc/nginx/
+: 1686036892:0;nvim nginx.conf.pacsave
+: 1686036906:0;mv nginx.conf.pacsave nginx.conf
+: 1686036913:0;rm nginx.conf
+: 1686037310:0;nvim /etc/nginx/nginx.conf
+: 1686037597:0;systemctl restart nginx
+: 1686037598:0;nginx -t
+: 1686044978:0;docker ps
+: 1686044990:0;z ngin
+: 1686045024:0;less error.log
+: 1686045601:0;z nginx
+: 1686045606:0;less 20230606.log
+: 1686045678:0;cd
+: 1686045682:0;pm2 ls
+: 1686045685:0;cdl
+: 1686045685:0;gl
+: 1686116672:0;cl
+: 1686116674:0;cd .config/
+: 1686116677:0;lazygit
+: 1686116713:0;ls
+: 1686116715:0;nvim install.sh
+: 1686116741:0;sh install.sh
+: 1686116742:0;..
+: 1686116742:0;l
+: 1686116759:0;exit
+: 1686116811:0;cl
+: 1686116812:0;l
+: 1686116819:0;unlink .mysql_history
+: 1686116827:0;unlink .rediscli_history
+: 1686116830:0;unlink .wget-hsts
+: 1686116833:0;ls
+: 1686116834:0;l
+: 1686116842:0;unlink .lesshst
+: 1686116844:0;l
+: 1686116849:0;cd .config/
+: 1686116849:0;ls
+: 1686116853:0;git pull
+: 1686116856:0;lazygit
