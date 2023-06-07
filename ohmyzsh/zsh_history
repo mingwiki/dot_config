@@ -558,7 +558,6 @@
 : 1684726731:0;rg -v www stream.log | less
 : 1684727094:0;code /etc/nginx/nginx.conf
 : 1684727170:0;rm stream.log
-: 1684727235:0;truncate -s 0 error.log
 : 1684734118:0;systemctl stop authdaemond.service
 : 1684734133:0;systemctl stop lvm2-lvmpolld.socket
 : 1684734138:0;systemctl stop lvm2-monitor.service
@@ -868,14 +867,12 @@
 : 1685715041:0;cd scripts/
 : 1685715045:0;nvim run.sh
 : 1685715128:0;cds
-: 1685715452:0;docker
 : 1685715459:0;./bitwarden.sh start
 : 1685715548:0;cd bwdata/
 : 1685715551:0;cd logs/
 : 1685715555:0;cd mssql/
 : 1685715568:0;journalctl -f -u docker.service
 : 1685715584:0;docker logs -f bitwarden-mssql
-: 1685715605:0;free -h
 : 1685715633:0;./bitwarden.sh uninstall
 : 1685715660:0;rm -rf bitwarden*
 : 1685715666:0;rm -rf pass.4fm.top_other
@@ -886,7 +883,6 @@
 : 1685718094:0;docker rm vaultwarden
 : 1685719095:0;less 20230602.log
 : 1685719113:0;rga -v www 20230602.log| less
-: 1685719189:0;zless http.gz
 : 1685719683:0;cd /cert/
 : 1685719937:0;rm pass.4fm.top_other
 : 1685719939:0;rm pass.4fm.top_other*
@@ -1253,8 +1249,6 @@ We trust you have received the usual lecture from th
 : 1685854725:0;paru proxychains
 : 1685854734:0;nvim /etc/proxychains.conf
 : 1685854995:0;unsp
-: 1685855418:0;nginx -v
-: 1685855421:0;nginx -V
 : 1685855441:0;nvim /etc/nginx/
 : 1685855718:0;systemctl start nginx
 : 1685855725:0;systemctl status nginx
@@ -1499,7 +1493,6 @@ cron-hourly.timer cron-monthly.timer cron-root-root-1.timer cron-weekly.timer
 : 1685955001:0;cd complete/
 : 1685955012:0;transmission-cli
 : 1685955191:0;ufw allow 9091
-: 1685955581:0;cd /
 : 1685955650:0;ls downloads
 : 1685955657:0;ll downloads
 : 1685955673:0;chown -R transmission:root downloads
@@ -1527,7 +1520,6 @@ cron-hourly.timer cron-monthly.timer cron-root-root-1.timer cron-weekly.timer
 : 1685958120:0;cd 20230228/
 : 1685958297:0;docker logs -f kavita
 : 1685958317:0;docker version
-: 1685958420:0;qgl
 : 1685958582:0;docker -D compose up -d
 : 1685958602:0;docker -D compose up
 : 1685958921:0;booklet
@@ -1563,9 +1555,6 @@ cron-hourly.timer cron-monthly.timer cron-root-root-1.timer cron-weekly.timer
 : 1685963464:0;docker stop bitwarden freshrss
 : 1685963487:0;mv bitwarden.conf bitwarden.conf.bk
 : 1685963491:0;rm freshrss.conf
-: 1685963542:0;docker container prune -a
-: 1685963544:0;docker container prune
-: 1685963554:0;docker image prune -a
 : 1685963727:0;nvim
 : 1685963775:0;mv aria2 ~
 : 1685963786:0;mv cookie ~
@@ -1712,7 +1701,6 @@ cron-hourly.timer cron-monthly.timer cron-root-root-1.timer cron-weekly.timer
 : 1686017281:0;systemctl daemon-reload
 : 1686017284:0;systemctl start cronie
 : 1686017654:0;mkdir cron.d
-: 1686017660:0;crontab -e
 : 1686017671:0;mv cron ddns
 : 1686017677:0;mv ddns etc/cron.d
 : 1686017690:0;ln -s ~/etc/cron.d /etc
@@ -1729,7 +1717,6 @@ cron-hourly.timer cron-monthly.timer cron-root-root-1.timer cron-weekly.timer
 : 1686018083:0;nvim anacrontab
 : 1686018093:0;rm anacrontab
 : 1686018416:0;docker logs -f nginx
-: 1686018423:0;docker s
 : 1686018547:0;cp ddns test
 : 1686018564:0;cp test test2
 : 1686018579:0;nvim /etc/aliases
@@ -1784,7 +1771,6 @@ chmod 640 /etc/msmtprc
 : 1686022370:0;nvim /etc/samba/smb.conf
 : 1686022400:0;systemctl restart smb nmb
 : 1686022481:0;ps
-: 1686022484:0;w
 : 1686022610:0;lvs -o+cache_mode
 : 1686022668:0;paru -Rs htop
 : 1686022681:0;paru -Qtd
@@ -1888,7 +1874,6 @@ chmod 640 /etc/msmtprc
 : 1686050562:0;z compose
 : 1686050601:0;journalctl -f -u immich-server
 : 1686050613:0;journalctl -f -u immich-web
-: 1686050628:0;journalctl -f -u nginx
 : 1686054748:0;docker log -f immich-web
 : 1686054769:0;docker logs -f immich-web
 : 1686054776:0;docker logs -f immich-server
@@ -1925,6 +1910,7 @@ chmod 640 /etc/msmtprc
 : 1686116293:0;rm miwifi_ra82_all_7eb36_1.3.27_INT.bin
 : 1686116300:0;rm ÊÉÆ•ÂÉØ£ÊÉ∂ÉßÊÉÅ£20221027.html
 : 1686116350:0;df -ahT
+: 1686116470:0;cat /proc/mdstat
 : 1686116500:0;lsblk
 : 1686116504:0;lsblk -af
 : 1686116529:0;lvs
@@ -1958,8 +1944,6 @@ chmod 640 /etc/msmtprc
 : 1686037597:0;systemctl restart nginx
 : 1686037598:0;nginx -t
 : 1686044990:0;z ngin
-: 1686045024:0;less error.log
-: 1686045601:0;z nginx
 : 1686045606:0;less 20230606.log
 : 1686045682:0;pm2 ls
 : 1686045685:0;cdl
@@ -2319,3 +2303,67 @@ chmod 640 /etc/msmtprc
 : 1686133453:0;ls
 : 1686133533:0;cd .config/
 : 1686133534:0;lazygit
+: 1686116849:0;cd .config/
+: 1686116853:0;git pull
+: 1686116888:0;rm .lesshst
+: 1686116898:0;lazygit
+: 1686117384:0;crontab -e
+: 1686123999:0;grep 244.171 20230607.log| less
+: 1686124036:0;grep 197.203 20230607.log| less
+: 1686125584:0;z nginx
+: 1686125611:0;journalctl -f -u nginx
+: 1686125755:0;nginx -V | grep real
+: 1686125762:0;nginx -V | rg real
+: 1686126370:0;nginx -v
+: 1686126371:0;nginx -V
+: 1686126379:0;nginx -V | less
+: 1686126390:0;nginx -V | grep real | less
+: 1686126399:0;echo nginx -V
+: 1686126408:0;echo `nginx -V`
+: 1686126419:0;echo `nginx -V` | rg real
+: 1686126436:0;qgl
+: 1686126526:0;echo `nginx -V` | less
+: 1686127032:0;z gninx
+: 1686127032:0;lls
+: 1686127034:0;z ng
+: 1686127295:0;zless http.gz
+: 1686127511:0;rm http.gz
+: 1686127626:0;nvim /etc/nginx/nginx.conf
+: 1686127667:0;systemctl restart nginx
+: 1686127669:0;nginx -t
+: 1686127675:0;tail -f 20230607.log
+: 1686127760:0;less 20230607.log
+: 1686127829:0;z /var/log/nginx
+: 1686127869:0;truncate -s 0 error.log
+: 1686127873:0;less error.log
+: 1686127880:0;gl
+: 1686127887:0;w
+: 1686127892:0;docker s
+: 1686127895:0;docekr ps
+: 1686127896:0;docker
+: 1686127912:0;docker inspect vaultwarden
+: 1686127917:0;docker inspect vaultwarden | less
+: 1686127971:0;qls
+: 1686127972:0;cd /
+: 1686127986:0;docker inspect freshrss
+: 1686127990:0;docker inspect freshrss | les
+: 1686127991:0;docker inspect freshrss | less
+: 1686128000:0;ls
+: 1686128005:0;cd vw-data/
+: 1686128006:0;l
+: 1686128016:0;cd
+: 1686128025:0;free -h
+: 1686128034:0;docker images
+: 1686128048:0;docker image -
+: 1686128067:0;docker container prune
+: 1686128070:0;docker container prune -a
+: 1686128080:0;docker image prune -a
+: 1686128082:0;cl
+: 1686128083:0;docker ps
+: 1686128085:0;df -ahT
+: 1686128112:0;exit
+: 1686133551:0;ls
+: 1686133552:0;l
+: 1686133558:0;nvim .zshrc
+: 1686133563:0;cd .config/
+: 1686133564:0;lazygit
