@@ -1924,7 +1924,6 @@ chmod 640 /etc/msmtprc
 : 1686127829:0;z /var/log/nginx
 : 1686127869:0;truncate -s 0 error.log
 : 1686127873:0;less error.log
-: 1686127880:0;gl
 : 1686127887:0;w
 : 1686127892:0;docker s
 : 1686127895:0;docekr ps
@@ -1945,7 +1944,6 @@ chmod 640 /etc/msmtprc
 : 1686128080:0;docker image prune -a
 : 1686128083:0;docker ps
 : 1686128085:0;df -ahT
-: 1686133552:0;l
 : 1686133558:0;nvim .zshrc
 : 1686133564:0;lazygit
 : 1686133550:0;exit
@@ -1972,6 +1970,9 @@ chmod 640 /etc/msmtprc
 : 1686134412:0;git cache rm nvim
 : 1686134424:0;git add .
 : 1686134436:0;git rm --cached nvim -r
+: 1686134384:0;git submodule deinit nvim -=f
+: 1686134412:0;git cache rm nvim
+: 1686134424:0;git add .
 : 1686134440:0;git rm --cached nvim
 : 1686134451:0;git push
 : 1686134459:0;.
@@ -1989,11 +1990,11 @@ chmod 640 /etc/msmtprc
 : 1686135013:0;mv lazy.lua plugin.lua
 : 1686135039:0;mv plugin.lua lazy.lua
 : 1686135044:0;cd nvim/ls
-: 1686135045:0;cd nvim/
 : 1686135046:0;;s
 : 1686135047:0;l
 : 1686135065:0;mv lazy.lua lazynvim.lua
 : 1686135072:0;cd nvim
+: 1686135065:0;mv lazy.lua lazynvim.lua
 : 1686135074:0;nvim init.lua
 : 1686135223:0;cd lls
 : 1686135242:0;nvim lazynvim.lua
@@ -2009,44 +2010,29 @@ chmod 640 /etc/msmtprc
 : 1686135611:0;rm -rf .git
 : 1686135616:0;cd
 : 1686135618:0;nvim
+: 1686135551:0;lx
+: 1686135602:0;git clone https://github.com/LazyVim/starter ~/.config/nvim
+: 1686135607:0;cd .config/nvim/
 : 1686135878:0;:q
-: 1686135888:0;ls
 : 1686135896:0;nvim .config/ohmyzsh/alias.zsh
-: 1686135939:0;cd .config/
-: 1686135939:0;lazygit
 : 1686133597:0;cd nvim/l
 : 1686133598:0;cd nvim/
 : 1686133601:0;..
-: 1686133606:0;git submodule update --recursive --init
 : 1686133862:0;cl
 : 1686133869:0;nvim trojan-linux-amd64
-: 1686133875:0;cd .config/
 : 1686133877:0;vnim install.sh
-: 1686133893:0;nvim install.sh
-: 1686133904:0;cd
-: 1686133905:0;ls
-: 1686133905:0;exit
-: 1686135970:0;cd .config/
-: 1686135971:0;lazygit
 : 1686135998:0;rm nvim
 : 1686136002:0;cd nvim
-: 1686136002:0;ls
-: 1686136006:0;l
 : 1686136010:0;rm -rf .git
-: 1686136013:0;cd
 : 1686136016:0;cd .config/
-: 1686136017:0;lazygit
-: 1686136030:0;ls
 : 1686136033:0;git submodule update --recursive --init
 : 1686136045:0;git submodule deinit nvim
 : 1686136048:0;git submodule deinit nvim =f
 : 1686136050:0;git submodule deinit nvim -f
 : 1686136054:0;git submodule deinit -f nvim
 : 1686136060:0;git rm --cached nvim -r
-: 1686136061:0;ls
 : 1686136067:0;rm -rf .nvim
 : 1686136071:0;rm -rf nvim
-: 1686136071:0;ls
 : 1686136075:0;nvim .gitmodules
 : 1686136082:0;lazygit
 : 1686135960:0;exit
@@ -2276,3 +2262,256 @@ chmod 640 /etc/msmtprc
 : 1686149263:0;ls
 : 1686149269:0;..
 : 1686149271:0;lazygit
+: 1686136110:0;nvimin
+: 1686136113:0;nvim install.sh
+: 1686188233:0;cd
+: 1686188248:0;ls
+: 1686188251:0;l
+: 1686188256:0;nvim
+: 1686189323:0;paru sysbench
+: 1686189492:0;paru 7zip
+: 1686189526:0;7z i
+: 1686189544:0;tldr 7z
+: 1686189602:0;7z -h
+: 1686189623:0;7z b -h
+: 1686189645:0;cpuinfo
+: 1686189656:0;cat /proc/cpuinfo
+: 1686189817:0;gl
+: 1686189824:0;7z b
+: 1686190063:0;exit
+: 1686190230:0;sysbench
+: 1686190232:0;sysbench -h
+: 1686190238:0;sysbench cpu run
+: 1686190243:0;paru sysbench
+: 1686190251:0;sysbench cpu run
+: 1686190258:0;paru libaio
+: 1686190272:0;sysbench cpu run
+: 1686190318:0;tldr sysbench
+: 1686190334:0;sysbench --threads=2 cpu run
+: 1686190410:0;ssh root@naizi.fun
+: 1686190585:0;paru hardinfo
+: 1686190591:0;fuck
+: 1686190606:0;sudo -u nobody paru hardinfo
+: 1686190621:0;sudo -u ming paru hardinfo
+: 1686190714:0;sp
+: 1686190716:0;sudo -u ming paru hardinfo
+: 1686190727:0;unsp
+: 1686190738:0;proxychains4
+: 1686190744:0;paru proxychains
+: 1686190818:0;sudo -u ming paru hardinfo
+: 1686190858:0;paru -Rs hardinfo
+: 1686190869:0;paru hardinfo
+: 1686190886:0;cl
+: 1686190890:0;tldr paru
+: 1686190910:0;paru -Sua
+: 1686190915:0;paru -Syy
+: 1686191139:0;paru -Q
+: 1686191140:0;paru -Qt
+: 1686191215:0;paru -Qtd
+: 1686191227:0;paru -Qtdq
+: 1686191264:0;paru -Sc
+: 1686191276:0;cl
+: 1686191277:0;df -ahT
+: 1686191316:0;df -h
+: 1686191319:0;df -ha
+: 1686191321:0;df -h
+: 1686191322:0;df -hT
+: 1686191333:0;cl
+: 1686191334:0;ls
+: 1686191345:0;gl
+: 1686191355:0;ls
+: 1686191358:0;docker ps
+: 1686191364:0;ls
+: 1686191368:0;cd /bin/
+: 1686191370:0;cd /
+: 1686191371:0;ls
+: 1686191374:0;cd vw-data/
+: 1686191374:0;ls
+: 1686191382:0;cd
+: 1686191383:0;ls
+: 1686191386:0;docker volume
+: 1686191393:0;docker volume create vault
+: 1686191397:0;docker volume ls
+: 1686191445:0;docker run -d --name test -v vault:/data/ alpine
+: 1686191536:0;ls
+: 1686191562:0;docker cp /vw-data test:/data
+: 1686191573:0;docker stop bitwarden
+: 1686191578:0;docker stop vaultwarden
+: 1686191583:0;docker cp /vw-data test:/data
+: 1686191591:0;docker stop test
+: 1686191607:0;docker run -d --name vaultwarden -v vault:/data/ -p 6666:80 vaultwarden/server:latest
+: 1686191612:0;docker rm vaultwarden
+: 1686191613:0;docker run -d --name vaultwarden -v vault:/data/ -p 6666:80 vaultwarden/server:latest
+: 1686191617:0;docker ps
+: 1686191657:0;docker exec -it vaultwarden bash
+: 1686191694:0;docker stop vaultwarden
+: 1686191715:0;docker rm vaultwarden
+: 1686191723:0;docker exec -it alpine bash
+: 1686191727:0;docker exec -it test bash
+: 1686191730:0;docker exec -it test ash
+: 1686191737:0;docker start test
+: 1686191743:0;docker exec -it test ash
+: 1686191749:0;docker exec -it test sh
+: 1686191751:0;docker ps
+: 1686191758:0;docker ps -a
+: 1686191768:0;docker start test
+: 1686191770:0;docker ps -a
+: 1686191776:0;docker rm test
+: 1686191849:0;docker run -d --name test -v vault:/data/ alpine
+: 1686191851:0;docker exec -it test sh
+: 1686191858:0;docker ps
+: 1686191861:0;docker ps -a
+: 1686191868:0;docker logs -f test
+: 1686191877:0;docker ps -a
+: 1686191898:0;docker rm test
+: 1686191899:0;ls
+: 1686191907:0;docker volume rm vault
+: 1686191909:0;docker volume ls
+: 1686191996:0;docker run -d --name vaultwarden -v /vw-data:/data/ -p 6666:80 vaultwarden/server:latest
+: 1686191998:0;docker ps
+: 1686192209:0;ll
+: 1686192216:0;docker ps
+: 1686192218:0;ls
+: 1686192253:0;nvim docker-compose.yml
+: 1686192280:0;docker stop vaultwarden freshrss
+: 1686192282:0;ls
+: 1686192288:0;docker rm vaultwarden freshrss
+: 1686192289:0;ls
+: 1686192299:0;mv /vw-data vault
+: 1686192301:0;ls
+: 1686192435:0;cd
+: 1686192436:0;ls
+: 1686192439:0;nvim docker-compose.yml
+: 1686192486:0;docker volume ls
+: 1686192516:0;nvim docker-compose.yml
+: 1686192538:0;docker compose up -d
+: 1686192543:0;nvim docker-compose.yml
+: 1686192565:0;docker compose up -d
+: 1686192567:0;nvim docker-compose.yml
+: 1686192575:0;docker compose up -d
+: 1686192578:0;docker ps
+: 1686192584:0;nvim docker-compose.yml
+: 1686192599:0;docker compose up -d
+: 1686192665:0;docker volume ls
+: 1686192671:0;nvim docker-compose.yml
+: 1686192715:0;docker compose up -d
+: 1686192735:0;docker volume ls
+: 1686192756:0;docker inspect freshrss | less
+: 1686192782:0;docker compose down
+: 1686192785:0;docker compose up -d
+: 1686192789:0;docker inspect freshrss | less
+: 1686192835:0;docker image
+: 1686192837:0;docker image ls
+: 1686192845:0;docker volume
+: 1686192856:0;docker volume inspect freshrss_data
+: 1686192870:0;docker volume prune
+: 1686192875:0;docker volume ps
+: 1686192877:0;docker ps -a
+: 1686192887:0;docker image prune -a
+: 1686192892:0;docker volume prune
+: 1686192900:0;docker container prune
+: 1686192902:0;cd
+: 1686192902:0;ls
+: 1686192904:0;df -hT
+: 1686193126:0;sysbench --threads=2 cpu run
+: 1686193274:0;paru -Rs sysbench
+: 1686193290:0;paru -Rs tar unzip
+: 1686193295:0;paru -Rs unzip
+: 1686193515:0;paru -Q
+: 1686193545:0;ssh root@naizi.fun
+: 1686195005:0;paru -Rs broot ncdu
+: 1686195012:0;paru -Rs grep
+: 1686195021:0;paru -Qt
+: 1686195038:0;inxi
+: 1686195041:0;inxi -h
+: 1686195070:0;inxi -aF
+: 1686195150:0;paru -Rs inxi
+: 1686195155:0;paru
+: 1686195167:0;paru -Qt
+: 1686195187:0;paru -Rs htop bind
+: 1686195198:0;ls
+: 1686195205:0;paru -Rs wget
+: 1686195207:0;ls
+: 1686195210:0;curl
+: 1686195214:0;tldr curl
+: 1686195270:0;curl -O
+: 1686195621:0;curl -cL cookie.com google.com
+: 1686195624:0;ls
+: 1686195629:0;nvim L
+: 1686195634:0;rm L
+: 1686195634:0;l
+: 1686195656:0;curl -v www.4fm.top
+: 1686195667:0;curl -v www.4fm.top:443
+: 1686195677:0;curl -v https://www.4fm.top:443
+: 1686195711:0;curl -vL https://www.4fm.top:443
+: 1686195744:0;curl --trace https://www.4fm.top:443
+: 1686195753:0;curl --trace - https://www.4fm.top:443
+: 1686195788:0;curl -h '' -v https://www.4fm.top:443
+: 1686195804:0;curl -h 'query:youtube.com' -v https://www.4fm.top:443
+: 1686195811:0;curl https://www.4fm.top:443
+: 1686195902:0;curl -f
+: 1686195905:0;curl -f -h
+: 1686195997:0;ls
+: 1686196005:0;l
+: 1686196007:0;ls
+: 1686196066:0;docker run -d --name test -v freshrss_data:/data -v freshrss_extension:/extension alpine
+: 1686196076:0;docker exec -it test sh
+: 1686196080:0;docker ps -a
+: 1686196096:0;docker logs test
+: 1686196109:0;journalctl -f -u docker
+: 1686196213:0;docker stop test
+: 1686196216:0;docker rm test
+: 1686196216:0;ls
+: 1686196218:0;docker ps
+: 1686196237:0;nvim docker-compose.yml
+: 1686196271:0;docker cp vaultwarden:/var/www/ .
+: 1686196300:0;nvim docker-compose.yml
+: 1686196316:0;docker cp freshrss:/var/www .
+: 1686196317:0;ls
+: 1686196320:0;cd www/
+: 1686196320:0;ls
+: 1686196322:0;cd html/
+: 1686196323:0;ls
+: 1686196324:0;..
+: 1686196325:0;ls
+: 1686196328:0;cd FreshRSS/
+: 1686196328:0;ls
+: 1686196334:0;cd data/
+: 1686196335:0;ls
+: 1686196350:0;..
+: 1686196350:0;ls
+: 1686196356:0;mv data extensions ~
+: 1686196357:0;ls
+: 1686196358:0;cd
+: 1686196358:0;ls
+: 1686196363:0;rm -rf www
+: 1686196364:0;ls
+: 1686196373:0;mkdir freshrss
+: 1686196382:0;mv data/ extensions freshrss
+: 1686196382:0;ls
+: 1686196385:0;nvim docker-compose.yml
+: 1686196408:0;docker compose up -d
+: 1686196411:0;ls
+: 1686196728:0;cd freshrss/
+: 1686196728:0;ls
+: 1686196730:0;cd ..
+: 1686196730:0;ls
+: 1686196732:0;nvim docker-compose.yml
+: 1686196740:0;ls
+: 1686196743:0;docker volume prune
+: 1686196751:0;docker container prune
+: 1686196757:0;docker image prune -a
+: 1686196759:0;cd
+: 1686196759:0;ls
+: 1686196826:0;cd
+: 1686196826:0;ls
+: 1686196828:0;docker ps
+: 1686196866:0;l
+: 1686196867:0;gl
+: 1686196944:0;netstat -tunlp
+: 1686196968:0;nvim /etc/dns-over-https/doh-client.conf
+: 1686197042:0;systemctl restart doh-client.service
+: 1686197045:0;ls
+: 1686197049:0;nvim docker-compose.yml
+: 1686197057:0;cd .config/
+: 1686197058:0;lazygit
