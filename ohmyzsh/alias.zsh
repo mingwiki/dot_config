@@ -15,6 +15,7 @@ alias grep='rga'
 alias pc='proxychains4'
 alias lg='lazygit'
 alias vi='nvim'
+alias he='helix'
 hup() {
   if [[ $# -eq 0 ]]; then
     echo "Error: 'nohup' requires at least one argument."

@@ -4,3 +4,7 @@ plugins=(git deno thefuck adb z docker docker-compose docker-machine emoji encod
 eval $(thefuck --alias)
 source $ZSH/oh-my-zsh.sh
 neofetch
+
+autoload -U +X compinit && compinit -i
+autoload -U +X bashcompinit && bashcompinit -i
+complete -o nospace -F /usr/bin/aliyun aliyun

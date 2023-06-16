@@ -8,3 +8,5 @@ fi
 
 test -t 0 && mesg n 2> /dev/null || true
 . "$HOME/.cargo/env"
+
+complete -C /usr/bin/aliyun aliyun
