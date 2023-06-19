@@ -1,3 +1,22 @@
+: 1685690246:0;usermod -d /home/root -m root
+: 1685690302:0;cld
+: 1685690317:0;cp /root /home
+: 1685690320:0;cp /root /home -r
+: 1685690560:0;rm -rf /root
+: 1685690577:0;usermod -d /home/ming ming
+: 1685690584:0;mv ming /home
+: 1685690588:0;cd /home
+: 1685690592:0;cd root/
+: 1685690665:0;unlink .idea .java .local
+: 1685690716:0;sh .config/install.sh
+: 1685696615:0;brotli
+: 1685696757:0;cd .config/broot/
+: 1685696762:0;cd launcher/
+: 1685696818:0;source .config/broot/launcher/bash/br
+: 1685696840:0;nvim br
+: 1685696844:0;rm br
+: 1685696858:0;paru broot
+: 1685696866:0;cd .config/broot/launcher/
 : 1685696868:0;cd bash/
 : 1685696952:0;rm -rf .config/broot
 : 1685696969:0;broot
@@ -437,7 +456,6 @@ We trust you have received the usual lecture from th
 : 1685857646:0;nvim cron.conf
 : 1685857662:0;crontab cron.conf
 : 1685857669:0;mv cron.conf cron
-: 1685858619:0;journalctl -f -u crontab
 : 1685858629:0;crond
 : 1685858638:0;crontab -x
 : 1685858674:0;smb
@@ -937,7 +955,6 @@ chmod 640 /etc/msmtprc
 : 1686025090:0;cat /etc/samba/smb.conf
 : 1686027130:0;lvdisplay -a
 : 1686027382:0;z lgo
-: 1686027384:0;z log
 : 1686027402:0;cd gn
 : 1686027416:0;cd samba/
 : 1686027448:0;cd 569e29cfb2c94f029403705e68bd6844/
@@ -1392,7 +1409,6 @@ chmod 640 /etc/msmtprc
 : 1686203651:0;journalctl
 : 1686203662:0;journalctl status
 : 1686203734:0;systemctl restart systemd--journald
-: 1686203740:0;systemctl restart systemd-journald
 : 1686203785:0;rm -rf kube
 : 1686203792:0;rm -rf .kube
 : 1686203803:0;cd ming/
@@ -1409,7 +1425,6 @@ chmod 640 /etc/msmtprc
 : 1686203989:0;cd journal/
 : 1686203995:0;ncdu .
 : 1686204007:0;nvim /etc/systemd/journald.conf
-: 1686204035:0;tldr journalctl
 : 1686204260:0;npm list
 : 1686204288:0;npm uninstall -g n
 : 1686204294:0;npm uni n
@@ -1650,7 +1665,6 @@ chmod 640 /etc/msmtprc
 : 1686283988:0;journalctl -f -u nginx -g 124.90.197.203**TCP
 : 1686284263:0;nvim /etc/nginx/nginx.conf
 : 1686284363:0;journalctl --vacuum-time=1d
-: 1686284367:0;journalctl --vacuum-time=2d
 : 1686288277:0;paru -Syu
 : 1686288375:0;paru -Rs deno
 : 1686288384:0;paru
@@ -1668,7 +1682,6 @@ chmod 640 /etc/msmtprc
 : 1686536300:0;z nginx
 : 1686536311:0;rm -rf nginx-1.25.0
 : 1686536317:0;cd /var/log
-: 1686536324:0;journalctl -u nginx
 : 1686536362:0;ncud
 : 1686536364:0;ncdu
 : 1686536408:0;paru -Rs yarn
@@ -1694,7 +1707,6 @@ chmod 640 /etc/msmtprc
 : 1686650832:0;rm -rf snapshot
 : 1686651041:0;cd vault/
 : 1686651428:0;sqlite3 db.sqlite3
-: 1686710309:0;vi /etc/systemd/journald.conf
 : 1686710324:0;ping google.com -n 2
 : 1686710336:0;ping google.com
 : 1686710355:0;ping twitter.com
@@ -1739,7 +1751,6 @@ chmod 640 /etc/msmtprc
 : 1686720287:0;less trojan-linux-amd64_20230614_1249.log
 : 1686720528:0;killall ssh
 : 1686720533:0;killall sshd
-: 1686720540:0;w
 : 1686720576:0;killall zsh
 : 1686724607:0;git clone git@github.com:mingwiki/cv.git
 : 1686724627:0;rm keqing.png
@@ -1793,7 +1804,6 @@ chmod 640 /etc/msmtprc
 : 1686760684:0;pm2 save
 : 1686760693:0;rm trojan-linux-amd64_20230614_1249.log
 : 1686760818:0;hup ./trojan-linux-amd64 web
-: 1686760830:0;df -hT
 : 1686761874:0;systemctl restart docker
 : 1686761880:0;docker info
 : 1686761881:0;docker ps
@@ -1878,7 +1888,6 @@ chmod 640 /etc/msmtprc
 : 1686798851:0;systemctl status trojan-web.service
 : 1686798870:0;systemctl status trojan trojan-web
 : 1686798881:0;systemctl enable trojan-web
-: 1686798890:0;vi /etc/nginx/nginx.conf
 : 1686799065:0;systemctl list-units
 : 1686799079:0;systemctl list-unit-files
 : 1686799150:0;systemctl disable pm2-root
@@ -1901,8 +1910,6 @@ chmod 640 /etc/msmtprc
 : 1686799873:0;journalctl -f -u op_support.service
 : 1686799884:0;z /etc/nginx
 : 1686799910:0;rm ngx_stream_module.so
-: 1686799913:0;nginx -t
-: 1686799928:0;systemctl restart nginx
 : 1686799930:0;systemctl status nginx
 : 1686799940:0;vi nginx.conf
 : 1686799974:0;ps auxww | rg trojan
@@ -2012,3 +2019,66 @@ chmod 640 /etc/msmtprc
 : 1687252861:0;ls
 : 1687252866:0;cd .config/
 : 1687252867:0;lg
+: 1686905178:0;cd .config/
+: 1686905179:0;lg
+: 1686905207:0;crontab -e
+: 1686905230:0;journalctl -f -u crontab
+: 1686905239:0;z log
+: 1686905244:0;cd
+: 1687140636:0;w
+: 1687149300:0;journalctl -h
+: 1687149305:0;tldr journalctl
+: 1687149313:0;df -hT
+: 1687149343:0;GL
+: 1687149354:0;vi /etc/systemd/journald.conf
+: 1687149381:0;systemctl restart systemd-journald
+: 1687149387:0;journalctl --vacuum-time=2d
+: 1687153434:0;l
+: 1687153554:0;journalctl -u ng
+: 1687153563:0;journalctl -u nginx | less
+: 1687153585:0;journalctl -u nginx | rg TCP | less
+: 1687153673:0;ls
+: 1687153684:0;journalctl -u nginx | rg TCP | rg TLS | less
+: 1687154101:0;neofetch
+: 1687154103:0;cl
+: 1687154141:0;journalctl --vacuum-time=0 -u nginx
+: 1687154170:0;journalctl -u nginx --vacuum-time=0
+: 1687154230:0;journalctl --vacuum-time=0
+: 1687154238:0;journalctl -u nginx --vacuum-time=0s
+: 1687154248:0;journalctl --vacuum-time=0s
+: 1687154275:0;journalctl -u nginx --vacuum-size=0
+: 1687154283:0;journalctl --vacuum-size=0
+: 1687154291:0;journalctl -u nginx --vacuum-size=0s
+: 1687154300:0;journalctl -u nginx --vacuum-size=0m
+: 1687154307:0;journalctl -u nginx --vacuum-size=0K
+: 1687154316:0;journalctl -u nginx --vacuum-size=0k
+: 1687154352:0;ournalctl --vacuum-time=1s
+: 1687156370:0;vi /etc/nginx/nginx.conf
+: 1687156398:0;nginx -t
+: 1687156399:0;systemctl restart nginx
+: 1687156429:0;ss
+: 1687156439:0;ss -x
+: 1687156443:0;ss -X
+: 1687156447:0;ss -u
+: 1687156448:0;ss -t
+: 1687156548:0;tldr ss
+: 1687156561:0;ss -tl
+: 1687156650:0;journalctl --rotate
+: 1687156652:0;journalctl --vacuum-time=1s
+: 1687156656:0;journalctl -u nginx | rg TCP | rg -v TLSv1.3 | less
+: 1687156661:0;journalctl -u nginx
+: 1687158156:0;journalctl -u nginx -f
+: 1687158338:0;gl
+: 1687158357:0;exit
+: 1687163722:0;cl
+: 1687163726:0;journalctl -u nginx
+: 1687163814:0;journalctl -u nginx | rg TCP
+: 1687163818:0;journalctl -u nginx | rg TCP | less
+: 1687163835:0;journalctl -u nginx | rg TCP | rg -v TLSv1.3 | less
+: 1687163870:0;cl
+: 1687163875:0;neofetch
+: 1687163879:0;cl
+: 1687163881:0;neofetch
+: 1687163887:0;cl
+: 1687163890:0;z .config
+: 1687163893:0;lg
