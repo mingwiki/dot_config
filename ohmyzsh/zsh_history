@@ -1,51 +1,3 @@
-: 1685098090:0;systemctl enable sg
-: 1685098095:0;systemctl start sg
-: 1685098116:0;git clone https://github.com/Jrohy/trojan-web.git
-: 1685098119:0;cd trojan-web/
-: 1685098152:0;nvim vite.config.js
-: 1685098240:0;cp /git/toolkits/pm2.json .
-: 1685098263:0;pm2 log trojan
-: 1685098287:0;pm2 del pm2.json
-: 1685098301:0;mv trojan-web /git
-: 1685098430:0;cd /git/trojan-web/
-: 1685098459:0;cd trojan-web/dist/
-: 1685098463:0;cd static/
-: 1685098605:0;mv trojan-web trojan
-: 1685099356:0;nvim /etc/trojan/config.json
-: 1685099464:0;cat /etc/trojan/config.json >> /usr/local/etc/trojan/config.json
-: 1685099465:0;nvim /usr/local/etc/trojan/config.json
-: 1685099523:0;systemctl disable sg
-: 1685099527:0;systemctl stop sg
-: 1685099536:0;systemctl restart trojan
-: 1685328111:0;less 20230529.log
-: 1685345644:0;kill 729117
-: 1685347555:0;ps aux | grep trojan
-: 1685351263:0;nvim ls
-: 1685351286:0;nvim .pm2
-: 1685410878:0;pcac
-: 1685411138:0;systemctl restart mariadb
-: 1685411149:0;systemctl status mariadb
-: 1685411190:0;pm2 damone
-: 1685690195:0;systemctl status sg trojan
-: 1685690246:0;usermod -d /home/root -m root
-: 1685690302:0;cld
-: 1685690317:0;cp /root /home
-: 1685690320:0;cp /root /home -r
-: 1685690560:0;rm -rf /root
-: 1685690577:0;usermod -d /home/ming ming
-: 1685690584:0;mv ming /home
-: 1685690588:0;cd /home
-: 1685690592:0;cd root/
-: 1685690665:0;unlink .idea .java .local
-: 1685690716:0;sh .config/install.sh
-: 1685696615:0;brotli
-: 1685696757:0;cd .config/broot/
-: 1685696762:0;cd launcher/
-: 1685696818:0;source .config/broot/launcher/bash/br
-: 1685696840:0;nvim br
-: 1685696844:0;rm br
-: 1685696858:0;paru broot
-: 1685696866:0;cd .config/broot/launcher/
 : 1685696868:0;cd bash/
 : 1685696952:0;rm -rf .config/broot
 : 1685696969:0;broot
@@ -182,9 +134,6 @@
 : 1685777367:0;git push origin master -f
 : 1685777373:0;git push -f
 : 1685777377:0;git push -f origin master
-: 1685808209:0;rm install.sh
-: 1685808215:0;rm .zshrc
-: 1685808219:0;mv .zshrc.pre-oh-my-zsh .zshrc
 : 1685808293:0;pacman -S lazygit
 : 1685808311:0;cd .oh-my-zsh/
 : 1685808318:0;git remote show origin
@@ -1241,7 +1190,6 @@ chmod 640 /etc/msmtprc
 : 1686135242:0;nvim lazynvim.lua
 : 1686135336:0;cd .config/lua
 : 1686135351:0;nvim plugins.lua
-: 1686135498:0;sl
 : 1686135551:0;lx
 : 1686135602:0;git clone https://github.com/LazyVim/starter ~/.config/nvim
 : 1686135896:0;nvim .config/ohmyzsh/alias.zsh
@@ -1322,7 +1270,6 @@ chmod 640 /etc/msmtprc
 : 1686149205:0;vi lua
 : 1686136110:0;nvimin
 : 1686136113:0;nvim install.sh
-: 1686188256:0;nvim
 : 1686189492:0;paru 7zip
 : 1686189526:0;7z i
 : 1686189544:0;tldr 7z
@@ -1338,9 +1285,6 @@ chmod 640 /etc/msmtprc
 : 1686190272:0;sysbench cpu run
 : 1686190318:0;tldr sysbench
 : 1686190606:0;sudo -u nobody paru hardinfo
-: 1686190714:0;sp
-: 1686190727:0;unsp
-: 1686190738:0;proxychains4
 : 1686190744:0;paru proxychains
 : 1686190818:0;sudo -u ming paru hardinfo
 : 1686190858:0;paru -Rs hardinfo
@@ -1437,7 +1381,6 @@ chmod 640 /etc/msmtprc
 : 1686197081:0;nvim docker-compose.yml
 : 1686197138:0;uptime
 : 1686201813:0;ps auxww
-: 1686201840:0;cd .config/
 : 1686201861:0;crontab -e
 : 1686202735:0;nginx -v
 : 1686203416:0;cndu
@@ -1542,7 +1485,6 @@ chmod 640 /etc/msmtprc
 : 1686207015:0;yarn
 : 1686207017:0;pnpm
 : 1686207024:0;paru npm
-: 1686207041:0;lazygit
 : 1686207368:0;rm -rf pnpm-lock.yaml node_modules
 : 1686207688:0;cd /git
 : 1686207695:0;nvim pm2.json
@@ -1553,7 +1495,6 @@ chmod 640 /etc/msmtprc
 : 1686208031:0;nvim toolkits
 : 1686214803:0;ps aux
 : 1686215519:0;cat /proc/mdstat
-: 1686216291:0;la
 : 1686216315:0;less 20230608.log
 : 1686216968:0;nginx 0t
 : 1686216988:0;chown http:http -R access.log
@@ -1653,7 +1594,6 @@ chmod 640 /etc/msmtprc
 : 1686276783:0;which nginx
 : 1686276788:0;cd /usr/
 : 1686276791:0;cd lib/ls
-: 1686276793:0;cd lib/
 : 1686276795:0;ll
 : 1686276801:0;lcd
 : 1686276810:0;cd src
@@ -1732,7 +1672,6 @@ chmod 640 /etc/msmtprc
 : 1686536362:0;ncud
 : 1686536364:0;ncdu
 : 1686536408:0;paru -Rs yarn
-: 1686536414:0;cd /usr/local/share/
 : 1686536420:0;rm -rf .yarnrc
 : 1686536422:0;cd .cache/
 : 1686536426:0;rm -rf .cache
@@ -1742,7 +1681,6 @@ chmod 640 /etc/msmtprc
 : 1686645258:0;helix
 : 1686645260:0;h
 : 1686645264:0;he
-: 1686645273:0;vi .config/ohmyzsh/alias.zsh
 : 1686645295:0;sz
 : 1686645564:0;cd snapshot/
 : 1686645568:0;cd..
@@ -1753,10 +1691,8 @@ chmod 640 /etc/msmtprc
 : 1686650810:0;cd freshrss/
 : 1686650813:0;cd data/
 : 1686650819:0;cd extensions/
-: 1686650826:0;cd go/
 : 1686650832:0;rm -rf snapshot
 : 1686651041:0;cd vault/
-: 1686651045:0;pwd
 : 1686651428:0;sqlite3 db.sqlite3
 : 1686710309:0;vi /etc/systemd/journald.conf
 : 1686710324:0;ping google.com -n 2
@@ -1919,7 +1855,6 @@ chmod 640 /etc/msmtprc
 : 1686798334:0;z git
 : 1686798338:0;cd chatbot-ui/
 : 1686798346:0;cd toolkits/
-: 1686798348:0;lg
 : 1686798377:0;vi chatbot-ui.service
 : 1686798383:0;vi op_support.service
 : 1686798455:0;cd /
@@ -1961,7 +1896,6 @@ chmod 640 /etc/msmtprc
 : 1686799626:0;vi trojan.service
 : 1686799633:0;rm -rf /etc/trojan
 : 1686799646:0;cd user/
-: 1686799648:0;..
 : 1686799795:0;systemctl status trojan trojan-web chatbot-ui op_support
 : 1686799868:0;journalctl -f -u chatbot-ui.service
 : 1686799873:0;journalctl -f -u op_support.service
@@ -1984,10 +1918,8 @@ chmod 640 /etc/msmtprc
 : 1686820158:0;grub
 : 1686820162:0;grub-mkconfi
 : 1686820163:0;grub-mkconfig
-: 1686820167:0;l
 : 1686820170:0;cd /boot/
 : 1686820174:0;cd grub/
-: 1686820176:0;cd
 : 1686820195:0;reflector -h
 : 1686820207:0;reflector -c sg -f 2
 : 1686820221:0;reflector -c sg -f 2 > /etc/pacman.d/mirrorlist
@@ -1996,15 +1928,87 @@ chmod 640 /etc/msmtprc
 : 1686820328:0;paru -Rs linux
 : 1686820334:0;ls -lsha /boot
 : 1686820341:0;grub-mkconfig -o /boot/grub/grub.cfg
-: 1686820352:0;ls
 : 1686820357:0;reboot
 : 1686820470:0;uname -r
 : 1686820472:0;uname -a
 : 1686820501:0;systemctl restart trojan docker
 : 1686820509:0;timedatectl
 : 1686820526:0;gl
-: 1686820529:0;cl
 : 1686820531:0;neofetch
-: 1686820538:0;exit
-: 1686905178:0;cd .config/
-: 1686905179:0;lg
+: 1687250459:0;rm .zshrc
+: 1687250463:0;mv .zshrc.pre-oh-my-zsh .zshrc
+: 1687250487:0;rm install.sh
+: 1687250492:0;la
+: 1687250503:0;py -m venv .
+: 1687250537:0;py launch.py
+: 1687250903:0;rm /usr/bin/py
+: 1687250917:0;apt install python3
+: 1687251034:0;which nvim
+: 1687251047:0;apt uninstall neovim
+: 1687251058:0;apt remove neovim
+: 1687251063:0;nvim
+: 1687251078:0;sl
+: 1687251079:0;l
+: 1687251089:0;source bin/activate
+: 1687251091:0;sd
+: 1687251185:0;which python3
+: 1687251201:0;cd /usr/local/share/
+: 1687251209:0;cd lib/
+: 1687251211:0;cd python3.10/
+: 1687251213:0;cd dist-packages/
+: 1687251224:0;cd stable-diffusion-webui/
+: 1687251408:0;python3 launch.py
+: 1687251448:0;install https://github.com/TencentARC/GFPGAN/archive/8d2447a2d918f8eba5a4a01463fd48e45126a379.zip --prefer-binary
+: 1687251450:0;pip install https://github.com/TencentARC/GFPGAN/archive/8d2447a2d918f8eba5a4a01463fd48e45126a379.zip --prefer-binary
+: 1687251460:0;proxychains
+: 1687251462:0;proxychains4
+: 1687251465:0;proxychains pip install https://github.com/TencentARC/GFPGAN/archive/8d2447a2d918f8eba5a4a01463fd48e45126a379.zip --prefer-binary
+: 1687251539:0;apt install helix
+: 1687251542:0;apt install hellix
+: 1687251563:0;apt install lazygit
+: 1687251573:0;apt search lazygit
+: 1687251612:0;apt install ripgrep-all
+: 1687251646:0;apt install ripgrep pandoc poppler-utils ffmpeg
+: 1687251652:0;rga
+: 1687251684:0;wget https://github.com/phiresky/ripgrep-all/releases/download/v1.0.0-alpha.5/ripgrep_all-v1.0.0-alpha.5-x86_64-unknown-linux-musl.tar.gz
+: 1687251698:0;cl
+: 1687251706:0;pc wget https://github.com/phiresky/ripgrep-all/releases/download/v1.0.0-alpha.5/ripgrep_all-v1.0.0-alpha.5-x86_64-unknown-linux-musl.tar.gz
+: 1687251716:0;mv ripgrep_all-v1.0.0-alpha.5-x86_64-unknown-linux-musl.tar.gz ~
+: 1687251724:0;tar zxf ripgrep_all-v1.0.0-alpha.5-x86_64-unknown-linux-musl.tar.gz
+: 1687251728:0;cd ripgrep_all-v1.0.0-alpha.5-x86_64-unknown-linux-musl/
+: 1687251736:0;mv rga* /usr/bin
+: 1687251742:0;rm -rf ripgrep_all-v1.0.0-alpha.5-x86_64-unknown-linux-musl*
+: 1687251750:0;LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep -Po '"tag_name": "v\K[^"]*')
+: 1687251761:0;apt install pcre
+: 1687251766:0;apt update
+: 1687251771:0;apt install pcre2
+: 1687251784:0;pip install lazygit
+: 1687252466:0;pip uninstall lazygit
+: 1687252482:0;apt install go
+: 1687252485:0;apt install golang
+: 1687252496:0;sp
+: 1687252584:0;vi /etc/proxychains.conf
+: 1687252601:0;pc go install github.com/jesseduffield/lazygit@latest
+: 1687252640:0;vi .config/ohmyzsh/alias.zsh
+: 1687252646:0;wsp
+: 1687252654:0;unsp
+: 1687252733:0;go env -w GO111MODULE=on
+: 1687252776:0;cd .config/
+: 1687252776:0;lg
+: 1687252779:0;..
+: 1687252794:0;/usr/bin/lazygit
+: 1687252796:0;lazygit
+: 1687252807:0;go install github.com/jesseduffield/lazygit@latest
+: 1687252813:0;cd go/
+: 1687252815:0;cd bin/
+: 1687252815:0;ls
+: 1687252818:0;pwd
+: 1687252824:0;cd
+: 1687252826:0;vi .config/ohmyzsh/export.zsh
+: 1687252843:0;exit
+: 1687252847:0;cd
+: 1687252852:0;apt install nvm fzf
+: 1687252858:0;apt install fzf
+: 1687252861:0;ls
+: 1687252866:0;cd .config/
+: 1687252867:0;lg

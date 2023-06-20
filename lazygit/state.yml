@@ -1,8 +1,6 @@
 lastupdatecheck: 0
 recentrepos:
-- /home/root/.config
-- /git/toolkits
-- /git/chatbot-ui
+- /root/.config
 startuppopupversion: 5
 customcommandshistory:
 - q

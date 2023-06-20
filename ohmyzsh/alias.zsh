@@ -1,4 +1,5 @@
 alias sp='export {http,https,ftp,rsync,all}_proxy=socks5h://127.0.0.1:20000; export {HTTP,HTTPS,FTP,RSYNC,ALL}_PROXY=socks5h://127.0.0.1:20000'
+alias wsp='export {http,https,ftp,rsync,all}_proxy=socks5h://10.10.10.110:20000; export {HTTP,HTTPS,FTP,RSYNC,ALL}_PROXY=socks5h://10.10.10.110:20000'
 alias unsp='unset {http,https,ftp,rsync,all}_proxy; unset {HTTP,HTTPS,FTP,RSYNC,ALL}_PROXY'
 alias cl='clear'
 alias gl='glances'
@@ -9,13 +10,13 @@ alias bili='bilibili_cookie_batch'
 alias ytn='ls */**/playlist.txt| xargs -n1| node yt.js &'
 alias wt='watch tail -n 20'
 alias setPip='pip config set global.index-url https://mirrors.ustc.edu.cn/pypi/web/simple'
-alias sd='python3 launch.py --ckpt-dir=/mnt/r1/ckpt --lora-dir=/mnt/r1/lora --xformers --listen --enable-insecure-extension-access --port=8888'
+alias sd='python3 launch.py --xformers --listen --enable-insecure-extension-access --port=8888'
 alias rg='rga'
 alias grep='rga'
-alias pc='proxychains4'
+alias pc='proxychains'
+alias pc4='proxychains4'
 alias lg='lazygit'
 alias vi='nvim'
-alias he='helix'
 hup() {
   if [[ $# -eq 0 ]]; then
     echo "Error: 'nohup' requires at least one argument."

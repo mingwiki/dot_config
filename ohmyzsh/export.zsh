@@ -1,4 +1,4 @@
-export PATH=$DENO_INSTALL/bin:$HOME/bin:$HOME/.cargo/bin:/usr/local/bin:$HOME/.config/nvim-linux64/bin:/usr/local/go/bin:$PATH
+export PATH=$DENO_INSTALL/bin:$HOME/bin:$HOME/go/bin:$HOME/.cargo/bin:/usr/local/bin:$HOME/.config/nvim-linux64/bin:/usr/local/go/bin:$PATH
 export NVM_DIR="$HOME/.nvm"
 export NODEJS_ORG_MIRROR=https://npmmirror.com/mirrors/node/
 export NODIST_NODE_MIRROR=https://npmmirror.com/mirrors/node/
@@ -20,3 +20,4 @@ export DENO_INSTALL="$HOME/.deno"
 export VIM=$HOME/.config/nvim-linux64/share/nvim/runtime
 export EDITOR=nvim
 export GO111MODULE=on
+export GOPROXY="https://goproxy.cn"
