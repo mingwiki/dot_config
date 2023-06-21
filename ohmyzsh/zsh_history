@@ -1,43 +1,3 @@
-: 1685690246:0;usermod -d /home/root -m root
-: 1685690302:0;cld
-: 1685690317:0;cp /root /home
-: 1685690320:0;cp /root /home -r
-: 1685690560:0;rm -rf /root
-: 1685690577:0;usermod -d /home/ming ming
-: 1685690584:0;mv ming /home
-: 1685690588:0;cd /home
-: 1685690592:0;cd root/
-: 1685690665:0;unlink .idea .java .local
-: 1685690716:0;sh .config/install.sh
-: 1685696615:0;brotli
-: 1685696757:0;cd .config/broot/
-: 1685696762:0;cd launcher/
-: 1685696818:0;source .config/broot/launcher/bash/br
-: 1685696840:0;nvim br
-: 1685696844:0;rm br
-: 1685696858:0;paru broot
-: 1685696866:0;cd .config/broot/launcher/
-: 1685696868:0;cd bash/
-: 1685696952:0;rm -rf .config/broot
-: 1685696969:0;broot
-: 1685697094:0;nvim grub.cfg
-: 1685697104:0;c
-: 1685697292:0;br
-: 1685697298:0;b
-: 1685697394:0;pm2 log op
-: 1685697426:0;systemctl restart pm2-root.service
-: 1685697468:0;kill 10077
-: 1685697477:0;kill 10477
-: 1685697506:0;killall pm2
-: 1685697511:0;kill 9204
-: 1685697613:0;pm2 startup
-: 1685697627:0;systemctl status pm2
-: 1685697629:0;systemctl status pm2-root.service
-: 1685697634:0;ps aux | grep pm2
-: 1685697642:0;ps aux | rg pm2
-: 1685708460:0;kill 11143
-: 1685708462:0;ps aux | rg glances
-: 1685712750:0;curl -Lso bitwarden.sh "https://func.bitwarden.com/api/dl/?app=self-host&platform=linux" && chmod 700 bitwarden.sh
 : 1685712793:0;nvim bitwarden.sh
 : 1685712810:0;docker-compose
 : 1685712829:0;sh bitwarden.sh
@@ -103,7 +63,6 @@
 : 1685723520:0;netstat -tunl
 : 1685723526:0;netstat -tunp
 : 1685723805:0;clera
-: 1685723806:0;clear
 : 1685776285:0;git rm --cached
 : 1685776289:0;git rm --cached .
 : 1685776293:0;git rm --cached -r
@@ -637,7 +596,6 @@ cron-hourly.timer cron-monthly.timer cron-root-root-1.timer cron-weekly.timer
 : 1685952511:0;mv compose ~
 : 1685953055:0;cd kavita
 : 1685953070:0;mv kavita ..
-: 1685953443:0;paru -Rs nginx-mainline
 : 1685953649:0;rm cron.conf
 : 1685953708:0;mkdir /etc/docker
 : 1685953709:0;cp daemon.json /etc/docker/
@@ -802,7 +760,6 @@ cron-hourly.timer cron-monthly.timer cron-root-root-1.timer cron-weekly.timer
 : 1685986144:0;pip3
 : 1685986148:0;paru pip3
 : 1685986161:0;python3 -m pip3
-: 1685986184:0;paru python3-pip
 : 1685986199:0;paru pip
 : 1685986206:0;paru pip | less
 : 1685986221:0;python3 -m pip
@@ -823,9 +780,7 @@ cron-hourly.timer cron-monthly.timer cron-root-root-1.timer cron-weekly.timer
 : 1685986482:0;systemctl start mdmonitor
 : 1685986511:0;mdadm --monitor --scan --oneshot --mail mail@naizi.fun
 : 1685986522:0;mdadm --monitor --scan --test -1
-: 1685986646:0;paru dnslookup
 : 1685986651:0;su ming
-: 1685986899:0;sudo -u ming paru dnslookup
 : 1685986971:0;wget https://github.com/ameshkov/dnslookup/releases/download/v1.9.1/dnslookup-linux-amd64-v1.9.1.tar.gz
 : 1685986978:0;curl -OL https://github.com/ameshkov/dnslookup/releases/download/v1.9.1/dnslookup-linux-amd64-v1.9.1.tar.gz
 : 1685986997:0;tar zxf dnslookup-linux-amd64-v1.9.1.tar.gz
@@ -834,7 +789,6 @@ cron-hourly.timer cron-monthly.timer cron-root-root-1.timer cron-weekly.timer
 : 1685987021:0;rm -rf linux-amd64 dnslookup-linux-amd64-v1.9.1.tar.gz
 : 1685987025:0;dnslookup
 : 1685987028:0;dnslookup qq.com
-: 1685987041:0;dnslookup qq.com 127.0.0.1
 : 1685987051:0;paru nslookup
 : 1685987093:0;pacman -S dnsutils
 : 1685987101:0;nslookup www.4fm.top
@@ -994,7 +948,6 @@ chmod 640 /etc/msmtprc
 : 1686030667:0;rm syncthing.conf
 : 1686030719:0;ufw delete 14
 : 1686030733:0;ufw delete 24
-: 1686030738:0;ufw status numbered
 : 1686030770:0;ufw delete 10
 : 1686032130:0;cd /home/
 : 1686036411:0;nginx
@@ -1033,7 +986,6 @@ chmod 640 /etc/msmtprc
 : 1686116300:0;rm ÊÉÆ•ÂÉØ£ÊÉ∂ÉßÊÉÅ£20221027.html
 : 1686116504:0;lsblk -af
 : 1686116532:0;ldif
-: 1686116665:0;eixt
 : 1685777464:0;git commit -a
 : 1685777474:0;git push origin master
 : 1685777799:0;docker ls
@@ -1072,7 +1024,6 @@ chmod 640 /etc/msmtprc
 : 1686118263:0;ufw allow 21119
 : 1686118306:0;cd rustdesk/
 : 1686118310:0;cat id_ed25519.pub
-: 1686123625:0;htop
 : 1686123674:0;journalctl -f
 : 1686128260:0;q
 : 1686128265:0;cd /home/data/
@@ -1419,9 +1370,7 @@ chmod 640 /etc/msmtprc
 : 1686203902:0;mv 202305*.log 202305
 : 1686203920:0;chown http:http -R 202305
 : 1686203933:0;chown http:http -R error.log
-: 1686203944:0;less pacman.log
 : 1686203976:0;cd private/
-: 1686203983:0;less lastlog
 : 1686203989:0;cd journal/
 : 1686203995:0;ncdu .
 : 1686204007:0;nvim /etc/systemd/journald.conf
@@ -1493,7 +1442,6 @@ chmod 640 /etc/msmtprc
 : 1686206816:0;paru pnpm yarn
 : 1686206823:0;paru -Rs pnpm yarn
 : 1686206826:0;paru -Rs pnpm
-: 1686206835:0;cd .local/
 : 1686206848:0;cd state/
 : 1686206854:0;rm -rf pnpm
 : 1686207013:0;npm
@@ -1590,7 +1538,6 @@ chmod 640 /etc/msmtprc
 : 1686232562:0;cat /dev/log
 : 1686232575:0;nvim /dev/log
 : 1686232616:0;jq
-: 1686233029:0;ip addr
 : 1686234073:0;sy
 : 1686234710:0;cat /etc/nginx/nginx.conf
 : 1686234900:0;:q
@@ -1667,7 +1614,6 @@ chmod 640 /etc/msmtprc
 : 1686284363:0;journalctl --vacuum-time=1d
 : 1686288277:0;paru -Syu
 : 1686288375:0;paru -Rs deno
-: 1686288384:0;paru
 : 1686288640:0;paru -Rs hwdata
 : 1686288921:0;s
 : 1686290696:0;nvim ss.ts
@@ -1681,7 +1627,6 @@ chmod 640 /etc/msmtprc
 : 1686490729:0;ping naizi.fun
 : 1686536300:0;z nginx
 : 1686536311:0;rm -rf nginx-1.25.0
-: 1686536317:0;cd /var/log
 : 1686536362:0;ncud
 : 1686536364:0;ncdu
 : 1686536408:0;paru -Rs yarn
@@ -1711,14 +1656,10 @@ chmod 640 /etc/msmtprc
 : 1686710336:0;ping google.com
 : 1686710355:0;ping twitter.com
 : 1686710366:0;nali
-: 1686710375:0;ping google.com | nali
 : 1686710387:0;ping google.sg
 : 1686710425:0;paru dnsutils
-: 1686710451:0;vi /etc/dns-over-https/doh-client.conf
 : 1686710504:0;systemctl restart doh--client.service
-: 1686710509:0;systemctl restart doh-client.service
 : 1686710524:0;nslookup google.com | nali
-: 1686710531:0;ping google.sg |nali
 : 1686710569:0;cd /git/
 : 1686710573:0;code op_support
 : 1686710582:0;code toolkits
@@ -1805,7 +1746,6 @@ chmod 640 /etc/msmtprc
 : 1686760693:0;rm trojan-linux-amd64_20230614_1249.log
 : 1686760818:0;hup ./trojan-linux-amd64 web
 : 1686761874:0;systemctl restart docker
-: 1686761880:0;docker info
 : 1686761881:0;docker ps
 : 1686795288:0;./trojan-linux-amd64
 : 1686796219:0;vi start.json
@@ -1813,9 +1753,6 @@ chmod 640 /etc/msmtprc
 : 1686796228:0;rm dev.json
 : 1686796232:0;rm npx_20230614_1505.log
 : 1686796247:0;rm *.log
-: 1686796284:0;users
-: 1686796298:0;groups
-: 1686796313:0;cat /etc/passwd
 : 1686796364:0;chown -R nobody:nobody git
 : 1686796380:0;cd l
 : 1686796401:0;mv toolkits.service ..
@@ -1855,14 +1792,12 @@ chmod 640 /etc/msmtprc
 : 1686797994:0;npm uni -g pm2
 : 1686798006:0;systemctl disable pm2-root.service
 : 1686798035:0;systemctl enable op_support chatbot-ui
-: 1686798098:0;pm2 ls
 : 1686798108:0;systemctl stop op_support.service chatbot-ui.service
 : 1686798117:0;ps auxww | rg npm
 : 1686798120:0;ps auxww | rg node
 : 1686798145:0;systemctl stop pm2-root.service
 : 1686798170:0;systemctl start chatbot-ui.service op_support.service
 : 1686798173:0;systemctl status op_support.service chatbot-ui.service
-: 1686798334:0;z git
 : 1686798338:0;cd chatbot-ui/
 : 1686798346:0;cd toolkits/
 : 1686798377:0;vi chatbot-ui.service
@@ -1892,7 +1827,6 @@ chmod 640 /etc/msmtprc
 : 1686799079:0;systemctl list-unit-files
 : 1686799150:0;systemctl disable pm2-root
 : 1686799180:0;systemctl unmask pm2-root
-: 1686799195:0;pm2
 : 1686799230:0;systemctl clean
 : 1686799236:0;systemctl clean pm2-root
 : 1686799545:0;cd /etc/systemd
@@ -1914,7 +1848,6 @@ chmod 640 /etc/msmtprc
 : 1686799940:0;vi nginx.conf
 : 1686799974:0;ps auxww | rg trojan
 : 1686799979:0;ps auxww | rg nginx
-: 1686799990:0;netstat -tunlp
 : 1686800028:0;iptables -P FORWARD ACCEPT
 : 1686800030:0;iptables -L
 : 1686800122:0;systemctl daemon-reload
@@ -2020,27 +1953,17 @@ chmod 640 /etc/msmtprc
 : 1687252866:0;cd .config/
 : 1687252867:0;lg
 : 1686905178:0;cd .config/
-: 1686905179:0;lg
-: 1686905207:0;crontab -e
 : 1686905230:0;journalctl -f -u crontab
 : 1686905239:0;z log
-: 1686905244:0;cd
-: 1687140636:0;w
 : 1687149300:0;journalctl -h
 : 1687149305:0;tldr journalctl
-: 1687149313:0;df -hT
 : 1687149343:0;GL
 : 1687149354:0;vi /etc/systemd/journald.conf
 : 1687149381:0;systemctl restart systemd-journald
 : 1687149387:0;journalctl --vacuum-time=2d
-: 1687153434:0;l
 : 1687153554:0;journalctl -u ng
 : 1687153563:0;journalctl -u nginx | less
-: 1687153585:0;journalctl -u nginx | rg TCP | less
-: 1687153673:0;ls
 : 1687153684:0;journalctl -u nginx | rg TCP | rg TLS | less
-: 1687154101:0;neofetch
-: 1687154103:0;cl
 : 1687154141:0;journalctl --vacuum-time=0 -u nginx
 : 1687154170:0;journalctl -u nginx --vacuum-time=0
 : 1687154230:0;journalctl --vacuum-time=0
@@ -2056,7 +1979,6 @@ chmod 640 /etc/msmtprc
 : 1687156370:0;vi /etc/nginx/nginx.conf
 : 1687156398:0;nginx -t
 : 1687156399:0;systemctl restart nginx
-: 1687156429:0;ss
 : 1687156439:0;ss -x
 : 1687156443:0;ss -X
 : 1687156447:0;ss -u
@@ -2065,20 +1987,94 @@ chmod 640 /etc/msmtprc
 : 1687156561:0;ss -tl
 : 1687156650:0;journalctl --rotate
 : 1687156652:0;journalctl --vacuum-time=1s
-: 1687156656:0;journalctl -u nginx | rg TCP | rg -v TLSv1.3 | less
-: 1687156661:0;journalctl -u nginx
 : 1687158156:0;journalctl -u nginx -f
-: 1687158338:0;gl
-: 1687158357:0;exit
-: 1687163722:0;cl
 : 1687163726:0;journalctl -u nginx
 : 1687163814:0;journalctl -u nginx | rg TCP
 : 1687163818:0;journalctl -u nginx | rg TCP | less
-: 1687163835:0;journalctl -u nginx | rg TCP | rg -v TLSv1.3 | less
-: 1687163870:0;cl
-: 1687163875:0;neofetch
-: 1687163879:0;cl
-: 1687163881:0;neofetch
-: 1687163887:0;cl
 : 1687163890:0;z .config
 : 1687163893:0;lg
+: 1687163918:0;crontab -e
+: 1687163995:0;git --git-dir=~/.config status
+: 1687164005:0;git --git-dir=./.config status
+: 1687164015:0;git --git-dir=~/.config/ status
+: 1687164019:0;git --work-tree=~/.config status
+: 1687164022:0;git --work-tree=~/.config/ status
+: 1687164026:0;git --work-tree=~/.config/.git status
+: 1687164087:0;htop
+: 1687164211:0;journalctl -u doh-server.service -f
+: 1687164290:0;journalctl -u doh-server.service
+: 1687164295:0;clear
+: 1687168395:0;ss
+: 1687168408:0;ip addr
+: 1687168437:0;vi docker-compose.yml
+: 1687168444:0;ufw status numbered
+: 1687168504:0;ping google.sg |nali
+: 1687168514:0;ping google.com | nali
+: 1687168593:0;vi /etc/dns-over-https/doh-client.conf
+: 1687168633:0;systemctl restart doh-client.service
+: 1687168639:0;vi /etc/dns-over-https/doh-server.conf
+: 1687168669:0;systemctl restart doh-server.service
+: 1687168677:0;dnslookup qq.com 127.0.0.1
+: 1687168679:0;nslookup google.com
+: 1687168715:0;paru dnslookup
+: 1687168729:0;sudo -u ming paru dnslookup
+: 1687168793:0;w
+: 1687168818:0;userdel courier postfix
+: 1687168822:0;userdel courier
+: 1687168875:0;userdel bitwarden
+: 1687168915:0;userdel haproxy
+: 1687168918:0;userdel redis
+: 1687168922:0;cat /etc/passwd
+: 1687168935:0;userdel postfix
+: 1687168939:0;userdel postgres
+: 1687168951:0;cat /etc/group
+: 1687168960:0;groupdel postdrop
+: 1687169000:0;users
+: 1687169005:0;groups
+: 1687169011:0;docker info
+: 1687169059:0;journalctl -u nginx | rg TCP | rg -v TLSv1.3 | less
+: 1687169066:0;cd /var/log
+: 1687169073:0;less lastlog
+: 1687169081:0;les pacman.log
+: 1687169089:0;less pacman.log
+: 1687169130:0;pm2 ls
+: 1687169132:0;pm2
+: 1687169138:0;z git
+: 1687170141:0;paru python3-pip
+: 1687170146:0;paru python-pip
+: 1687170385:0;pip install shell-gpt
+: 1687170415:0;sgpt -h
+: 1687170419:0;sgpt --help
+: 1687170440:0;cd .local/
+: 1687170445:0;cd
+: 1687170446:0;sgpt
+: 1687170453:0;sgpt hello
+: 1687170482:0;sgpt test
+: 1687170698:0;sgpt 'test'
+: 1687170750:0;pip uninstall sgpt
+: 1687170767:0;pip uninstall shell_gpt
+: 1687178707:0;neofetch
+: 1687178776:0;paru --Rs nginx
+: 1687178781:0;paru -Rs nginx-mainline
+: 1687178787:0;paru
+: 1687179316:0;eixt
+: 1687242879:0;ls
+: 1687242884:0;netstat -tunlp
+: 1687243299:0;l
+: 1687243418:0;vi /etc/my.cnf
+: 1687243423:0;vi /etc/my.cnf.d
+: 1687243491:0;vi /etc/fstab
+: 1687243510:0;vi /etc/my.cnf.d/server.cnf
+: 1687243536:0;systemctl restart mariadb
+: 1687243597:0;df -hT
+: 1687264213:0;cl
+: 1687264213:0;gl
+: 1687264248:0;exit
+: 1687311612:0;cl
+: 1687311612:0;gl
+: 1687311915:0;cl
+: 1687311918:0;neofetch
+: 1687311921:0;he
+: 1687311931:0;paru -Rs helix
+: 1687311937:0;cd .config/
+: 1687311939:0;lg
