@@ -17,6 +17,7 @@ alias pc='proxychains'
 alias pc4='proxychains4'
 alias lg='lazygit'
 alias vi='nvim'
+alias paru='sudo -u ming paru'
 hup() {
   if [[ $# -eq 0 ]]; then
     echo "Error: 'nohup' requires at least one argument."
