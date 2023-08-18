@@ -2003,3 +2003,5 @@ sudo chmod +x /usr/local/bin/ufw-docker
 : 1692370270:0;lazygit
 : 1692370273:0;ccd
 : 1692370273:0;ls
+: 1692370401:0;paru -Rs lazygit
+: 1692370409:0;vi ohmyzsh/alias.zsh
