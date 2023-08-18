@@ -11,6 +11,7 @@ alias ytn='ls */**/playlist.txt| xargs -n1| node yt.js &'
 alias wt='watch tail -n 20'
 alias setPip='pip config set global.index-url https://mirrors.ustc.edu.cn/pypi/web/simple'
 alias sd='python3 launch.py --xformers --listen --enable-insecure-extension-access --port=8888'
+alias sd='python3 launch.py --ckpt-dir=/home/data/ckpt --lora-dir=/home/data/lora --xformers --listen --enable-insecure-extension-access --port=8888'
 alias rg='rga'
 alias grep='rga'
 alias pc='proxychains'
@@ -33,7 +34,7 @@ youtube_cookie_batch() {
     echo "Error: 'youtube_cookie_batch' missing batch file"
     return 1
   else
-    hup yt-dlp --proxy socks5://10.10.10.10:20000 --verbose --no-check-certificates --cookies /mnt/r10/cookie/youtube.txt --yes-playlist --download-archive archive.txt -o "%(playlist)s/%(title)s.%(ext)s" --batch-file $1
+    hup yt-dlp --proxy socks5://0.0.0.0:20000 --verbose --no-check-certificates --cookies /home/root/cookie/youtube.txt --yes-playlist --download-archive archive.txt -o "%(playlist)s/%(title)s.%(ext)s" --batch-file $1
   fi
 }
 bilibili_cookie_batch() {
@@ -41,6 +42,6 @@ bilibili_cookie_batch() {
     echo "Error: 'bilibili_cookie_batch' missing batch file"
     return 1
   else
-    hup yt-dlp --verbose --no-check-certificates --cookies /mnt/r10/cookie/bilibili.txt --yes-playlist --download-archive archive.txt -o "%(playlist)s/%(title)s.%(ext)s" --batch-file $1
+    hup yt-dlp --verbose --no-check-certificates --cookies /home/root/cookie/bilibili.txt --yes-playlist --download-archive archive.txt -o "%(playlist)s/%(title)s.%(ext)s" --batch-file $1
   fi
 }

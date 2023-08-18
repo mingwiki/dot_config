@@ -9,3 +9,5 @@ editor = nvim
 	prune = true
 [diff]
 	colorMoved = zebra
+[safe]
+	directory = /home/root/.config

@@ -2,6 +2,7 @@ lastupdatecheck: 0
 recentrepos:
     - /home/root/.config
     - /git/op_support
+- /home/root/.config
 startuppopupversion: 5
 customcommandshistory:
     - q

@@ -10,8 +10,6 @@
 -- * override the configuration of LazyVim plugins
 return {
   -- add gruvbox
-  --  { "ellisonleao/gruvbox.nvim" },
-
   {
     'navarasu/onedark.nvim',
     lazy = false,    -- make sure we load this during startup if it is your main colorscheme
@@ -33,6 +31,15 @@ return {
     lazy = true,
   },
 
+  { "nvim-tree/nvim-web-devicons", lazy = true },
+
+  {
+    "jose-elias-alvarez/null-ls.nvim",
+    opts = function(_, opts)
+      local nls = require("null-ls")
+      table.insert(opts.sources, nls.builtins.formatting.prettierd)
+    end,
+  },
   -- Configure LazyVim to load gruvbox
   {
     "LazyVim/LazyVim",
