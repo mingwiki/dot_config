@@ -3,7 +3,9 @@ recentrepos:
     - /home/root/.config
     - /git/op_support
 - /home/root/.config
+- /home/root/aliyun-ddns
 startuppopupversion: 5
 customcommandshistory:
     - q
 hidecommandlog: false
+ignorewhitespaceindiffview: false

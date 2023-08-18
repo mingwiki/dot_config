@@ -21,4 +21,3 @@ export VIM=$HOME/.config/nvim-linux64/share/nvim/runtime
 export EDITOR=nvim
 export GO111MODULE=on
 export GOPROXY="https://goproxy.cn"
-export GOPROXY=https://goproxy.cn
