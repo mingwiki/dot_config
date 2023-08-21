@@ -13,7 +13,6 @@ alias rg='rga'
 alias grep='rga'
 alias pc='proxychains4'
 alias vi='nvim'
-alias paru='sudo -u ming paru'
 hup() {
   if [[ $# -eq 0 ]]; then
     echo "Error: 'nohup' requires at least one argument."
