@@ -16,3 +16,4 @@ export SAVEHIST=2000
 export ZSHZ_CASE=smart
 export GO111MODULE=on
 export GOPROXY="https://goproxy.cn"
+export EDITOR="nvim"
