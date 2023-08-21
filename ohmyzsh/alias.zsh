@@ -12,7 +12,6 @@ alias sd='python3 launch.py --ckpt-dir=/home/data/ckpt --lora-dir=/home/data/lor
 alias rg='rga'
 alias grep='rga'
 alias pc='proxychains4'
-alias vi='nvim'
 hup() {
   if [[ $# -eq 0 ]]; then
     echo "Error: 'nohup' requires at least one argument."
