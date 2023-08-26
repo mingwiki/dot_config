@@ -1,7 +1,5 @@
 alias sp='export {http,https,ftp,rsync,all}_proxy=socks5h://127.0.0.1:20000; export {HTTP,HTTPS,FTP,RSYNC,ALL}_PROXY=socks5h://127.0.0.1:20000'
-alias wsp='export {http,https,ftp,rsync,all}_proxy=socks5h://10.10.10.10:20000; export {HTTP,HTTPS,FTP,RSYNC,ALL}_PROXY=socks5h://10.10.10.10:20000'
 alias unsp='unset {http,https,ftp,rsync,all}_proxy; unset {HTTP,HTTPS,FTP,RSYNC,ALL}_PROXY'
-alias cl='clear'
 alias sz='source ~/.zshrc'
 alias mv='mv -iuv'
 alias yt='youtube_cookie_batch'
