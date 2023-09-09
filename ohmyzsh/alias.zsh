@@ -10,6 +10,7 @@ alias grep='rg'
 alias pc='proxychains4'
 alias vi='nvim'
 alias vim='nvim'
+alias ls='exa'
 hup() {
   if [[ $# -eq 0 ]]; then
     echo "Error: 'nohup' requires at least one argument."
