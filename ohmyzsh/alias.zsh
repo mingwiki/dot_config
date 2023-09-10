@@ -11,6 +11,8 @@ alias pc='proxychains4'
 alias vi='nvim'
 alias vim='nvim'
 alias ls='exa'
+alias docker='podman'
+alias p='podman-compose'
 hup() {
   if [[ $# -eq 0 ]]; then
     echo "Error: 'nohup' requires at least one argument."
