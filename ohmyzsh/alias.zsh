@@ -1,4 +1,5 @@
 alias sp='export {http,https,ftp,rsync,all}_proxy=socks5h://127.0.0.1:20000; export {HTTP,HTTPS,FTP,RSYNC,ALL}_PROXY=socks5h://127.0.0.1:20000'
+alias wslsp='export {http,https,ftp,rsync,all}_proxy=socks5h://10.10.10.10:20000; export {HTTP,HTTPS,FTP,RSYNC,ALL}_PROXY=socks5h://10.10.10.10:20000'
 alias unsp='unset {http,https,ftp,rsync,all}_proxy; unset {HTTP,HTTPS,FTP,RSYNC,ALL}_PROXY'
 alias sz='source ~/.zshrc'
 alias mv='mv -iuv'
@@ -28,14 +29,6 @@ youtube_cookie_batch() {
     echo "Error: 'youtube_cookie_batch' missing batch file"
     return 1
   else
-    hup yt-dlp --proxy socks5://0.0.0.0:20000 --verbose --no-check-certificates --cookies /home/root/cookie/youtube.txt --yes-playlist --download-archive archive.txt -o "%(playlist)s/%(title)s.%(ext)s" --batch-file $1
-  fi
-}
-bilibili_cookie_batch() {
-  if [[ $# -eq 0 ]]; then
-    echo "Error: 'bilibili_cookie_batch' missing batch file"
-    return 1
-  else
-    hup yt-dlp --verbose --no-check-certificates --cookies /home/root/cookie/bilibili.txt --yes-playlist --download-archive archive.txt -o "%(playlist)s/%(title)s.%(ext)s" --batch-file $1
+    hup yt-dlp --proxy socks5://0.0.0.0:20000 --verbose --no-check-certificates --cookies /home/root/youtube.txt --yes-playlist --download-archive archive.txt -o "%(playlist)s/%(title)s.%(ext)s" --batch-file $1
   fi
 }
