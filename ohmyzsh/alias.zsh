@@ -14,6 +14,7 @@ alias vim='nvim'
 alias ls='exa'
 alias docker='podman'
 alias p='podman-compose'
+alias bcaddy='hup xcaddy build --with github.com/caddyserver/forwardproxy@caddy2=$PWD --with github.com/mholt/caddy-webdav --with github.com/caddy-dns/cloudflare'
 hup() {
   if [[ $# -eq 0 ]]; then
     echo "Error: 'nohup' requires at least one argument."
