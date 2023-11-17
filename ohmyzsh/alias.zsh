@@ -15,8 +15,11 @@ alias p='podman-compose'
 alias bcaddy='hup xcaddy build --with github.com/caddyserver/forwardproxy@caddy2=$PWD --with github.com/mholt/caddy-webdav --with github.com/caddy-dns/cloudflare'
 alias fcaddy='caddy fmt /etc/caddy/Caddyfile --overwrite && caddy validate --config /etc/caddy/Caddyfile'
 alias l='ranger'
+<<<<<<< HEAD
 alias e='helix'
 alias dlp='yt-dlp -f 'bv+ba' --merge-output-format mp4'
+=======
+>>>>>>> parent of b096e27... udpate
 hup() {
   if [[ $# -eq 0 ]]; then
     echo "Error: 'nohup' requires at least one argument."
