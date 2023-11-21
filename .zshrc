@@ -7,8 +7,6 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
-
 plugins=(z podman emoji encode64 fzf github history node npm pip systemd vi-mode vscode zsh-interactive-cd zsh-navigation-tools zsh-autosuggestions zsh-syntax-highlighting rsync copyfile dirhistory)
 neofetch
-eval $(thefuck --alias)
 source $ZSH/oh-my-zsh.sh
