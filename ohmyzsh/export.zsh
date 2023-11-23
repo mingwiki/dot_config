@@ -17,3 +17,10 @@ export ZSHZ_CASE=smart
 export GO111MODULE=on
 export GOPROXY="https://goproxy.cn"
 export EDITOR="nvim"
+# pnpm
+export PNPM_HOME="/home/root/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end

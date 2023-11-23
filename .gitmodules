@@ -4,9 +4,6 @@ url = https://github.com/zsh-users/zsh-autosuggestions.git
 [submodule "ohmyzsh/themes/powerlevel10k"]
 path = ohmyzsh/themes/powerlevel10k
 url = https://gitee.com/romkatv/powerlevel10k.git
-[submodule "ohmyzsh/plugins/zsh-z"]
-path = ohmyzsh/plugins/zsh-z
-url = https://github.com/agkozak/zsh-z
 [submodule "ohmyzsh/plugins/zsh-syntax-highlighting"]
 path = ohmyzsh/plugins/zsh-syntax-highlighting
 url = https://github.com/zsh-users/zsh-syntax-highlighting.git

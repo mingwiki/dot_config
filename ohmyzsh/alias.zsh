@@ -2,21 +2,24 @@ alias sp='export {http,https,ftp,rsync,all}_proxy=socks5h://127.0.0.1:20000; exp
 alias wslsp='export {http,https,ftp,rsync,all}_proxy=socks5h://10.10.10.10:20000; export {HTTP,HTTPS,FTP,RSYNC,ALL}_PROXY=socks5h://10.10.10.10:20000'
 alias unsp='unset {http,https,ftp,rsync,all}_proxy; unset {HTTP,HTTPS,FTP,RSYNC,ALL}_PROXY'
 alias sz='source ~/.zshrc'
-alias mv='mv -iuv'
 alias yt='youtube_cookie_batch'
 alias bili='bilibili_cookie_batch'
 alias wt='watch tail -n 20'
 alias sd='python3 launch.py --ckpt-dir=/home/data/ckpt --lora-dir=/home/data/lora --xformers --listen --enable-insecure-extension-access --port=8888'
-alias grep='rg'
 alias pc='proxychains4'
-alias ls='exa'
-alias docker='podman'
 alias p='podman-compose'
 alias bcaddy='hup xcaddy build --with github.com/caddyserver/forwardproxy@caddy2=$PWD --with github.com/mholt/caddy-webdav --with github.com/caddy-dns/cloudflare'
 alias fcaddy='caddy fmt /etc/caddy/Caddyfile --overwrite && caddy validate --config /etc/caddy/Caddyfile'
+alias dlp='yt-dlp -f "bv+ba" --merge-output-format mp4'
+
+alias mv='mv -iuv'
+alias grep='rg'
+alias ls='exa'
 alias l='ranger'
 alias e='nvim'
-alias dlp='yt-dlp -f "bv+ba" --merge-output-format mp4'
+alias rm='rip'
+alias cd='z'
+
 hup() {
   if [[ $# -eq 0 ]]; then
     echo "Error: 'nohup' requires at least one argument."
