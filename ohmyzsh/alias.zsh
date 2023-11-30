@@ -9,7 +9,7 @@ alias sd='python3 launch.py --ckpt-dir=/home/data/ckpt --lora-dir=/home/data/lor
 alias pc='proxychains4'
 alias p='podman-compose'
 alias bcaddy='hup xcaddy build --with github.com/caddyserver/forwardproxy@caddy2=$PWD --with github.com/mholt/caddy-webdav --with github.com/caddy-dns/cloudflare'
-alias fcaddy='caddy fmt /etc/caddy/Caddyfile --overwrite && caddy validate --config /etc/caddy/Caddyfile'
+alias fcaddy='caddy fmt /etc/caddy/* --overwrite && caddy validate --config /etc/caddy/Caddyfile'
 alias dlp='yt-dlp -f "bv+ba" --merge-output-format mp4'
 
 alias mv='mv -iuv'
@@ -17,8 +17,9 @@ alias grep='rg'
 alias ls='exa'
 alias l='ranger'
 alias e='nvim'
-alias rm='rip'
 alias cd='z'
+alias curl='curlie'
+alias rc='repoctl'
 
 hup() {
   if [[ $# -eq 0 ]]; then
