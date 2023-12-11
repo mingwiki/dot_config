@@ -19,7 +19,6 @@ alias l='ranger'
 alias e='nvim'
 alias cd='z'
 alias curl='curlie'
-alias rc='repoctl'
 
 hup() {
   if [[ $# -eq 0 ]]; then
