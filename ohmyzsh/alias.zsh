@@ -15,10 +15,10 @@ alias dlp='yt-dlp -f "bv+ba" --merge-output-format mp4'
 alias mv='mv -iuv'
 alias grep='rg'
 alias ls='exa'
-alias l='ranger'
 alias e='nvim'
 alias cd='z'
 alias curl='curlie'
+alias paru='sudo -u ming paru'
 
 hup() {
   if [[ $# -eq 0 ]]; then
