@@ -16,6 +16,7 @@ alias e='nvim'
 alias cd='z'
 alias curl='curlie'
 alias paru='sudo -u ming paru'
+alias s='screen -L'
 
 hup() {
   if [[ $# -eq 0 ]]; then
