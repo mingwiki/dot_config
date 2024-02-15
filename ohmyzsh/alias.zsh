@@ -16,7 +16,7 @@ alias e='nvim'
 alias cd='z'
 alias curl='curlie'
 alias paru='sudo -u ming paru'
-alias s='screen -L'
+alias s='screen -L -Logfile /var/log/screen.log'
 
 hup() {
   if [[ $# -eq 0 ]]; then
