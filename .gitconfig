@@ -11,19 +11,3 @@ editor = nvim
 	colorMoved = zebra
 [safe]
 	directory = /home/root/.config
-[http]
-	sslVerify = false
-[http "https://git.kernel.org"]
-	proxy = socks5h://127.0.0.1:20000
-	sslVerify = false
-[http "https://github.com"]
-	proxy = socks5h://127.0.0.1:20000
-	sslVerify = false
-[https]
-	sslVerify = false
-[https "https://git.kernel.org"]
-	proxy = socks5h://127.0.0.1:20000
-	sslVerify = false
-[https "https://github.com"]
-	proxy = socks5h://127.0.0.1:20000
-	sslVerify = false

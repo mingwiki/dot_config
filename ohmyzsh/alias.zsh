@@ -6,7 +6,7 @@ alias yt='youtube_cookie_batch'
 alias wt='watch tail -n 20'
 alias pc='proxychains4'
 alias bcaddy='hup xcaddy build --with github.com/caddyserver/forwardproxy@caddy2=$PWD --with github.com/mholt/caddy-webdav --with github.com/caddy-dns/cloudflare'
-alias fcaddy='caddy fmt /etc/caddy/* --overwrite && caddy validate --config /etc/caddy/Caddyfile'
+alias fcaddy='caddy fmt /etc/caddy/Caddyfile /etc/caddy/4fm /etc/caddy/naizi --overwrite && caddy validate --config /etc/caddy/Caddyfile'
 alias dlp='yt-dlp -f "bv+ba" --merge-output-format mp4'
 
 alias mv='mv -iuv'
