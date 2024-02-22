@@ -15,6 +15,8 @@ alias ls='exa'
 alias e='nvim'
 alias cd='z'
 alias curl='curlie'
+alias top='htop'
+alias glances='htop'
 alias paru='sudo -u ming paru'
 alias s='screen -L -Logfile /var/log/screen.log'
 
