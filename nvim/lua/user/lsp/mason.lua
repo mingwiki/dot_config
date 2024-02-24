@@ -1,12 +1,12 @@
 local servers = {
 	"lua_ls",
-	-- "cssls",
-	-- "html",
-	-- "tsserver",
+	"cssls",
+	"html",
+	"tsserver",
 	"pylsp",
-	-- "bashls",
+	"bashls",
 	"jsonls",
-	-- "yamlls",
+    "yamlls",
 }
 
 local settings = {

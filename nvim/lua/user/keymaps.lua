@@ -9,7 +9,7 @@ local keymap = vim.keymap.set
 keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
-
+vim.wo.relativenumber = true
 -- Modes
 --   normal_mode = "n",
 --   insert_mode = "i",
