@@ -3,7 +3,7 @@
 -----------------------------------------------------------
 
 local function map(mode, lhs, rhs, opts)
-  local options = { noremap=true, silent=true }
+  local options = { noremap = true, silent = true }
   if opts then
     options = vim.tbl_extend('force', options, opts)
   end
@@ -11,7 +11,7 @@ local function map(mode, lhs, rhs, opts)
 end
 
 -- Change leader to a comma
-vim.g.mapleader = ','
+vim.g.mapleader = ' '
 
 -----------------------------------------------------------
 -- Neovim shortcuts
@@ -57,8 +57,14 @@ map('n', '<leader>q', ':qa!<CR>')
 -----------------------------------------------------------
 
 -- Terminal mappings
-map('n', '<C-t>', ':Term<CR>', { noremap = true })  -- open
-map('t', '<Esc>', '<C-\\><C-n>')                    -- exit
+map('n', '<C-t>', ':Term<CR>', { noremap = true }) -- open
+map('t', '<Esc>', '<C-\\><C-n>')                   -- exit
 
 -- Tagbar
-map('n', '<leader>z', ':TagbarToggle<CR>')          -- open/close
+map('n', '<leader>z', ':TagbarToggle<CR>') -- open/close
+
+
+-- Telescope file_browser
+map('n', '<leader>b', ':Telescope file_browser<CR>')
+map('n', '<leader>b', ':Telescope file_browser path=%:p:h select_buffer=true<CR>')
+map('n', '<leader>f', ':Telescope find_files<CR>')
