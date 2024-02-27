@@ -33,25 +33,25 @@ local on_attach = function(client, bufnr)
   -- See: https://sbulav.github.io/til/til-neovim-highlight-references/
   -- for the highlight trigger time see: `vim.opt.updatetime`
   if client.server_capabilities.documentHighlightProvider then
-      vim.api.nvim_create_augroup("lsp_document_highlight", { clear = true })
-      vim.api.nvim_clear_autocmds { buffer = bufnr, group = "lsp_document_highlight" }
-      vim.api.nvim_create_autocmd("CursorHold", {
-          callback = vim.lsp.buf.document_highlight,
-          buffer = bufnr,
-          group = "lsp_document_highlight",
-          desc = "Document Highlight",
-      })
-      vim.api.nvim_create_autocmd("CursorMoved", {
-          callback = vim.lsp.buf.clear_references,
-          buffer = bufnr,
-          group = "lsp_document_highlight",
-          desc = "Clear All the References",
-      })
+    vim.api.nvim_create_augroup("lsp_document_highlight", { clear = true })
+    vim.api.nvim_clear_autocmds { buffer = bufnr, group = "lsp_document_highlight" }
+    vim.api.nvim_create_autocmd("CursorHold", {
+      callback = vim.lsp.buf.document_highlight,
+      buffer = bufnr,
+      group = "lsp_document_highlight",
+      desc = "Document Highlight",
+    })
+    vim.api.nvim_create_autocmd("CursorMoved", {
+      callback = vim.lsp.buf.clear_references,
+      buffer = bufnr,
+      group = "lsp_document_highlight",
+      desc = "Clear All the References",
+    })
   end
 
   -- Mappings.
   -- See `:help vim.lsp.*` for documentation on any of the below functions
-  local bufopts = { noremap=true, silent=true, buffer=bufnr }
+  local bufopts = { noremap = true, silent = true, buffer = bufnr }
   vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, bufopts)
   vim.keymap.set('n', 'gd', vim.lsp.buf.definition, bufopts)
   vim.keymap.set('n', 'K', vim.lsp.buf.hover, bufopts)
@@ -66,7 +66,6 @@ local on_attach = function(client, bufnr)
   vim.keymap.set('n', '<space>rn', vim.lsp.buf.rename, bufopts)
   vim.keymap.set('n', '<space>ca', vim.lsp.buf.code_action, bufopts)
   vim.keymap.set('n', 'gr', vim.lsp.buf.references, bufopts)
-  vim.keymap.set('n', '<space>f', function() vim.lsp.buf.format { async = true } end, bufopts)
 end
 
 -- Diagnostic settings:
@@ -81,7 +80,7 @@ vim.diagnostic.config({
     source = "always",
     header = "",
     prefix = "",
-	},
+  },
 })
 
 -- Show line diagnostics automatically in hover window
@@ -91,7 +90,7 @@ vim.cmd([[
 
 -- Mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
-local opts = { noremap=true, silent=true }
+local opts = { noremap = true, silent = true }
 vim.keymap.set('n', '<space>e', vim.diagnostic.open_float, opts)
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, opts)
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, opts)
