@@ -19,12 +19,7 @@ autocmd('TextYankPost', {
     vim.highlight.on_yank({ higroup = 'IncSearch', timeout = '1000' })
   end
 })
-autocmd("BufWritePre", {
-  pattern = "*",
-  callback = function(args)
-    require("conform").format({ bufnr = args.buf })
-  end,
-})
+
 -- Settings for filetypes:
 --------------------------
 

@@ -96,21 +96,6 @@ vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, opts)
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, opts)
 vim.keymap.set('n', '<space>q', vim.diagnostic.setloclist, opts)
 
---[[
-Language servers setup:
-
-For language servers list see:
-https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
-
-Language server installed:
-
-Bash          -> bashls
-Python        -> pyright
-C-C++         -> clangd
-HTML/CSS/JSON -> vscode-html-languageserver
-JavaScript/TypeScript -> tsserver
---]]
-
 -- Define `root_dir` when needed
 -- See: https://github.com/neovim/nvim-lspconfig/issues/320
 -- This is a workaround, maybe not work with some servers.
