@@ -1,21 +1,13 @@
-require "user.options"
-require "user.keymaps"
-require "user.plugins"
-require "user.colorscheme"
-require "user.cmp"
-require "user.lsp"
-require "user.telescope"
-require "user.gitsigns"
-require "user.treesitter"
-require "user.autopairs"
-require "user.comment"
-require "user.nvim-tree"
-require "user.bufferline"
-require "user.lualine"
-require "user.toggleterm"
-require "user.project"
-require "user.impatient"
-require "user.alpha"
-require "user.whichkey"
-require "user.autocommands"
-require("ibl").setup()
+require('core/lazy')
+require('core/autocmds')
+require('core/keymaps')
+require('core/colors')
+require('core/statusline')
+require('core/options')
+require('lsp/lspconfig')
+require('plugins/nvim-tree')
+require('plugins/indent-blankline')
+require('plugins/nvim-cmp')
+require('plugins/nvim-treesitter')
+-- require('plugins/alpha-nvim')
+
