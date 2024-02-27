@@ -25,7 +25,6 @@ ibl.setup {
       'markdown',
       'text',
       'terminal',
-      'NvimTree',
     },
 
     buftypes = {

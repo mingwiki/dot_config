@@ -40,18 +40,9 @@ lazy.setup({
       priority = 1000, -- make sure to load this before all the other start plugins
     },
 
-    -- other colorschemes:
-    { 'tanvirtin/monokai.nvim', lazy = true },
-    { 'https://github.com/rose-pine/neovim', name = 'rose-pine', lazy = true },
-
     -- Icons
     { 'kyazdani42/nvim-web-devicons', lazy = true },
 
-    -- Dashboard (start screen)
-    {
-      'goolord/alpha-nvim',
-      dependencies = { 'kyazdani42/nvim-web-devicons' },
-    },
 
     -- Git labels
     {
@@ -64,12 +55,6 @@ lazy.setup({
       config = function()
         require('gitsigns').setup{}
       end
-    },
-
-    -- File explorer
-    {
-      'kyazdani42/nvim-tree.lua',
-      dependencies = { 'kyazdani42/nvim-web-devicons' },
     },
 
     -- Statusline
