@@ -41,15 +41,11 @@ lazy.setup({
       config = function()
         require('gitsigns').setup {}
       end
-    }, -- Statusline
-    {
-      'freddiehaddad/feline.nvim',
-      dependencies = { 'kyazdani42/nvim-web-devicons', 'lewis6991/gitsigns.nvim' }
-    }, -- Treesitter
-    {
+    }, 
+   {
       'nvim-treesitter/nvim-treesitter',
-      build = ':TSUpdate'
-    }, -- Indent line
+      build = ":TSUpdate"
+    }, 
     {
       'lukas-reineke/indent-blankline.nvim',
       main = 'ibl',
@@ -78,6 +74,10 @@ lazy.setup({
       dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
     },
     { 'stevearc/conform.nvim' },
-    { "mrquantumcodes/bufferchad.nvim" }
-  }
+    { "mrquantumcodes/bufferchad.nvim" },
+    {
+    'nvim-lualine/lualine.nvim',
+    dependencies = { 'nvim-tree/nvim-web-devicons' }
+  },
+  },
 })

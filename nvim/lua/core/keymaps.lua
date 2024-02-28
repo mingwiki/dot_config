@@ -11,7 +11,7 @@ local function map(mode, lhs, rhs, opts)
 end
 
 -- Change leader to a comma
-vim.g.mapleader = ','
+vim.g.mapleader = ' '
 
 -----------------------------------------------------------
 -- Neovim shortcuts
@@ -47,9 +47,12 @@ map('n', '<leader>z', ':TagbarToggle<CR>') -- open/close
 
 
 -- Telescope file_browser
-map('n', '<leader>b', ':Telescope file_browser<CR>')
-map('n', '<leader>b', ':Telescope file_browser path=%:p:h select_buffer=true<CR>')
-map('n', '<leader>g', ':Telescope find_files<CR>')
+map('n', '<leader>tb', ':Telescope file_browser<CR>')
+map('n', '<leader>tb', ':Telescope file_browser path=%:p:h select_buffer=true<CR>')
+map('n', '<leader>tf', ':Telescope find_files<CR>')
+map('n', '<leader>tg', ':Telescope live_grep<CR>')
+map('n', '<leader>tb', ':Telescope buffers<CR>')
+map('n', '<leader>th', ':Telescope help_tags<CR>')
 local conform = require("conform")
 vim.keymap.set({ "n", "v" }, "<leader>f", function()
   conform.format({
