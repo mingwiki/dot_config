@@ -87,6 +87,13 @@ lazy.setup({
   opts = {
     -- configurations go here
   },
+},
+{
+    'numToStr/Comment.nvim',
+    opts = {
+        -- add any options here
+    },
+    lazy = false,
 }
   },
 })

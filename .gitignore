@@ -17,3 +17,6 @@ TabNine/
 
 **/__pycache__/
 **/node_modules/
+
+nvim/lazy-lock.json
+
