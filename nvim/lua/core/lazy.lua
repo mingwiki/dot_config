@@ -79,10 +79,6 @@ lazy.setup({
 				"saadparwaiz1/cmp_luasnip",
 			},
 		},
-		{
-			"nvim-telescope/telescope-file-browser.nvim",
-			dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" },
-		},
 		{ "stevearc/conform.nvim" },
 		{ "mrquantumcodes/bufferchad.nvim" },
 		{ "ojroques/nvim-hardline" },
@@ -106,5 +102,6 @@ lazy.setup({
 			lazy = false,
 		},
 		{ "ggandor/lightspeed.nvim" },
+		{ "nvim-telescope/telescope.nvim" },
 	},
 })
