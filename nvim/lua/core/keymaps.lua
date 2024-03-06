@@ -52,6 +52,8 @@ map("n", "<leader>tf", ":Telescope find_files<CR>")
 map("n", "<leader>tg", ":Telescope live_grep<CR>")
 map("n", "<leader>tb", ":Telescope buffers<CR>")
 map("n", "<leader>th", ":Telescope help_tags<CR>")
+map("n", "<leader>u", ":Telescope undo<CR>")
+
 local conform = require("conform")
 vim.keymap.set({ "n", "v" }, "<leader>f", function()
 	conform.format({

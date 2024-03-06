@@ -102,6 +102,35 @@ lazy.setup({
 			lazy = false,
 		},
 		{ "ggandor/lightspeed.nvim" },
-		{ "nvim-telescope/telescope.nvim" },
+		{
+			"nvim-telescope/telescope.nvim",
+			dependencies = {
+				"nvim-lua/plenary.nvim",
+				"debugloop/telescope-undo.nvim",
+			},
+			config = function()
+				require("telescope").setup({
+					-- the rest of your telescope config goes here
+					extensions = {
+						undo = {
+							-- telescope-undo.nvim config, see below
+						},
+						-- other extensions:
+						-- file_browser = { ... }
+					},
+				})
+				require("telescope").load_extension("undo")
+			end,
+		},
+		{
+			"folke/persistence.nvim",
+			event = "BufReadPre",
+			opts = {
+				dir = vim.fn.expand(vim.fn.stdpath("state") .. "/sessions/"), -- directory where session files are saved
+				options = { "buffers", "curdir", "tabpages", "winsize" }, -- sessionoptions used for saving
+				pre_save = nil, -- a function to call before saving the session
+				save_empty = false, -- don't save if there are no open file buffers
+			},
+		},
 	},
 })
