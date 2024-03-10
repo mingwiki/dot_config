@@ -2,13 +2,13 @@ alias sp='export {http,https,ftp,rsync,all}_proxy=socks5h://\[::\]:20000; export
 alias wsp='export {http,https,ftp,rsync,all}_proxy=socks5h://10.10.10.10:20000; export {HTTP,HTTPS,FTP,RSYNC,ALL}_PROXY=socks5h://10.10.10.10:20000'
 alias unsp='unset {http,https,ftp,rsync,all}_proxy; unset {HTTP,HTTPS,FTP,RSYNC,ALL}_PROXY'
 alias sz='source ~/.zshrc'
-alias wt='watch tail -n 20'
+alias wt='watch -n 1 tail -n 10'
 alias pc='proxychains4'
 alias bcaddy='hup xcaddy build --with github.com/caddyserver/forwardproxy@caddy2=$PWD --with github.com/mholt/caddy-webdav --with github.com/caddy-dns/cloudflare'
 alias fcaddy='caddy fmt /etc/caddy/Caddyfile /etc/caddy/4fm /etc/caddy/naizi --overwrite && caddy validate --config /etc/caddy/Caddyfile'
 alias dlp='yt-dlp -f "bv+ba" --merge-output-format mp4'
 alias dlb='dlp_batch'
-alias dlb_yt='youtube_cookie_batch'
+alias dlb_yt='yt_batch'
 alias mv='mv -iuv'
 alias grep='rg'
 alias ls='exa'
@@ -28,19 +28,20 @@ hup() {
     tail -F $name.log
   fi
 }
-youtube_cookie_batch() {
-  if [[ $# -eq 0 ]]; then
-    echo "Error: 'youtube_cookie_batch' missing batch file"
-    return 1
-  else
-    hup yt-dlp --proxy socks5://0.0.0.0:20000 --verbose --no-check-certificates --cookies /home/root/youtube.txt --yes-playlist --download-archive archive.txt -o "%(playlist)s/%(title)s.%(ext)s" --batch-file $1
-  fi
-}
+
 dlp_batch() {
   if [[ $# -eq 0 ]]; then
     echo "Error: 'dlp_batch' missing batch file"
     return 1
   else
-    hup yt-dlp -f "bv+ba" --merge-output-format mp4 --verbose --no-check-certificates --yes-playlist --download-archive archive.txt -o "%(playlist)s/%(title)s.%(ext)s" --batch-file $1
+    hup yt-dlp --merge-output-format mp4 --verbose --no-check-certificates --yes-playlist --download-archive archive.txt --cookies cookie.txt -o "%(playlist)s/%(title)s.%(ext)s" --batch-file $1
+  fi
+}
+yt_batch() {
+  if [[ $# -eq 0 ]]; then
+    echo "Error: 'dlp_batch' missing batch file"
+    return 1
+  else
+    hup yt-dlp --merge-output-format mp4 --proxy socks5h://10.10.10.10:20000 --write-subs --write-auto-subs --embed-thumbnail --embed-metadata --embed-chapters --no-progress --verbose --no-check-certificates --yes-playlist --download-archive archive.txt --cookies cookie.txt -o "%(playlist)s/%(title)s.%(ext)s" --batch-file $1
   fi
 }
