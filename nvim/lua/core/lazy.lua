@@ -34,18 +34,10 @@ lazy.setup({
 			"navarasu/onedark.nvim",
 			lazy = false, -- make sure we load this during startup if it is your main colorscheme
 			priority = 1000, -- make sure to load this before all the other start plugins
-		}, -- Icons
+		},          -- Icons
 		{
 			"kyazdani42/nvim-web-devicons",
 			lazy = true,
-		}, -- Git labels
-		{
-			"lewis6991/gitsigns.nvim",
-			lazy = true,
-			dependencies = { "nvim-lua/plenary.nvim", "kyazdani42/nvim-web-devicons" },
-			config = function()
-				require("gitsigns").setup({})
-			end,
 		},
 		{
 			"nvim-treesitter/nvim-treesitter",
@@ -55,15 +47,15 @@ lazy.setup({
 			"lukas-reineke/indent-blankline.nvim",
 			main = "ibl",
 			opts = {},
-		}, -- Tag viewer
-		{ "preservim/tagbar" }, -- Autopair
+		},
+		{ "preservim/tagbar" },
 		{
 			"windwp/nvim-autopairs",
 			event = "InsertEnter",
 			config = function()
 				require("nvim-autopairs").setup({})
 			end,
-		}, -- LSP
+		},                     -- LSP
 		{ "neovim/nvim-lspconfig" }, -- Autocomplete
 		{
 			"hrsh7th/nvim-cmp",
@@ -121,16 +113,6 @@ lazy.setup({
 				})
 				require("telescope").load_extension("undo")
 			end,
-		},
-		{
-			"folke/persistence.nvim",
-			event = "BufReadPre",
-			opts = {
-				dir = vim.fn.expand(vim.fn.stdpath("state") .. "/sessions/"), -- directory where session files are saved
-				options = { "buffers", "curdir", "tabpages", "winsize" }, -- sessionoptions used for saving
-				pre_save = nil, -- a function to call before saving the session
-				save_empty = false, -- don't save if there are no open file buffers
-			},
 		},
 	},
 })

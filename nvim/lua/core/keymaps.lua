@@ -17,10 +17,6 @@ vim.g.mapleader = ","
 -- Neovim shortcuts
 -----------------------------------------------------------
 
--- Toggle auto-indenting for code paste
-map("n", "<F2>", ":set invpaste paste?<CR>")
-vim.opt.pastetoggle = "<F2>"
-
 -- Change split orientation
 map("n", "<leader>tk", "<C-w>t<C-w>K") -- change vertical to horizontal
 map("n", "<leader>th", "<C-w>t<C-w>H") -- change horizontal to vertical
@@ -38,21 +34,14 @@ map("n", "<leader>r", ":so %<CR>")
 -- Applications and Plugins shortcuts
 -----------------------------------------------------------
 
--- Terminal mappings
-map("n", "<C-t>", ":Term<CR>", { noremap = true }) -- open
-map("t", "<Esc>", "<C-\\><C-n>") -- exit
-
 -- Tagbar
 map("n", "<leader>z", ":TagbarToggle<CR>") -- open/close
 
--- Telescope file_browser
-map("n", "<leader>tb", ":Telescope file_browser<CR>")
-map("n", "<leader>tb", ":Telescope file_browser path=%:p:h select_buffer=true<CR>")
+-- Telescope
 map("n", "<leader>tf", ":Telescope find_files<CR>")
 map("n", "<leader>tg", ":Telescope live_grep<CR>")
 map("n", "<leader>tb", ":Telescope buffers<CR>")
-map("n", "<leader>th", ":Telescope help_tags<CR>")
-map("n", "<leader>u", ":Telescope undo<CR>")
+map("n", "<leader>tu", ":Telescope undo<CR>")
 
 local conform = require("conform")
 vim.keymap.set({ "n", "v" }, "<leader>f", function()
