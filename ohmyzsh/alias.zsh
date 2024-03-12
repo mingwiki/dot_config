@@ -1,5 +1,4 @@
-alias sp='export {http,https,ftp,rsync,all}_proxy=socks5h://\[::\]:20000; export {HTTP,HTTPS,FTP,RSYNC,ALL}_PROXY=socks5h://\[::\]:20000'
-alias wsp='export {http,https,ftp,rsync,all}_proxy=socks5h://10.10.10.10:20000; export {HTTP,HTTPS,FTP,RSYNC,ALL}_PROXY=socks5h://10.10.10.10:20000'
+alias sp='export {http,https,ftp,rsync,all}_proxy=socks5h://10.10.10.10:20000; export {HTTP,HTTPS,FTP,RSYNC,ALL}_PROXY=socks5h://10.10.10.10:20000'
 alias unsp='unset {http,https,ftp,rsync,all}_proxy; unset {HTTP,HTTPS,FTP,RSYNC,ALL}_PROXY'
 alias sz='source ~/.zshrc'
 alias wt='watch -n 1 tail -n 10'
