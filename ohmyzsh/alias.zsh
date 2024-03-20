@@ -7,11 +7,7 @@ alias bcaddy='hup xcaddy build --with github.com/caddyserver/forwardproxy@caddy2
 alias fcaddy='caddy fmt /etc/caddy/Caddyfile /etc/caddy/4fm /etc/caddy/naizi --overwrite && caddy validate --config /etc/caddy/Caddyfile'
 alias dlp='yt-dlp -f "bv+ba" --merge-output-format mp4'
 alias mv='mv -iuv'
-alias grep='rg'
-alias ls='exa'
-alias e='nvim'
 alias cd='z'
-alias curl='curlie'
 alias ah='sudo -u ming pikaur'
 alias s='screen -L -Logfile /var/log/screen.log'
 
