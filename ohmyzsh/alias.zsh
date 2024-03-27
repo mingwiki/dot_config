@@ -10,6 +10,7 @@ alias mv='mv -iuv'
 alias cd='z'
 alias ah='sudo -u ming pikaur'
 alias s='screen -L -Logfile /var/log/screen.log'
+alias e='nvim'
 
 hup() {
   if [[ $# -eq 0 ]]; then
