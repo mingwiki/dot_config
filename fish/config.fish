@@ -40,6 +40,9 @@ function wt
     watch -n 1 tail -n 10 $argv
 end
 
+function z
+    zoxide $argv
+end
 function bcaddy
     hup xcaddy build \
         --with github.com/caddyserver/forwardproxy@caddy2=$PWD \
@@ -54,15 +57,6 @@ end
 
 function dlp
     yt-dlp -f "bv+ba" --merge-output-format mp4 $argv
-end
-
-function mv
-    mv -iuv $argv
-end
-
-
-function ah
-    sudo -u ming pikaur $argv
 end
 
 function e
