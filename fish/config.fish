@@ -1,10 +1,4 @@
 if status is-interactive
-    and not set -q TMUX
-    if tmux has-session -t ming
-        exec tmux attach-session -t ming
-    else
-        tmux new-session -s ming
-    end
 end
 
 set -x PATH $HOME/bin:$HOME/go/bin:$HOME/.cargo/bin:/usr/local/bin:/usr/local/go/bin:$PATH
