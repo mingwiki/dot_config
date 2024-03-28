@@ -2,6 +2,20 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
+set -x PATH $HOME/bin:$HOME/go/bin:$HOME/.cargo/bin:/usr/local/bin:/usr/local/go/bin:$PATH
+set -x NODEJS_ORG_MIRROR https://npmmirror.com/mirrors/node/
+set -x NODIST_NODE_MIRROR https://npmmirror.com/mirrors/node/
+set -x NODE_MIRROR 'https://mirrors.ustc.edu.cn/node/'
+set -x NVM_NODEJS_ORG_MIRROR 'https://mirrors.ustc.edu.cn/node/'
+set -x NVMW_NODEJS_ORG_MIRROR 'https://mirrors.ustc.edu.cn/node/'
+set -x N_NODE_MIRROR 'https://mirrors.ustc.edu.cn/node/'
+set -x DOCKER_CLIENT_TIMEOUT 120
+set -x COMPOSE_HTTP_TIMEOUT 120
+set -x LANG en_US.UTF-8
+set -x GO111MODULE on
+set -x GOPROXY "https://goproxy.cn"
+set -x EDITOR nvim
+
 function sp
     set -gx http_proxy socks5h://10.10.10.10:20000
     set -gx https_proxy socks5h://10.10.10.10:20000
@@ -126,4 +140,13 @@ end
 
 function unset
     set --erase $argv
+end
+function export
+    if [ $argv ]
+        set var (echo $argv | cut -f1 -d=)
+        set val (echo $argv | cut -f2 -d=)
+        set -g -x $var $val
+    else
+        echo 'set -x var=value'
+    end
 end
