@@ -1,0 +1,29 @@
+[user]
+name = mingwiki
+email = mingwiki@gmail.com
+[core]
+editor = vim
+[pull]
+	rebase = true
+[fetch]
+	prune = true
+[diff]
+	colorMoved = zebra
+[safe]
+	directory = /home/root/.config
+	directory = /root/.config
+	directory = /var/lib/gitea/git/dreambuilder/core.git
+[http]
+[http "https://golang.org"]
+	proxy = socks5://proxy:20000
+	sslVerify = false
+[http "https://github.com"]
+	proxy = socks5://proxy:20000
+	sslVerify = false
+[http "https://proxy.golang.org"]
+	proxy = socks5://proxy:20000
+	sslVerify = false
+[init]
+	defaultBranch = master
+[credential]
+	helper = store
