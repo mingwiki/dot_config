@@ -145,10 +145,6 @@ function ff
 	ruff check --select I --fix **/**/*.py && ruff format
 end
 
-function pi
-	http $argv
-end
-
 
 zoxide init fish | source
 pyenv init - | source
