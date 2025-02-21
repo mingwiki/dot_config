@@ -1,3 +1,7 @@
+if status is-interactive
+    eval (zellij setup --generate-auto-start fish | string collect)
+end
+
 set -x PYENV_ROOT "$HOME/.pyenv"
 set -x PATH $HOME/.local/bin:$HOME/go/bin:$HOME/.cargo/bin:/usr/local/bin:/usr/local/go/bin:$PATH
 set -x DOCKER_CLIENT_TIMEOUT 120
@@ -12,11 +16,11 @@ set -x RUSTUP_DIST_SERVER https://mirrors.ustc.edu.cn/rust-static
 set -x RUSTUP_UPDATE_ROOT https://mirrors.ustc.edu.cn/rust-static/rustup
 
 function dp_sync
-        pyenv activate $argv
-        if test (pip freeze | grep -v -f requirements.txt | wc -l) -gt 0
-            pip freeze | grep -v -f requirements.txt - | xargs pip uninstall -y
-        end
-        pip install -r requirements.txt &>>/var/log/sync.log
+    pyenv activate $argv
+    if test (pip freeze | grep -v -f requirements.txt | wc -l) -gt 0
+        pip freeze | grep -v -f requirements.txt - | xargs pip uninstall -y
+    end
+    pip install -r requirements.txt &>>/var/log/sync.log
 end
 function dp_docker
     git fetch origin master &>>/var/log/dp.log
@@ -26,8 +30,8 @@ function dp_docker
         git pull origin master &>>/var/log/dp.log
         if test $status -eq 0 # Check if git pull was successful
             echo "Code updated. building..."
-			docker-compose build --no-cache
-			docker-compose up -d
+            docker-compose build --no-cache
+            docker-compose up -d
         else
             echo "Error: Failed to pull code changes. Check /var/log/dp.log for details."
         end
@@ -61,6 +65,8 @@ end
 function e
     if command -v code >/dev/null
         code $argv
+    else if command -v nvim >/dev/null
+        nvim $argv
     else if command -v vim >/dev/null
         vim $argv
     else
@@ -79,7 +85,8 @@ end
 function bcaddy
     xcaddy build \
         --with github.com/caddyserver/forwardproxy@caddy2 \
-		--with github.com/mholt/caddy-webdav
+        --with github.com/mholt/caddy-webdav \
+        --with github.com/caddy-dns/cloudflare
 end
 
 function fcaddy
@@ -142,7 +149,7 @@ function g
 end
 
 function ff
-	ruff check --select I --fix **/**/*.py && ruff format
+    ruff check --select I --fix **/**/*.py && ruff format
 end
 
 
@@ -154,6 +161,6 @@ fnm env --use-on-cd --shell fish | source
 # pnpm
 set -gx PNPM_HOME "/root/.local/share/pnpm"
 if not string match -q -- $PNPM_HOME $PATH
-  set -gx PATH "$PNPM_HOME" $PATH
+    set -gx PATH "$PNPM_HOME" $PATH
 end
 # pnpm end
