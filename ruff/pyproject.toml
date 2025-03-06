@@ -1,0 +1,22 @@
+[tool.ruff]
+line-length = 88   # Adjust if needed
+target-version = "py312"
+
+# Enable rules for removing unnecessary blank lines
+select = [
+    "E",  # Pycodestyle errors (includes blank line fixes)
+    "F",  # Pyflakes (common Python mistakes)
+    "I",  # isort (sort imports)
+    "UP", # pyupgrade (auto-upgrades syntax)
+]
+
+# Auto-fix all issues including blank lines
+fixable = ["ALL"]
+unfixable = []
+
+[tool.ruff.format]
+# Enable Ruff's automatic formatting (similar to Black)
+indent-style = "space"
+quote-style = "double"
+line-ending = "lf"
+

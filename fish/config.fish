@@ -1,7 +1,3 @@
-if status is-interactive
-    eval (zellij setup --generate-auto-start fish | string collect)
-end
-
 set -x PYENV_ROOT "$HOME/.pyenv"
 set -x PATH $HOME/.local/bin:$HOME/go/bin:$HOME/.cargo/bin:/usr/local/bin:/usr/local/go/bin:$PATH
 set -x DOCKER_CLIENT_TIMEOUT 120
@@ -56,6 +52,9 @@ end
 
 function wt
     watch -n 1 tail -n 10 $argv
+end
+function sc
+    screen $argv
 end
 
 function zl
