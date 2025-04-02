@@ -82,9 +82,10 @@ function v
 end
 
 function bcaddy
-    xcaddy build \
+    xcaddy build master \
         --with github.com/caddyserver/forwardproxy@caddy2 \
         --with github.com/mholt/caddy-webdav \
+        --with github.com/imgk/caddy-trojan \
         --with github.com/caddy-dns/cloudflare
 end
 
@@ -153,8 +154,6 @@ end
 
 
 zoxide init fish | source
-pyenv init - | source
-direnv hook fish | source
 fnm env --use-on-cd --shell fish | source
 
 # pnpm
