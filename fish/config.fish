@@ -155,6 +155,7 @@ end
 
 zoxide init fish | source
 fnm env --use-on-cd --shell fish | source
+pyenv init - fish | source
 
 # pnpm
 set -gx PNPM_HOME "/root/.local/share/pnpm"

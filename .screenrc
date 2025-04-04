@@ -89,6 +89,7 @@ termcapinfo xterm* ti@:te@
 # ignore displays that block on output
 defnonblock on
 
+
 # XTERM TWEAKS
 # ===============================================================
 
