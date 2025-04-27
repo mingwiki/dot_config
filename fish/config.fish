@@ -84,8 +84,6 @@ end
 function bcaddy
     xcaddy build master \
         --with github.com/caddyserver/forwardproxy@caddy2 \
-        --with github.com/mholt/caddy-webdav \
-        --with github.com/imgk/caddy-trojan \
         --with github.com/caddy-dns/cloudflare
 end
 
@@ -156,6 +154,7 @@ end
 zoxide init fish | source
 fnm env --use-on-cd --shell fish | source
 pyenv init - fish | source
+pyenv virtualenv-init - | source
 
 # pnpm
 set -gx PNPM_HOME "/root/.local/share/pnpm"
