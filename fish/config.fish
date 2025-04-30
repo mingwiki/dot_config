@@ -64,6 +64,8 @@ end
 function e
     if command -v code >/dev/null
         code $argv
+    else if command -v hx >/dev/null
+        hx $argv
     else if command -v nvim >/dev/null
         nvim $argv
     else if command -v vim >/dev/null
