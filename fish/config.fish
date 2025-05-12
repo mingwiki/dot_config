@@ -86,6 +86,7 @@ end
 function bcaddy
     xcaddy build master \
         --with github.com/caddyserver/forwardproxy@caddy2 \
+	--with github.com/mholt/caddy-webdav \
         --with github.com/caddy-dns/cloudflare
 end
 
