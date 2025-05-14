@@ -3,6 +3,7 @@ name = mingwiki
 email = mingwiki@gmail.com
 [core]
 editor = nvim
+	quotepath = false
 [pull]
 	rebase = true
 [fetch]
