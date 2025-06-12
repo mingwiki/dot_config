@@ -153,6 +153,15 @@ function ff
     ruff check --select I --fix **/**/*.py && ruff format
 end
 
+function ls --wraps exa --description "alias ls=exa --git, if installed"
+    if type -q exa
+        exa --git $argv
+    else
+        ls $argv
+    end
+end
+
+
 
 zoxide init fish | source
 fnm env --use-on-cd --shell fish | source
