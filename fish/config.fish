@@ -153,6 +153,10 @@ function ff
     ruff check --select I --fix **/**/*.py && ruff format
 end
 
+function p
+    pnpm $argv
+end
+
 function ls --wraps exa --description "alias ls=exa --git, if installed"
     if type -q exa
         exa --git $argv
