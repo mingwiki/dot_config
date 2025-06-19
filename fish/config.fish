@@ -79,6 +79,10 @@ function ff
     ruff check --select I --fix **/**/*.py && ruff format
 end
 
+function tk
+    tmux kill-session -a
+end
+
 zoxide init fish | source
 fnm env --use-on-cd --shell fish | source
 pyenv init - fish | source
