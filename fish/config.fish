@@ -7,7 +7,9 @@ set -x LC_CTYPE en_US.UTF-8
 set -x GO111MODULE on
 set -x GOSUMDB off
 set -x RUST_BACKTRACE 1
-set -x EDITOR vim
+set -x EDITOR nvim
+set -x TERM xterm-256color 
+set -x COLORTERM truecolor
 set -x RUSTUP_DIST_SERVER https://mirrors.ustc.edu.cn/rust-static
 set -x RUSTUP_UPDATE_ROOT https://mirrors.ustc.edu.cn/rust-static/rustup
 
@@ -17,21 +19,6 @@ function dp_sync
         pip freeze | grep -v -f requirements.txt - | xargs pip uninstall -y
     end
     pip install -r requirements.txt &>>/var/log/sync.log
-end
-function dp_docker
-    git fetch origin master &>>/var/log/dp.log
-    if git diff --quiet HEAD origin/master >/dev/null
-        echo "No changes to pull. Skipping deploy"
-    else
-        git pull origin master &>>/var/log/dp.log
-        if test $status -eq 0 # Check if git pull was successful
-            echo "Code updated. building..."
-            docker-compose build --no-cache
-            docker-compose up -d
-        else
-            echo "Error: Failed to pull code changes. Check /var/log/dp.log for details."
-        end
-    end
 end
 
 function sp
@@ -53,23 +40,12 @@ end
 function wt
     watch -n 1 tail -n 10 $argv
 end
-function sc
-    screen $argv
-end
-
-function zl
-    zellij attach -c zed
-end
 
 function e
     if command -v code >/dev/null
         code $argv
-    else if command -v hx >/dev/null
-        hx $argv
     else if command -v nvim >/dev/null
         nvim $argv
-    else if command -v vim >/dev/null
-        vim $argv
     else
         vi $argv
     end
@@ -95,56 +71,6 @@ function fcaddy
     caddy validate --config /etc/caddy/Caddyfile
 end
 
-function dlp_batch
-    yt-dlp \
-        --merge-output-format mp4 \
-        -f "bv+ba" \
-        --verbose \
-        --no-check-certificates \
-        --yes-playlist \
-        --download-archive archive.txt \
-        --cookies cookie.txt \
-        -o "%(playlist)s/%(title)s.%(ext)s" \
-        --batch-file $argv
-end
-
-function dlp_single
-    yt-dlp -f "bv+ba" --merge-output-format mp4 $argv
-end
-
-function yt_batch
-    yt-dlp \
-        --merge-output-format mp4 \
-        --proxy socks5h://proxy:20000 \
-        --write-subs \
-        -f "bv+ba" \
-        --video-multistreams \
-        --audio-multistreams \
-        --sub-langs 'zh,en' \
-        --write-auto-subs \
-        --embed-thumbnail \
-        --embed-metadata \
-        --embed-chapters \
-        --verbose \
-        --no-check-certificates \
-        --yes-playlist \
-        --download-archive archive.txt \
-        --cookies cookie.txt \
-        -o "%(playlist)s/%(title)s.%(ext)s" \
-        --batch-file $argv
-end
-
-function yt_single
-    yt-dlp \
-        --merge-output-format mp4 \
-        -f "bv+ba" \
-        --proxy socks5h://proxy:20000 \
-        --write-subs \
-        --video-multistreams \
-        --audio-multistreams \
-        --sub-langs
-end
-
 function g
     rg -p $argv | less -RFX
 end
@@ -152,20 +78,6 @@ end
 function ff
     ruff check --select I --fix **/**/*.py && ruff format
 end
-
-function p
-    pnpm $argv
-end
-
-function ls --wraps exa --description "alias ls=exa --git, if installed"
-    if type -q exa
-        exa --git $argv
-    else
-        ls $argv
-    end
-end
-
-
 
 zoxide init fish | source
 fnm env --use-on-cd --shell fish | source

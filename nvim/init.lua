@@ -21,7 +21,17 @@ require("lazy").setup({
 	{ "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
 	{ "mfussenegger/nvim-lint" },
 	{ "stevearc/conform.nvim" },
-	{ "nvim-tree/nvim-web-devicons" },
+	{
+		"navarasu/onedark.nvim",
+		priority = 1000, -- make sure to load this before all the other start plugins
+		config = function()
+			require("onedark").setup({
+				style = "darker",
+			})
+			-- Enable theme
+			require("onedark").load()
+		end,
+	},
 	{
 		"goolord/alpha-nvim",
 		dependencies = { "echasnovski/mini.icons" },
@@ -51,9 +61,6 @@ require("lazy").setup({
 		end,
 	},
 })
-
--- nvim-web-devicons
-require("nvim-web-devicons").setup({ default = true })
 
 -- Treesitter
 require("nvim-treesitter.configs").setup({
