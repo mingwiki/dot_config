@@ -6,7 +6,6 @@ set -x LANG en_US.UTF-8
 set -x LC_CTYPE en_US.UTF-8
 set -x GO111MODULE on
 set -x GOSUMDB off
-set -x RUST_BACKTRACE 1
 set -x EDITOR nvim
 set -x TERM xterm-256color 
 set -x COLORTERM truecolor
@@ -79,18 +78,14 @@ function ff
     ruff check --select I --fix **/**/*.py && ruff format
 end
 
+function t
+    tmuxinator start webterm 
+end
 function tk
     tmux kill-session -a
 end
 
 zoxide init fish | source
-fnm env --use-on-cd --shell fish | source
 pyenv init - fish | source
 pyenv virtualenv-init - | source
 
-# pnpm
-set -gx PNPM_HOME "/root/.local/share/pnpm"
-if not string match -q -- $PNPM_HOME $PATH
-    set -gx PATH "$PNPM_HOME" $PATH
-end
-# pnpm end
