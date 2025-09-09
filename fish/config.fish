@@ -21,11 +21,11 @@ function dp_sync
 end
 
 function sp
-    set -gx http_proxy socks5://proxy:20000
-    set -gx https_proxy socks5://proxy:20000
-    set -gx ftp_proxy socks5://proxy:20000
-    set -gx rsync_proxy socks5://proxy:20000
-    set -gx all_proxy socks5://proxy:20000
+    set -gx http_proxy socks5://proxy:10808
+    set -gx https_proxy socks5://proxy:10808
+    set -gx ftp_proxy socks5://proxy:10808
+    set -gx rsync_proxy socks5://proxy:10808
+    set -gx all_proxy socks5://proxy:10808
 end
 
 function unsp
@@ -51,8 +51,8 @@ function e
 end
 
 function v
-    if command -v moar >/dev/null
-        moar $argv
+    if command -v moor >/dev/null
+        moor $argv
     else
         less -RFX $argv
     end
@@ -61,17 +61,12 @@ end
 function bcaddy
     xcaddy build master \
         --with github.com/caddyserver/forwardproxy@caddy2 \
-	--with github.com/mholt/caddy-webdav \
-        --with github.com/caddy-dns/cloudflare
+	--with github.com/mholt/caddy-webdav
 end
 
 function fcaddy
-    caddy fmt /etc/caddy/Caddyfile --overwrite
-    caddy validate --config /etc/caddy/Caddyfile
-end
-
-function g
-    rg -p $argv | less -RFX
+    caddy fmt --overwrite $argv
+    caddy validate --config $argv
 end
 
 function ff
@@ -88,4 +83,12 @@ end
 zoxide init fish | source
 pyenv init - fish | source
 pyenv virtualenv-init - | source
+fnm env --use-on-cd --shell fish | source
+source "$HOME/.cargo/env.fish"
 
+# pnpm
+set -gx PNPM_HOME "/home/mingwiki/.local/share/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end
