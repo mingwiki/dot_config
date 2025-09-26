@@ -14,3 +14,5 @@ editor = nvim
 	defaultBranch = master
 [credential]
 	helper = store
+[safe]
+	directory = /root/.config
