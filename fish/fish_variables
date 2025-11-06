@@ -2,6 +2,7 @@
 # VERSION: 3.0
 SETUVAR --export PAGER:moar
 SETUVAR --export PYENV_ROOT:/home/mingwiki/\x2epyenv
+SETUVAR --export UV_PYTHON_BUILD_STANDALONE_MIRROR:https\x3a//mirrors\x2enju\x2eedu\x2ecn/github\x2drelease/astral\x2dsh/python\x2dbuild\x2dstandalone/LatestRelease/
 SETUVAR __fish_initialized:3400
 SETUVAR fish_color_autosuggestion:brblack
 SETUVAR fish_color_cancel:\x2dr

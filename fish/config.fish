@@ -1,4 +1,3 @@
-set -x PYENV_ROOT "$HOME/.pyenv"
 set -x PATH $HOME/.local/bin:$HOME/go/bin:$HOME/.cargo/bin:/usr/local/bin:/usr/local/go/bin:$PATH
 set -x DOCKER_CLIENT_TIMEOUT 120
 set -x COMPOSE_HTTP_TIMEOUT 120
@@ -6,11 +5,13 @@ set -x LANG en_US.UTF-8
 set -x LC_CTYPE en_US.UTF-8
 set -x GO111MODULE on
 set -x GOSUMDB off
-set -x EDITOR nvim
+set -x EDITOR vim
 set -x TERM xterm-256color 
 set -x COLORTERM truecolor
 set -x RUSTUP_DIST_SERVER https://mirrors.ustc.edu.cn/rust-static
 set -x RUSTUP_UPDATE_ROOT https://mirrors.ustc.edu.cn/rust-static/rustup
+set -x UV_PYTHON_BUILD_STANDALONE_MIRROR https://mirrors.nju.edu.cn/github-release/astral-sh/python-build-standalone/
+
 
 function sp
     set -gx http_proxy socks5://proxy:10808
@@ -65,12 +66,6 @@ function ff
     ruff check --select I --fix **/**/*.py && ruff format
 end
 
-function t
-    tmuxinator start webterm 
-end
-function tk
-    tmux kill-session -a
-end
 
 zoxide init fish | source
 fnm env --use-on-cd --shell fish | source
