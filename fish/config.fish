@@ -10,7 +10,8 @@ set -x TERM xterm-256color
 set -x COLORTERM truecolor
 set -x RUSTUP_DIST_SERVER https://mirrors.ustc.edu.cn/rust-static
 set -x RUSTUP_UPDATE_ROOT https://mirrors.ustc.edu.cn/rust-static/rustup
-set -x UV_PYTHON_BUILD_STANDALONE_MIRROR https://mirrors.nju.edu.cn/github-release/astral-sh/python-build-standalone/
+set -x UV_PYTHON_BUILD_STANDALONE_MIRROR https://mirrors.nju.edu.cn/github-release/astral-sh/python-build-standalone/LatestRelease/
+set -x UV_PYPI_MIRROR https://pypi.tuna.tsinghua.edu.cn/simple
 
 
 function sp
