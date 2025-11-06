@@ -1,6 +1,0 @@
-name: s0
-root: ~
-windows:
-  - main:
-      panes:
-        - fish
