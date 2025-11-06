@@ -12,14 +12,6 @@ set -x COLORTERM truecolor
 set -x RUSTUP_DIST_SERVER https://mirrors.ustc.edu.cn/rust-static
 set -x RUSTUP_UPDATE_ROOT https://mirrors.ustc.edu.cn/rust-static/rustup
 
-function dp_sync
-    pyenv activate $argv
-    if test (pip freeze | grep -v -f requirements.txt | wc -l) -gt 0
-        pip freeze | grep -v -f requirements.txt - | xargs pip uninstall -y
-    end
-    pip install -r requirements.txt &>>/var/log/sync.log
-end
-
 function sp
     set -gx http_proxy socks5://proxy:10808
     set -gx https_proxy socks5://proxy:10808
@@ -81,8 +73,6 @@ function tk
 end
 
 zoxide init fish | source
-pyenv init - fish | source
-pyenv virtualenv-init - | source
 fnm env --use-on-cd --shell fish | source
 source "$HOME/.cargo/env.fish"
 
