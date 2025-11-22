@@ -11,6 +11,7 @@ set -x COLORTERM truecolor
 set -x RUSTUP_DIST_SERVER https://mirrors.ustc.edu.cn/rust-static
 set -x RUSTUP_UPDATE_ROOT https://mirrors.ustc.edu.cn/rust-static/rustup
 set -x ZELLIJ_AUTO_ATTACH true
+set -x ZELLIJ_AUTO_EXIT true
 if status is-interactive
     eval (zellij setup --generate-auto-start fish | string collect)
 end
