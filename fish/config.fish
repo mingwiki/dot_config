@@ -172,6 +172,7 @@ end
 
 zoxide init fish | source
 fnm env --use-on-cd --shell fish | source
+atuin init fish | source
 source "$HOME/.cargo/env.fish"
 
 # pnpm
@@ -180,3 +181,5 @@ if not string match -q -- $PNPM_HOME $PATH
   set -gx PATH "$PNPM_HOME" $PATH
 end
 # pnpm end
+set -x RUSTUP_UPDATE_ROOT https://mirrors.tuna.tsinghua.edu.cn/rustup/rustup
+set -x RUSTUP_DIST_SERVER https://mirrors.tuna.tsinghua.edu.cn/rustup
