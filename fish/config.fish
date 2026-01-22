@@ -8,12 +8,10 @@ set -x GOSUMDB off
 set -x EDITOR vim
 set -x TERM xterm-256color 
 set -x COLORTERM truecolor
-set -x RUSTUP_DIST_SERVER https://mirrors.ustc.edu.cn/rust-static
-set -x RUSTUP_UPDATE_ROOT https://mirrors.ustc.edu.cn/rust-static/rustup
 set -x ZELLIJ_AUTO_ATTACH true
 set -x ZELLIJ_AUTO_EXIT true
 if status is-interactive
-    eval (zellij setup --generate-auto-start fish | string collect)
+    #    eval (zellij setup --generate-auto-start fish | string collect)
 end
 
 
@@ -111,63 +109,6 @@ function yt-dlp-playlist-mp3 --description '下载YouTube播放列表为MP3音�
         echo "❌ 下载过程中出现错误"
         return 1
     end
-end
-function yt-dlp-playlist-from-txt --description '从txt文件读取YouTube播放列表链接并下载MP3'
-    # 检查参数
-    if test (count $argv) -eq 0
-        echo "用法: yt-dlp-playlist-from-txt <文件名.txt>"
-        echo "示例: yt-dlp-playlist-from-txt playlist_list.txt"
-        return 1
-    end
-
-    set -l txt_file $argv[1]
-
-    # 检查文件是否存在
-    if not test -f "$txt_file"
-        echo "错误: 文件 '$txt_file' 不存在。"
-        return 1
-    end
-
-    echo "开始从 '$txt_file' 读取播放列表链接..."
-    set -l line_count 0
-    set -l valid_count 0
-
-    # 逐行读取文件
-    while read -l line
-        set line_count (math $line_count + 1)
-
-        # 移除行首尾空白字符（包括空格、制表符和换行符）
-        set line (string trim "$line")
-
-        # 跳过空行和以 # 开头的注释行
-        if test -z "$line"
-            echo "第 $line_count 行为空，跳过。"
-            continue
-        else if string match -q '#*' -- "$line"
-            echo "第 $line_count 行为注释，跳过。"
-            continue
-        end
-
-        # 简单的URL格式检查（可选，可根据需要调整匹配模式）
-        if not string match -q -r '^https?://.*youtube\.com.*list=' -- "$line"
-            echo "警告: 第 $line_count 行内容 '$line' 看起来不是标准的YouTube播放列表链接，但仍将尝试处理。"
-        end
-
-        echo "开始处理播放列表 ($valid_count): $line"
-        set valid_count (math $valid_count + 1)
-
-        # 调用之前定义的下载函数
-        if yt-dlp-playlist-mp3 "$line"
-            echo "✅ 播放列表 ($valid_count) 处理完成。"
-        else
-            echo "❌ 播放列表 ($valid_count) 处理失败。"
-        end
-        echo "---"
-    end < "$txt_file"
-
-    echo "所有任务处理完毕。"
-    echo "总共读取行数: $line_count"
-    echo "有效播放列表链接数: $valid_count"
 end
 
 zoxide init fish | source
