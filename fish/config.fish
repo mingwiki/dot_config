@@ -64,10 +64,7 @@ function fcaddy
     caddy validate --config $argv
 end
 
-function ff
-    ruff check --select I --fix **/**/*.py && ruff format
-end
-function yt-dlp-playlist-mp3 --description '下载YouTube播放列表为MP3音频（使用代理）'
+function yt-dlp-playlist-mp3 --description '下载YouTube播放列表（使用代理）'
     # 设置代理服务器
     set -l proxy_server "socks5://10.10.10.20:10808"
     set -l download_archive "downloaded_archive.txt"
