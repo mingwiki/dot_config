@@ -11,7 +11,7 @@ set -x COLORTERM truecolor
 set -x ZELLIJ_AUTO_ATTACH true
 set -x ZELLIJ_AUTO_EXIT true
 if status is-interactive
-    #    eval (zellij setup --generate-auto-start fish | string collect)
+    eval (zellij setup --generate-auto-start fish | string collect)
 end
 
 
@@ -110,7 +110,6 @@ end
 
 zoxide init fish | source
 fnm env --use-on-cd --shell fish | source
-atuin init fish | source
 source "$HOME/.cargo/env.fish"
 
 # pnpm
