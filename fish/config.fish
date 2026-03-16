@@ -10,6 +10,11 @@ set -x TERM xterm-256color
 set -x COLORTERM truecolor
 set -x ZELLIJ_AUTO_ATTACH true
 set -x ZELLIJ_AUTO_EXIT true
+# uv 使用清华 PyPI 镜像
+set -x UV_INDEX_URL https://pypi.tuna.tsinghua.edu.cn/simple
+# uv Python 下载镜像（python-build-standalone）
+set -x UV_PYTHON_INSTALL_MIRROR https://mirror.nju.edu.cn/github-release/astral-sh/python-build-standalone
+
 if status is-interactive
     eval (zellij setup --generate-auto-start fish | string collect)
 end
@@ -53,16 +58,6 @@ function v
     end
 end
 
-function bcaddy
-    xcaddy build master \
-        --with github.com/caddyserver/forwardproxy@caddy2 \
-	--with github.com/mholt/caddy-webdav
-end
-
-function fcaddy
-    caddy fmt --overwrite $argv
-    caddy validate --config $argv
-end
 
 function yt-dlp-playlist-mp3 --description '下载YouTube播放列表（使用代理）'
     # 设置代理服务器
